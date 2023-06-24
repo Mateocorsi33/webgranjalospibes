@@ -8,8 +8,10 @@ import gif4 from "../../../assest/amabilidad.gif";
 const BoxCuerpo = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
-    width: 100%;
+    margin-top: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 95%;
     height: auto;
     background-color: #ffffff;
 `

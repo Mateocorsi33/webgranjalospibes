@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Portada from "./Portada";
 import Presentacion from "./Presentacion";
+import NuestraMision from "./NuestraMision";
 
 const BoxMain = styled.div`
     display: flex;
@@ -16,6 +17,7 @@ const Main = () => {
         <BoxMain>
             <Portada/>
             <Presentacion/>
+            <NuestraMision/>
         </BoxMain>
     )
 }
