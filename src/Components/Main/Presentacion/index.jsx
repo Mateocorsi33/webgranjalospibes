@@ -19,8 +19,8 @@ const DivContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 6rem;
     width: 100%;
-    height: fit-content;
 `
 
 const DivContent2 = styled.div`
@@ -28,18 +28,17 @@ const DivContent2 = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 6rem;
     width: 100%;
-    height: fit-content;
 `
 
 const DivText = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 0;
     border-top: 4px solid #D6D582;
     width: 20%;
     gap: 2rem;
-    padding-bottom: 4rem;
     margin-left: 7rem;
 `
 
@@ -47,11 +46,10 @@ const DivText2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 2rem;
+    margin-top: 0;
     border-top: 4px solid #D6D582;
     width: 20%;
     gap: 2rem;
-    padding-bottom: 4rem;
     margin-right: 7rem;
 `
 
@@ -109,13 +107,15 @@ const Parra2 = styled.p`
 
 const Gif = styled.img`
     width: 26rem;
-    height: 26rem; 
+    height: 26rem;
+    margin: 0;
     padding-right: 4.5rem;
 `
 
 const Gif2 = styled.img`
     width: 26rem;
-    height: 26rem; 
+    height: 26rem;
+    margin: 0;
     padding-left: 4.5rem;
 `
 const STRONG = styled.h1`

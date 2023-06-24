@@ -41,11 +41,11 @@ const Titulo = styled.h1`
 
 const GradientOverlay = styled.div`  
     position: absolute;
-    top: 100%;   
+    top: 80%;   
     bottom: 0;   
     left: 0;   
     width: 100%;   
-    height: 40%;   
+    height: 50%;   
     content: '';   
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 61.84%);
 `
