@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Portada from "./Portada";
-import Cuerpo from "./Cuerpo";
+import Presentacion from "./Presentacion";
 
 const BoxMain = styled.div`
     display: flex;
@@ -15,7 +15,7 @@ const Main = () => {
     return(
         <BoxMain>
             <Portada/>
-            <Cuerpo/>
+            <Presentacion/>
         </BoxMain>
     )
 }

@@ -39,7 +39,7 @@ const DivText = styled.div`
     border-top: 4px solid #D6D582;
     width: 20%;
     gap: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     margin-left: 7rem;
 `
 
@@ -51,7 +51,7 @@ const DivText2 = styled.div`
     border-top: 4px solid #D6D582;
     width: 20%;
     gap: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     margin-right: 7rem;
 `
 
@@ -61,7 +61,7 @@ const Titu = styled.h1`
     height: 187px;
     flex-direction: column;
     color: #464646;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
     font-family: Manrope;
     line-height: 42px;
@@ -75,7 +75,7 @@ const Titu2 = styled.h1`
     flex-direction: column;
     text-align: end;
     color: #464646;
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 400;
     font-family: Manrope;
     line-height: 42px;
@@ -88,7 +88,7 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #586E66;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Manrope;
     line-height: 27px;
     letter-spacing: 0.7px;
@@ -101,30 +101,30 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #586E66;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Manrope;
     line-height: 27px;
     letter-spacing: 0.7px;
 `
 
 const Gif = styled.img`
-    width: 28rem;
-    height: 28rem; 
+    width: 26rem;
+    height: 26rem; 
     padding-right: 4.5rem;
 `
 
 const Gif2 = styled.img`
-    width: 28rem;
-    height: 28rem; 
+    width: 26rem;
+    height: 26rem; 
     padding-left: 4.5rem;
 `
 const STRONG = styled.h1`
     font-weight: 600;
-    font-size: 40px;
+    font-size: 38px;
     margin: 0;
 `
 
-const Cuerpo = () => {
+const Presentacion = () => {
     return (
         <BoxCuerpo>
             <DivContent>
@@ -168,4 +168,4 @@ const Cuerpo = () => {
     )
 }
 
-export default Cuerpo
+export default Presentacion

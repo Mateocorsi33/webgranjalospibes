@@ -6,16 +6,17 @@ const BoxBarraNav = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #647F76;
+    background-color: #ffffff;
     width: 85%;
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.05em;
-    color: #ffffff;
+    color: #464646;
 `
 
 const DivBarra1 = styled.div`
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin-left: 4%;
 `
@@ -27,6 +28,12 @@ const DivBarra2 = styled.div`
 `
 const Link = styled.a`
     cursor: pointer;
+`
+
+const Marcador = styled.div`
+    &:hover{
+        border-bottom: 2px solid #D6D582;
+    }
 `
 
 
@@ -51,12 +58,12 @@ const BarraNav = () => {
     return(
         <BoxBarraNav>
                 <DivBarra1>
-                    <Link>INICIO</Link>
-                    <Link>QUIENES SOMOS</Link>
-                    <Link>CONTACTO</Link>
+                    <Link><Marcador>INICIO</Marcador></Link>
+                    <Link><Marcador>QUIENES SOMOS</Marcador></Link>
+                    <Link><Marcador>CONTACTO</Marcador></Link>
                 </DivBarra1>
                 <DivBarra2>
-                    <Link>PADRINOS</Link>
+                    <Link><Marcador>PADRINOS</Marcador></Link>
                     <Link><Boton>DONAR</Boton></Link>
                 </DivBarra2>
         </BoxBarraNav>
