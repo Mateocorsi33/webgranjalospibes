@@ -22,7 +22,7 @@ const Video = styled.video`
 `
 
 const DivText = styled.div`
-    margin: 26% 14% 0;
+    margin: 23% 12% 0;
     position: absolute;
     z-index: 2;
 `
@@ -30,7 +30,7 @@ const DivText = styled.div`
 const Titulo = styled.h1`
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 5.2rem;
     font-weight: 300;
     letter-spacing: 0.02em;
     line-height: 6rem;
