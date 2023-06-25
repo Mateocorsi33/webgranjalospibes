@@ -4,6 +4,7 @@ import gif1 from "../../../assest/emergencia.gif";
 import gif2 from "../../../assest/estetoscopio.gif";
 import gif3 from "../../../assest/collar-para-mascotas.gif";
 import gif4 from "../../../assest/amabilidad.gif";
+import Divisor from "../Divisor";
 
 const BoxCuerpo = styled.div`
     display: flex;
@@ -88,7 +89,7 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #586E66;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Manrope;
     line-height: 27px;
     letter-spacing: 0.7px;
@@ -101,22 +102,22 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #586E66;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Manrope;
     line-height: 27px;
     letter-spacing: 0.7px;
 `
 
 const Gif = styled.img`
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
     margin: 0;
     padding-right: 4.5rem;
 `
 
 const Gif2 = styled.img`
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
     margin: 0;
     padding-left: 4.5rem;
 `
@@ -148,6 +149,9 @@ const Presentacion = () => {
                     </Parra2>
                 </DivText2>
             </DivContent2>
+
+            <Divisor/>
+
             <DivContent>
                 <DivText>
                     <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
