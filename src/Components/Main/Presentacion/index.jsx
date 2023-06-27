@@ -13,6 +13,10 @@ const BoxCuerpo = styled.div`
     margin-top: 3.5rem;
     width: 80%;
     background-color: #ffffff;
+
+    @media (max-width: 768px) {
+        margin-top:1rem;
+    }
 `
 
 const DivContent = styled.div`
@@ -26,7 +30,8 @@ const DivContent = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        padding-bottom: 3.5rem;
+        gap: 1.5rem;
     }
 `
 
@@ -40,7 +45,8 @@ const DivContent2 = styled.div`
     @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    padding-bottom: 3.5rem;
+    gap: 1.5rem;
     }
 `
 
@@ -53,6 +59,7 @@ const DivText = styled.div`
     @media (max-width: 800px) {
         text-align: center;
         align-items: center;
+        width: 30%;
     }
 `
 
@@ -66,6 +73,7 @@ const DivText2 = styled.div`
     @media (max-width: 800px) {
         align-items: center;
         order: 1;
+        width: 30%;
     }
 `
 
@@ -81,8 +89,9 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 26rem;
-        font-size: 1.7rem;
+        width: 20rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
 `
 
@@ -99,8 +108,8 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 26rem;
-        font-size: 1.7rem;
+        width: 20rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 `  
@@ -117,8 +126,8 @@ const Parra = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: 26rem;
-        font-size: .9rem;
+        width: 20rem;
+        font-size: .8rem;
     }
 `
 
@@ -135,8 +144,8 @@ const Parra2 = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: 26rem;
-        font-size: .9rem;
+        width: 20rem;
+        font-size: .8rem;
         text-align: center;
     }
 `
@@ -150,8 +159,8 @@ const Gif = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        width: 22rem;
-        height: 22rem;
+        width: 20rem;
+        height: 20rem;
     }
 `
 
@@ -164,8 +173,8 @@ const Gif2 = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        width: 22rem;
-        height: 22rem;
+        width: 20rem;
+        height: 20rem;
         order: 2;
     }
 `
@@ -173,6 +182,11 @@ const STRONG = styled.h1`
     font-weight: 600;
     font-size: 36px;
     margin: 0;
+
+    @media (max-width: 800px) {
+        font-size: 1.7rem;
+        text-align: center;
+    }
 `
 
 const Presentacion = () => {

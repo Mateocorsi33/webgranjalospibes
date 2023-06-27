@@ -17,6 +17,10 @@ const BoxMision = styled.div`
     height: fit-content;
     background-color: #D6D582;
     box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 800px) {
+        box-shadow: none;
+    }
 `
 
 const DivText = styled.div`
@@ -38,6 +42,12 @@ const Titulo = styled.h1`
     font-weight: 300;
     font-family: Manrope;
     margin: 0;
+    @media (max-width: 800px) {
+        text-align: center;
+        width: auto;
+        font-size: 1.5rem;
+        padding: 0 2rem;
+    }
 `
 
 const Parrafo = styled.p`
@@ -53,6 +63,7 @@ const Parrafo = styled.p`
     @media (max-width: 800px) {
         width: auto;
         padding: 0 2rem;
+        font-size:1rem;
     }
 `
 
@@ -60,6 +71,10 @@ const STRONG = styled.h1`
     font-weight: 600;
     font-size: 40px;
     margin: 0;
+
+    @media (max-width: 800px) {
+        font-size: 1.5rem;
+    }
 `
 
 const BoxCard = styled.div`
@@ -70,7 +85,6 @@ const BoxCard = styled.div`
 
     @media (max-width: 800px) {
         flex-direction: column;
-        gap: 0;
     }
 `
 
@@ -81,6 +95,12 @@ const Card = styled.div`
     width: 23rem;
     height: 48rem;
     margin: 2rem 0;
+
+    @media (max-width: 800px) {
+        margin:0;
+        width: 22rem;
+        height: auto;
+    }
 `
 const Eclipse1 = styled.div`
     position: absolute;
@@ -124,9 +144,9 @@ const Cuadro = styled.div`
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     @media (max-width: 800px) {
-        width: 30rem;
-        height: 32rem;
-        padding:1rem;
+        width: auto;
+        height: auto;
+        padding:0.5rem;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -143,6 +163,10 @@ const TCuadro = styled.h1`
     font-family: Manrope;
     font-weight: 500;
     margin-top: 6rem;
+
+    @media (max-width: 800px) {
+        font-size: 26px;
+    }
 `
 
 const PCuadro = styled.p`
@@ -151,6 +175,10 @@ const PCuadro = styled.p`
     font-size: 18px;
     font-family: Manrope;
     margin: 0 2rem;
+
+    @media (max-width: 800px) {
+        font-size: 16px;
+    }
 `
 
 const Boton = styled.button`
@@ -171,6 +199,10 @@ const Boton = styled.button`
         transition: .3s;
         opacity: 70%;
     }
+
+    @media (max-width: 800px) {
+        width: 90%;
+    }
 `
 
 const Iconos = styled.div`
@@ -182,7 +214,7 @@ const Iconos = styled.div`
 
     @media (max-width: 800px) {
         margin: 3rem 0;
-        gap: 2rem;
+        gap: 1rem;
     }
 `
 

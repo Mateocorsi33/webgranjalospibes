@@ -41,8 +41,8 @@ const Titulo = styled.h1`
     @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 2rem;
+        line-height: 1.8rem;
     }
 `
 
@@ -58,8 +58,8 @@ const GradientOverlay = styled.div`
 
     @media (max-width: 800px) {
         display: flex;
-        top: 65%;
-        height: 25%;
+        top: 38%;
+        height: 5rem;
     }
 `
 
