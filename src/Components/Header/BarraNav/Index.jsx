@@ -74,6 +74,9 @@ const Boton = styled.button`
     }
 
     @media (max-width: 800px) {
+        display: flex;
+        justify-content:center;
+        align-items: center;
         font-size: 0.8rem;
         width: 6rem;
         margin-bottom: 0.5rem;
@@ -94,6 +97,7 @@ const StyledLink = styled(Link)`
   @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
+        align-items:center;
         font-size: 0.8rem;
         width: 100%;
         margin:0;

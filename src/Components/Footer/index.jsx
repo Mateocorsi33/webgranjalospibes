@@ -5,6 +5,7 @@ import instagram from "../../assest/w-instagram.png";
 import whatsapp from "../../assest/w-whatsapp.png";
 import email from "../../assest/w-email.png";
 import youtube from "../../assest/w-youtube.png";
+import { Link } from "react-router-dom";
 
 const DivFooter = styled.div`
     display: flex;
@@ -95,20 +96,6 @@ const Titulos = styled.h1`
     border-bottom: 1px solid #ffffff;
 `
 
-const LinkNav = styled.a`
-    font-family: Manrope;
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0.3rem 0;
-    cursor: pointer;
-    &:hover{
-        transition: .3s;
-        opacity:.7;
-    }
-`
-
 const Texto = styled.p`
     width: 17rem;
     margin: 0.3rem 0;
@@ -139,17 +126,36 @@ const UbiLink = styled.a`
     }
 `
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0.3rem 0;
+    cursor: pointer;
+    &:hover {
+        transition: .3s;
+        opacity:.7;
+    }
+
+    @media (max-width: 800px) {
+    
+    }
+`;
+
 const Footer = () => {
     return(
         <DivFooter>
             <DivTexto>
                 <DivNav>
                     <Titulos>NAVEGACIÓN</Titulos>
-                    <LinkNav>Inicio</LinkNav>
-                    <LinkNav>Quiénes somos</LinkNav>
-                    <LinkNav>Contacto</LinkNav>
-                    <LinkNav>Padrinos</LinkNav>
-                    <LinkNav>Donar</LinkNav>
+                    <StyledLink to="/" style={{}}>Inicio</StyledLink>
+                    <StyledLink to="/quienes-somos" style={{}}>Quiénes somos</StyledLink>
+                    <StyledLink to="/contacto" style={{}}>Contacto</StyledLink>
+                    <StyledLink to="/padrinos" style={{}}>Padrinos</StyledLink>
+                    <StyledLink to="/donar" style={{}}>Donar</StyledLink>
                 </DivNav>
                 <DivGra>
                     <Titulos>GRANJA LOS PIBES</Titulos>
