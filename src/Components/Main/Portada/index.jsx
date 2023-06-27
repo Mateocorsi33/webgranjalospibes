@@ -19,6 +19,11 @@ const Video = styled.video`
     position: relative;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: 800px) {
+        width: 100%;
+        height: auto;
+    }
 `
 
 const DivText = styled.div`

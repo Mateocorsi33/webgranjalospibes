@@ -33,8 +33,8 @@ const DivBarra1 = styled.div`
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap:1rem;
-        margin: 1rem 0;
+        gap:0.5rem;
+        margin: 0.5rem 0;
     }
 `
 const DivBarra2 = styled.div`
@@ -47,12 +47,15 @@ const DivBarra2 = styled.div`
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap:1rem;
-        margin: 1rem 0;
+        gap:0.5rem;
+        margin:0;
     }
 `
 const Link = styled.a`
     cursor: pointer;
+    @media (max-width: 800px) {
+       margin: 0;
+    }
 `
 
 const Marcador = styled.div`
@@ -83,6 +86,7 @@ const Boton = styled.button`
     @media (max-width: 800px) {
         font-size: 0.8rem;
         width: 6rem;
+        margin-bottom: 0.5rem;
     }
 `
 

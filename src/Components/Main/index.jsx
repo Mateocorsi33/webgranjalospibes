@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Portada from "./Portada";
 import Presentacion from "./Presentacion";
 import NuestraMision from "./NuestraMision";
-import Imagenes from "./Imagenes";
+// import Imagenes from "./Imagenes";
 
 const BoxMain = styled.div`
     display: flex;
@@ -18,7 +18,7 @@ const Main = () => {
             <Portada/>
             <Presentacion/>
             <NuestraMision/>
-            <Imagenes/>
+            {/* <Imagenes/> */}
         </BoxMain>
     )
 }

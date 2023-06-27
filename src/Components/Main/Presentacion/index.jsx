@@ -60,7 +60,7 @@ const DivText = styled.div`
     @media (max-width: 800px) {
         text-align: center;
         align-items: center;
-        width: 30%;
+        width: 100%;
     }
 `
 
@@ -74,7 +74,7 @@ const DivText2 = styled.div`
     @media (max-width: 800px) {
         align-items: center;
         order: 1;
-        width: 30%;
+        width: 100%;
     }
 `
 
@@ -90,7 +90,7 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 27rem;
+        width: fit-content;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -109,7 +109,7 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 27rem;
+        width: fit-content;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -127,7 +127,7 @@ const Parra = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: 27rem;
+        width: fit-content;
         font-size: .8rem;
     }
 `
@@ -145,7 +145,7 @@ const Parra2 = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: 20rem;
+        width: fit-content;
         font-size: .8rem;
         text-align: center;
     }
