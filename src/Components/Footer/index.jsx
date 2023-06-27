@@ -19,21 +19,40 @@ const DivTexto = styled.div`
     align-items: flex-start;
     margin: 1rem 6rem;
     gap: 8rem;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 `
 
 const DivNav = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 800px) {
+        text-align:center;
+    }
 `
 
 const DivGra = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 800px) {
+        text-align:center;
+    }
 `
 
 const DivUbi = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 800px) {
+        text-align:center;
+    }
 `
 
 const DivCopyIconos = styled.div`
@@ -43,6 +62,11 @@ const DivCopyIconos = styled.div`
     align-items: center;
     margin: 1rem 6rem;
     border-top: 1px solid #ffffff;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        text-align:center;
+    }
 `
 
 const Iconos = styled.div`

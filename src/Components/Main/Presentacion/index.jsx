@@ -10,7 +10,7 @@ const BoxCuerpo = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     width: 80%;
     background-color: #ffffff;
 `
@@ -22,6 +22,12 @@ const DivContent = styled.div`
     align-items: center;
     padding-bottom: 8rem;
     gap: 5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 `
 
 const DivContent2 = styled.div`
@@ -31,6 +37,11 @@ const DivContent2 = styled.div`
     align-items: center;
     padding-bottom: 8rem;
     gap: 5rem;
+    @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    }
 `
 
 const DivText = styled.div`
@@ -38,6 +49,11 @@ const DivText = styled.div`
     flex-direction: column;
     border-top: 4px solid #D6D582;
     width: 20%;
+
+    @media (max-width: 800px) {
+        text-align: center;
+        align-items: center;
+    }
 `
 
 const DivText2 = styled.div`
@@ -46,6 +62,11 @@ const DivText2 = styled.div`
     align-items: flex-end;
     border-top: 4px solid #D6D582;
     width: 20%;
+
+    @media (max-width: 800px) {
+        align-items: center;
+        order: 1;
+    }
 `
 
 const Titu = styled.h1`
@@ -58,6 +79,11 @@ const Titu = styled.h1`
     font-family: Manrope;
     line-height: 2.625rem;
     letter-spacing: 2px;
+
+    @media (max-width: 800px) {
+        width: 26rem;
+        font-size: 1.7rem;
+    }
 `
 
 const Titu2 = styled.h1`
@@ -71,6 +97,12 @@ const Titu2 = styled.h1`
     font-family: Manrope;
     line-height: 2.625rem;
     letter-spacing: 2px;
+
+    @media (max-width: 800px) {
+        width: 26rem;
+        font-size: 1.7rem;
+        text-align: center;
+    }
 `  
 
 const Parra = styled.p`
@@ -83,6 +115,11 @@ const Parra = styled.p`
     font-family: Manrope;
     line-height: 1.6875rem;
     letter-spacing: 0.9px;
+
+    @media (max-width: 800px) {
+        width: 26rem;
+        font-size: .9rem;
+    }
 `
 
 const Parra2 = styled.p`
@@ -96,6 +133,12 @@ const Parra2 = styled.p`
     font-family: Manrope;
     line-height: 1.6875rem;
     letter-spacing: 0.9px;
+
+    @media (max-width: 800px) {
+        width: 26rem;
+        font-size: .9rem;
+        text-align: center;
+    }
 `
 
 const Gif = styled.img`
@@ -105,6 +148,11 @@ const Gif = styled.img`
     margin: 0;
     opacity: 80%;
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 800px) {
+        width: 22rem;
+        height: 22rem;
+    }
 `
 
 const Gif2 = styled.img`
@@ -114,6 +162,12 @@ const Gif2 = styled.img`
     margin: 0;
     opacity: 80%;
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 800px) {
+        width: 22rem;
+        height: 22rem;
+        order: 2;
+    }
 `
 const STRONG = styled.h1`
     font-weight: 600;

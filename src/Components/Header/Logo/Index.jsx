@@ -8,6 +8,10 @@ const BoxLogo = styled.div`
     width: 15%;
     height: 4.5rem;
     background-color: #586E66;
+    @media (max-width: 800px) {
+        display: flex;
+        justify-content:center;
+    }
 `
 const BoxImgText = styled.div`
     display: flex;
@@ -15,6 +19,9 @@ const BoxImgText = styled.div`
     align-items: center;
     gap: 0.5rem;
     margin: 1rem 0 1rem 15%;
+    @media (max-width: 800px) {
+        margin:0;
+    }
 `
 const ImgLogo = styled.img`
     width: 3rem;
@@ -25,6 +32,10 @@ const ImgLogo = styled.img`
 const DivText = styled.div`
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 `
 
 const TextLogo1 = styled.h2`

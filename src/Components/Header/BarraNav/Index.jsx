@@ -13,6 +13,11 @@ const BoxBarraNav = styled.div`
     font-weight: 500;
     letter-spacing: 0.05em;
     color: #464646;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 const DivBarra1 = styled.div`

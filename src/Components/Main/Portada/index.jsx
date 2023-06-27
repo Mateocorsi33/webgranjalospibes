@@ -37,6 +37,13 @@ const Titulo = styled.h1`
     width: 100%;
     margin: 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 `
 
 const GradientOverlay = styled.div`  
@@ -48,6 +55,12 @@ const GradientOverlay = styled.div`
     height: 55%;   
     content: '';   
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 61.84%);
+
+    @media (max-width: 800px) {
+        display: flex;
+        top: 65%;
+        height: 25%;
+    }
 `
 
 

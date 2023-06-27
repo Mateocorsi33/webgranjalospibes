@@ -49,6 +49,11 @@ const Parrafo = styled.p`
     text-align: center;
     font-size: 20px;
     font-family: Manrope;
+
+    @media (max-width: 800px) {
+        width: auto;
+        padding: 0 2rem;
+    }
 `
 
 const STRONG = styled.h1`
@@ -62,6 +67,11 @@ const BoxCard = styled.div`
     flex-direction: row;
     justify-content: space-around;
     gap: 2rem;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        gap: 0;
+    }
 `
 
 const Card = styled.div`
@@ -112,6 +122,15 @@ const Cuadro = styled.div`
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 800px) {
+        width: 30rem;
+        height: 32rem;
+        padding:1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 const TCuadro = styled.h1`
@@ -160,6 +179,11 @@ const Iconos = styled.div`
     justify-content: space-between;
     align-items: center;
     margin: 6rem 2rem 0 2rem;
+
+    @media (max-width: 800px) {
+        margin: 3rem 0;
+        gap: 2rem;
+    }
 `
 
 const ImgIconos = styled.img`
