@@ -3,8 +3,7 @@ import styled from "styled-components";
 import Portada from "./Portada";
 import Presentacion from "./Presentacion";
 import NuestraMision from "./NuestraMision";
-import divImg from "../../assest/imgdivvv.png";
-
+import Imagenes from "./Imagenes";
 
 const BoxMain = styled.div`
     display: flex;
@@ -12,19 +11,14 @@ const BoxMain = styled.div`
     align-items: center;
     justify-content: center;
 `
-const DivImg = styled.img`
-    width: 80%;
-    margin: 4rem 0 8rem 0;
-`
-
 
 const Main = () => {
     return(
         <BoxMain>
             <Portada/>
             <Presentacion/>
-            <DivImg src={divImg}/>
             <NuestraMision/>
+            <Imagenes/>
         </BoxMain>
     )
 }

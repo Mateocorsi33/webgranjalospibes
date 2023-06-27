@@ -26,7 +26,7 @@ const DivText = styled.div`
 
 const DivText2 = styled.div`
     text-align: center;
-    margin: 0.5rem 0 2rem 0;
+    margin: 0.5rem 0 5rem 0;
 `
 
 const Titulo = styled.h1`
