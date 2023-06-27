@@ -6,6 +6,12 @@ import BarraNav from "./BarraNav/Index";
 const DivHeader = styled.div`
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const Header = () => {

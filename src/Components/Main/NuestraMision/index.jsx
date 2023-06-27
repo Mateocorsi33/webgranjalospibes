@@ -178,6 +178,7 @@ const PCuadro = styled.p`
 
     @media (max-width: 800px) {
         font-size: 16px;
+        margin-bottom: 1rem;
     }
 `
 

@@ -57,8 +57,8 @@ const GradientOverlay = styled.div`
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 61.84%);
 
     @media (max-width: 800px) {
-        display: flex;
-        top: 38%;
+        display: none;
+        top: 16rem;
         height: 5rem;
     }
 `

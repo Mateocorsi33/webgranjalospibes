@@ -30,6 +30,7 @@ const DivContent = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        margin-top:1rem;
         padding-bottom: 3.5rem;
         gap: 1.5rem;
     }
@@ -89,7 +90,7 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 20rem;
+        width: 27rem;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -108,7 +109,7 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        width: 20rem;
+        width: 27rem;
         font-size: 1.5rem;
         text-align: center;
     }
@@ -126,7 +127,7 @@ const Parra = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: 20rem;
+        width: 27rem;
         font-size: .8rem;
     }
 `

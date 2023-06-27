@@ -11,6 +11,7 @@ const BoxLogo = styled.div`
     @media (max-width: 800px) {
         display: flex;
         justify-content:center;
+        width: 100%;
     }
 `
 const BoxImgText = styled.div`

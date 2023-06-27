@@ -17,6 +17,9 @@ const BoxBarraNav = styled.div`
     @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
+        font-size: 0.8rem;
+        width: 100%;
+        margin:0;
     }
 `
 
@@ -25,12 +28,28 @@ const DivBarra1 = styled.div`
     align-items: center;
     gap: 2rem;
     margin-left: 4%;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:1rem;
+        margin: 1rem 0;
+    }
 `
 const DivBarra2 = styled.div`
     display: flex;
     align-items: center;
     gap: 2rem;
     margin-right: 4%;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:1rem;
+        margin: 1rem 0;
+    }
 `
 const Link = styled.a`
     cursor: pointer;
@@ -41,7 +60,6 @@ const Marcador = styled.div`
         border-bottom: 2px solid #D6D582;
     }
 `
-
 
 const Boton = styled.button`
     background-color: #D6D582;
@@ -60,6 +78,11 @@ const Boton = styled.button`
         transition: .3s;
         background-color: #D9B36F;
         color: #ffffff;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 0.8rem;
+        width: 6rem;
     }
 `
 
