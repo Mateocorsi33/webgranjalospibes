@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const BoxBarraNav = styled.div`
     display: flex;
@@ -8,11 +9,6 @@ const BoxBarraNav = styled.div`
     align-items: center;
     background-color: #ffffff;
     width: 85%;
-    font-family: Manrope;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    color: #464646;
 
     @media (max-width: 800px) {
         display: flex;
@@ -51,12 +47,6 @@ const DivBarra2 = styled.div`
         margin:0;
     }
 `
-const Link = styled.a`
-    cursor: pointer;
-    @media (max-width: 800px) {
-       margin: 0;
-    }
-`
 
 const Marcador = styled.div`
     &:hover{
@@ -90,18 +80,38 @@ const Boton = styled.button`
     }
 `
 
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #464646;
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+        width: 100%;
+        margin:0;
+    }
+`;
+
 
 const BarraNav = () => {
     return(
         <BoxBarraNav>
                 <DivBarra1>
-                    <Link><Marcador>INICIO</Marcador></Link>
-                    <Link><Marcador>QUIÉNES SOMOS</Marcador></Link>
-                    <Link><Marcador>CONTACTO</Marcador></Link>
+                    <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
                 </DivBarra1>
                 <DivBarra2>
-                    <Link><Marcador>PADRINOS</Marcador></Link>
-                    <Link><Boton>DONAR</Boton></Link>
+                    <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
+                    <StyledLink to="/donar" style={{}}><Boton>DONAR</Boton></StyledLink>
                 </DivBarra2>
         </BoxBarraNav>
     )
