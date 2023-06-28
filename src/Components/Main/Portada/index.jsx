@@ -47,7 +47,8 @@ const Titulo = styled.h1`
         display: flex;
         flex-direction: column;
         font-size: 2rem;
-        line-height: 1.8rem;
+        line-height: 100%;
+        width: 1rem;
     }
 `
 

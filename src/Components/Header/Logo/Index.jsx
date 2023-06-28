@@ -15,7 +15,7 @@ const BoxLogo = styled.div`
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-evenly;
-        gap: 70%;
+        gap: 60%;
         width: 100%;
     }
 `

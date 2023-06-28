@@ -160,7 +160,9 @@ const Gif = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        width: 20rem;
+        border-radius: 2%;
+        box-shadow: none;
+        width: fit-content;
         height: 20rem;
     }
 `
@@ -174,7 +176,9 @@ const Gif2 = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        width: 20rem;
+        border-radius: 2%;
+        box-shadow: none;
+        width: fit-content;
         height: 20rem;
         order: 2;
     }
