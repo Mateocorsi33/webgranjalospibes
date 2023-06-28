@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import imagenlogo from "../../../assest/logoglp.png";
 import { Link } from "react-router-dom";
+import menu from "../../../assest/menu.png";
+import close from "../../../assest/close.png";
 
 
 const BoxLogo = styled.div` 
@@ -32,6 +34,10 @@ const ImgLogo = styled.img`
     height: 3rem;
     border-radius: 100%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+
+    @media (max-width: 800px) {
+        margin-left: 1rem;
+    }
 `
 const DivText = styled.div`
     font-family: 'Roboto', sans-serif;
@@ -53,8 +59,6 @@ const TextLogo2 = styled.h1`
     font-size: 1rem;
 `
 
-
-
 const BoxBarraNav = styled.div`
     display: none;
     flex-direction: row;
@@ -70,6 +74,10 @@ const BoxBarraNav = styled.div`
         font-size: 0.8rem;
         width: 100%;
         margin:0;
+
+        &.show {
+            transition: opacity 0.2s ease-in-out;
+        }
     }
 `
 
@@ -80,10 +88,9 @@ const BotonMenu = styled.button`
         display: flex;
         justify-content:center;
         align-items: center;
-        background-color: #D6D582;
+        background-color: #586E66;
         border-radius: 10px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        width: 6rem;
+        width: 3rem;
         height: 2rem;
         margin: 1rem;
         border: none;
@@ -99,6 +106,30 @@ const BotonMenu = styled.button`
             opacity: 80%;
         }
     }
+`
+
+const ImgMenu = styled.img`
+    display: flex;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+
+    &:hover {
+            transition: .3s;
+            opacity: 80%;
+        }
+`
+
+const ImgClose = styled.img`
+    display: flex;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+            transition: .3s;
+            opacity: 80%;
+        }
 `
 
 const DivBarra1 = styled.div`
@@ -140,7 +171,7 @@ const StyledLink = styled(Link)`
         font-size:.8rem; 
         width:auto; 
         height:auto; 
-        margin-bottom:.5rem; 
+        margin-top: 0.5rem;
     }
 `;
 
@@ -158,17 +189,19 @@ const Logo = () => {
                     <TextLogo2>LOS PIBES</TextLogo2>
                 </DivText>
             </BoxImgText>
+                <BotonMenu onClick={() => setShowMenu(!showMenu)}>
+                    {showMenu ? <ImgClose src={close} alt="close"/> : <ImgMenu src={menu}/>}
+                </BotonMenu>
         </BoxLogo>
         <BoxBarraNav showMenu={showMenu}>
-                        <DivBarra1>
-                            <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
-                            <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
-                            <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
-                            <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
-                            <Marcador><StyledLink to="/donar" style={{}}>DONAR</StyledLink></Marcador>
-                        </DivBarra1>
+                    <DivBarra1>
+                        <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/donar" style={{}}>DONAR</StyledLink></Marcador>
+                    </DivBarra1>
         </BoxBarraNav>
-        <BotonMenu onClick={() => setShowMenu(!showMenu)}>Ver Menú</BotonMenu>
         </>
     )
 }
