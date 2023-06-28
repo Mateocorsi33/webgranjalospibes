@@ -11,11 +11,7 @@ const BoxBarraNav = styled.div`
     width: 85%;
 
     @media (max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8rem;
-        width: 100%;
-        margin:0;
+        display: none;
     }
 `
 
@@ -26,11 +22,7 @@ const DivBarra1 = styled.div`
     margin-left: 4%;
 
     @media (max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap:0.5rem;
-        margin: 0.5rem 0;
+        display: none;
     }
 `
 const DivBarra2 = styled.div`
@@ -40,11 +32,7 @@ const DivBarra2 = styled.div`
     margin-right: 4%;
 
     @media (max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap:0.5rem;
-        margin:0;
+        display: none;
     }
 `
 

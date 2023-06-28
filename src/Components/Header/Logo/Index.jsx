@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import imagenlogo from "../../../assest/logoglp.png";
+import { Link } from "react-router-dom";
+
 
 const BoxLogo = styled.div` 
     display: flex;
@@ -10,7 +12,8 @@ const BoxLogo = styled.div`
     background-color: #586E66;
     @media (max-width: 800px) {
         display: flex;
-        justify-content:center;
+        justify-content: space-evenly;
+        gap: 70%;
         width: 100%;
     }
 `
@@ -50,8 +53,103 @@ const TextLogo2 = styled.h1`
     font-size: 1rem;
 `
 
+
+
+const BoxBarraNav = styled.div`
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 85%;
+
+    @media (max-width: 800px) {
+        display: ${props => props.showMenu ? 'flex' : 'none'};
+        flex-direction: column;
+        text-align: flex-start;
+        font-size: 0.8rem;
+        width: 100%;
+        margin:0;
+    }
+`
+
+const BotonMenu = styled.button`
+    display: none;
+     
+    @media (max-width: 800px) {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: #D6D582;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        width: 6rem;
+        height: 2rem;
+        margin: 1rem;
+        border: none;
+        font-family: Manrope;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #464646;
+        cursor: pointer;
+
+        &:hover {
+            transition: .3s;
+            opacity: 80%;
+        }
+    }
+`
+
+const DivBarra1 = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 4%;
+
+    @media (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        gap:0.5rem;
+        margin: 0.5rem auto;
+    }
+`
+
+const Marcador = styled.div`
+    &:hover{
+        border-bottom: 2px solid #D6D582;
+    }
+`
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    font-family: Manrope;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #464646;
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+        display: flex;
+        justify-content:center; 
+        align-items:center; 
+        font-size:.8rem; 
+        width:auto; 
+        height:auto; 
+        margin-bottom:.5rem; 
+    }
+`;
+
+
+
 const Logo = () => {
+    const [showMenu, setShowMenu] = useState(false);
     return(
+        <>
         <BoxLogo>
             <BoxImgText>
                 <ImgLogo src={imagenlogo} alt="Logo"/>
@@ -61,6 +159,17 @@ const Logo = () => {
                 </DivText>
             </BoxImgText>
         </BoxLogo>
+        <BoxBarraNav showMenu={showMenu}>
+                        <DivBarra1>
+                            <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
+                            <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
+                            <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
+                            <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
+                            <Marcador><StyledLink to="/donar" style={{}}>DONAR</StyledLink></Marcador>
+                        </DivBarra1>
+        </BoxBarraNav>
+        <BotonMenu onClick={() => setShowMenu(!showMenu)}>Ver Menú</BotonMenu>
+        </>
     )
 }
 
