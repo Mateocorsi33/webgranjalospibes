@@ -7,6 +7,7 @@ import Padrinos from "../src/Components/Padrinos";
 import Donar from "../src/Components/Donar";
 import Footer from './Components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Imagenes from './Components/Main/Imagenes';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/padrinos' element={<Padrinos />}/>
         <Route path='/donar' element={<Donar />}/>
       </Routes>
+      {/* <Imagenes/> */}
       <Footer/>
     </Router>
   )
