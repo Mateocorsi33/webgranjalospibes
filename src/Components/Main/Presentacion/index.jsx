@@ -121,14 +121,14 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #586E66;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: Manrope;
-    line-height: 1.6875rem;
+    line-height: 1.8rem;
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 `
 
@@ -139,14 +139,14 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #586E66;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: Manrope;
-    line-height: 1.6875rem;
+    line-height: 1.8rem;
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: .8rem;
+        font-size: 1rem;
         text-align: center;
     }
 `
@@ -160,10 +160,11 @@ const Gif = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        border-radius: 2%;
+        border-radius: 5px;
         box-shadow: none;
         width: fit-content;
         height: 20rem;
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
     }
 `
 
@@ -176,8 +177,8 @@ const Gif2 = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        border-radius: 2%;
-        box-shadow: none;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
         width: fit-content;
         height: 20rem;
         order: 2;

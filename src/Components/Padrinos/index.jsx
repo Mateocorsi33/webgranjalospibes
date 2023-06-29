@@ -1,11 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import fondo from "../../assest/fondopa.png";
+
+
+const ImgBack = styled.img`
+    width: 100%;
+`
 
 const Padrinos = () => {
     return (
-        <div>
-            Hola padrinos
-        </div>
+        <>
+            <ImgBack src={fondo} />
+        </>
     )
 }
 
