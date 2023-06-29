@@ -1,45 +1,23 @@
 import React from "react";
 import styled from "styled-components";
-import fondoM from "../../assest/fotoMovil.png";
-import fondo from "../../assest/fondoqs.png";
+import fondo from "../../assest/foto5.png";
 import foto1 from "../../assest/foto.gif";
 import foto2 from "../../assest/foto2.jpg";
 import foto3 from "../../assest/imgdivvv.png";
 
-
-const Div = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-`
-
-const BackGM = styled.div`
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: url(${fondoM});
-
-@media (max-width: 800px) {
-    display: flex;
-    background-size:100%;
-    background-repeat:no-repeat;
-    width:100%;
-    height:16rem;
-}
-`
 
 const BackG = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20rem;
+    height: 22rem;
     background: url(${fondo});
 
     @media (max-width: 800px) {
-        display: none;
+        display: flex;
+        height:auto;
+        background-size: 100%;
     }
 `
 
@@ -54,8 +32,10 @@ const Titulo = styled.h1`
     letter-spacing: 0.02em;
 
     @media (max-width: 800px) {
-        font-size: 3rem;
+        display: flex;
+        font-size: 2rem;
         text-align: center;
+        align-items: center;
         font-weight: 500;
     }
 `
@@ -122,10 +102,7 @@ const Fotos = styled.img`
 
 const QuienesSomos = () => {
     return (
-        <Div>
-            <BackGM>
-                    <Titulo>Quiénes Somos</Titulo>
-            </BackGM>
+        <>
             <BackG>
                 <Titulo>Quiénes Somos</Titulo>
             </BackG>
@@ -146,7 +123,7 @@ const QuienesSomos = () => {
                 <Parrafo>Sendero ambiental y programa socioeducativo: En colaboración con el Ministerio de Ambiente de la Nación, se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales. También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo>
                 <Encabe>¡Dando Respuestas y Construyendo Futuros!</Encabe>
             </DivQS>
-        </Div>
+        </>
     )
 }
 
