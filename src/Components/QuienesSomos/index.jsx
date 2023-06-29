@@ -54,9 +54,9 @@ const Titulo = styled.h1`
     letter-spacing: 0.02em;
 
     @media (max-width: 800px) {
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
-        font-weight: 600;
+        font-weight: 500;
     }
 `
 

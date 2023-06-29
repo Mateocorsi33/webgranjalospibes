@@ -19,22 +19,6 @@ const BoxCuerpo = styled.div`
     }
 `
 
-const GradientOverlay = styled.div`
-    display: none;
-    position: absolute;   
-    width: 100%;   
-    height: 55%;   
-    content: '';   
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 61.84%);
-
-    @media (max-width: 800px) {
-        display: flex;
-        top: 1rem;
-        margin-top: 10rem;
-        height:9rem;
-    }
-`
-
 const TituloPortada = styled.h1`
     display: none;
     flex-direction: column;
@@ -50,6 +34,7 @@ const TituloPortada = styled.h1`
         font-size: 3rem;
         color: #464646;
         z-index: 100;
+        margin-top: 0;
     }
 `
 
@@ -232,7 +217,6 @@ const STRONG = styled.h1`
 const Presentacion = () => {
     return (
         <BoxCuerpo>
-                <GradientOverlay />
                 <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>
             <DivContent>
                 <DivText>
