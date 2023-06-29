@@ -14,8 +14,42 @@ const BoxCuerpo = styled.div`
     width: 80%;
     background-color: #ffffff;
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         margin-top:1rem;
+    }
+`
+
+const GradientOverlay = styled.div`
+    display: none;
+    position: absolute;   
+    width: 100%;   
+    height: 55%;   
+    content: '';   
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 61.84%);
+
+    @media (max-width: 800px) {
+        display: flex;
+        top: 1rem;
+        margin-top: 10rem;
+        height:9rem;
+    }
+`
+
+const TituloPortada = styled.h1`
+    display: none;
+    flex-direction: column;
+    color: #464646;
+    font-size: 40px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    @media (max-width: 800px) {
+        display: flex;
+        font-size: 3rem;
+        color: #464646;
+        z-index: 100;
     }
 `
 
@@ -27,7 +61,7 @@ const DivContent = styled.div`
     padding-bottom: 8rem;
     gap: 5rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
         flex-direction: column;
         align-items: center;
         margin-top:1rem;
@@ -43,7 +77,7 @@ const DivContent2 = styled.div`
     align-items: center;
     padding-bottom: 8rem;
     gap: 5rem;
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
     padding-bottom: 3.5rem;
@@ -198,6 +232,8 @@ const STRONG = styled.h1`
 const Presentacion = () => {
     return (
         <BoxCuerpo>
+                <GradientOverlay />
+                <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>
             <DivContent>
                 <DivText>
                     <Titu>GRANJA LOS PIBES: CONTRIBUYENDO A LA CONCIENCIACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>

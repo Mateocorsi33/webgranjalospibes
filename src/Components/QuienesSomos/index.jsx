@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import fondoM from "../../assest/fotoMovil.png";
 import fondo from "../../assest/fondoqs.png";
 import foto1 from "../../assest/foto.gif";
 import foto2 from "../../assest/foto2.jpg";
@@ -14,6 +15,21 @@ const Div = styled.div`
     width: 100%;
 `
 
+const BackGM = styled.div`
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: url(${fondoM});
+
+@media (max-width: 800px) {
+    display: flex;
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:100%;
+    height:16rem;
+}
+`
+
 const BackG = styled.div`
     display: flex;
     align-items: center;
@@ -23,9 +39,7 @@ const BackG = styled.div`
     background: url(${fondo});
 
     @media (max-width: 800px) {
-        background-size: 100%;
-        height: auto;
-        background-repeat: no-repeat;
+        display: none;
     }
 `
 
@@ -109,6 +123,9 @@ const Fotos = styled.img`
 const QuienesSomos = () => {
     return (
         <Div>
+            <BackGM>
+                    <Titulo>Quiénes Somos</Titulo>
+            </BackGM>
             <BackG>
                 <Titulo>Quiénes Somos</Titulo>
             </BackG>
