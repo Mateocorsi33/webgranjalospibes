@@ -13,7 +13,7 @@ const FondoForm = styled.div`
 
   @media (max-width: 800px) {
         width: auto;
-        padding: 1rem;
+        padding: 2rem;
     }
 `
 
@@ -46,7 +46,8 @@ const Encabezado = styled.div`
 
   @media (max-width: 800px) {
         justify-content: center;
-        height: 4rem;
+        height: auto;
+        padding-top: 1rem;
     }
 `
 
@@ -58,9 +59,8 @@ const ImgLogo = styled.img`
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 
     @media (max-width: 800px) {
-        margin-left: 1rem;
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: auto;
     }
 `
 
@@ -74,8 +74,8 @@ const TextLogo = styled.h2`
     color: #464646;
 
     @media (max-width: 800px) {
-        width: 3.5rem;
-        font-size: .7rem;
+        width: 5rem;
+        font-size: .9rem;
     }
 `
 
