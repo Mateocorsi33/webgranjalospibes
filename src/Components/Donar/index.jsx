@@ -2,14 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import imagenlogo from "../../assest/logoglp.png";
 import fotoform from "../../assest/fotoform.png";
+import fondo from "../../assest/fondo.png";
 
 const FondoForm = styled.div`
   width: auto;
   height: auto;
-  background-color: #F5F5F5;
+  background-image: url(${fondo});
+  width: 100%;
   padding: 6% 15%;
 
   @media (max-width: 800px) {
+        width: auto;
         padding: 1rem;
     }
 `
@@ -26,6 +29,7 @@ const DivForm = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   @media (max-width: 800px) {
         width: 100%;
+        gap: 1rem;
         margin: 0;
     }
 `
@@ -33,26 +37,30 @@ const DivForm = styled.div`
 const Encabezado = styled.div`
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: .8rem;
   width: 100%;
   height: 98px;
   border-radius: 10px 10px 0px 0px;
-  background: #D6D582;
+  background: #ffffff;
 
   @media (max-width: 800px) {
+        justify-content: center;
         height: 4rem;
     }
 `
 
 const ImgLogo = styled.img`
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
     border-radius: 100%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 
     @media (max-width: 800px) {
         margin-left: 1rem;
+        width: 2rem;
+        height: 2rem;
     }
 `
 
@@ -60,10 +68,15 @@ const TextLogo = styled.h2`
     display: flex;
     flex-direction: column;
     width: 5rem;
-    font-weight: 500;
+    font-weight: 600;
     margin:0;
     font-size: 1rem;
-    color: #ffffff;
+    color: #464646;
+
+    @media (max-width: 800px) {
+        width: 3.5rem;
+        font-size: .7rem;
+    }
 `
 
 const ImgForm = styled.img`
@@ -89,10 +102,11 @@ const Titulo = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
+        margin-inline: .5rem;
         font-size: 2rem;
         text-align: center;
         align-items: center;
-        font-weight: 500;
+        font-weight: 600;
     }
 `
 
@@ -109,6 +123,7 @@ const Parrafo1 = styled.h2`
 
   @media (max-width: 800px) {
         width: 90%;
+        margin: 0;
     }
 `
 
@@ -125,6 +140,7 @@ const Parrafo = styled.h3`
 
   @media (max-width: 800px) {
         width: 90%;
+        margin: 0;
     }
 `
 
@@ -185,6 +201,11 @@ const Button = styled.button`
   background-color: #F58220;
   color: #fff;
   font-size: 1.5rem;
+  cursor: pointer;
+    &:hover {
+        transition: .3s;
+        opacity: 70%;
+    }
 
   @media (max-width: 800px) {
         width: 10rem;
