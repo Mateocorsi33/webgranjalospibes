@@ -31,6 +31,10 @@ const Encabezado = styled.div`
   height: 98px;
   border-radius: 10px 10px 0px 0px;
   background: #D6D582;
+
+  @media (max-width: 800px) {
+        height: 4rem;
+    }
 `
 
 const ImgLogo = styled.img`
@@ -57,6 +61,11 @@ const TextLogo = styled.h2`
 const ImgForm = styled.img`
   width: 100%;
   height: 20rem;
+
+  @media (max-width: 800px) {
+        width: 100%;
+        height: 10rem;
+    }
 `
 
 const Titulo = styled.h1`
@@ -106,28 +115,62 @@ const Parrafo = styled.h3`
 const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 80%;
   margin: 0;
 `;
 
+const H2 = styled.h2`
+  color: #000;
+  font-size: 1.5rem;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.42px;
+`
+
+const DivIP = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  
+`
+
 const Input = styled.input`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  width:18rem;
+  width:19rem;
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid #4F8A7E;
+  background: #FFF;
+
+  @media (max-width: 800px) {
+        width: 100%;
+        font-size: 1rem;
+    }
 `;
 
 const Button = styled.button`
-  margin-top: 20px;
+  margin: 2rem 0 2rem 0;
+  width: 14rem;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
-  background-color: #0070f3;
+  background-color: #F58220;
   color: #fff;
+  font-size: 1.5rem;
+
+  @media (max-width: 800px) {
+        width: 10rem;
+        font-size: 1rem;
+    }
 `;
 
 function Donar() {
@@ -144,23 +187,25 @@ function Donar() {
         <Parrafo>Únete a nuestra misión y se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible. ¡Juntos podemos marcar la diferencia!</Parrafo>
         <Parrafo1>¡Únete como padrino hoy mismo y sé parte del cambio!</Parrafo1>
         <Form>
-          <h2>Información Personal</h2>
-          <Input type="text" placeholder="Nombre" />
-          <Input type="text" placeholder="Apellido" />
-          <Input type="email" placeholder="Correo Electrónico" />
-          <Input type="tel" placeholder="Teléfono" />
-          <Input type="text" placeholder="País" />
-          <Input type="text" placeholder="Provincia/Estado" />
-          <Input type="text" placeholder="Ciudad" />
-          <Input type="text" placeholder="Dirección" />
-          <Input type="text" placeholder="Código Postal" />
-
-          <h2>Información de Pago</h2>
-          <Input type="text" placeholder="Número de Tarjeta" />
-          <Input type="text" placeholder="Fecha de Expiración (MM/AA)" />
-          <Input type="text" placeholder="Código de Seguridad (CVV/CVC)" />
-          <Input type="text" placeholder="Número de Documento" />
-
+          <H2>Información Personal</H2>
+          <DivIP>
+            <Input type="text" placeholder="Nombre" />
+            <Input type="text" placeholder="Apellido" />
+            <Input type="email" placeholder="Correo Electrónico" />
+            <Input type="tel" placeholder="Teléfono" />
+            <Input type="text" placeholder="País" />
+            <Input type="text" placeholder="Provincia/Estado" />
+            <Input type="text" placeholder="Ciudad" />
+            <Input type="text" placeholder="Dirección" />
+            <Input type="text" placeholder="Código Postal" />
+          </DivIP>
+          <H2>Información de Pago</H2>
+          <DivIP>
+            <Input type="text" placeholder="Número de Tarjeta" />
+            <Input type="text" placeholder="Fecha de Expiración (MM/AA)" />
+            <Input type="text" placeholder="Código de Seguridad (CVV/CVC)" />
+            <Input type="text" placeholder="Número de Documento" />
+          </DivIP>
           <Button>Donar</Button>
         </Form>
       </DivForm>
