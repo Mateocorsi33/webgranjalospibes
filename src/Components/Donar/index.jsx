@@ -4,10 +4,14 @@ import imagenlogo from "../../assest/logoglp.png";
 import fotoform from "../../assest/fotoform.png";
 
 const FondoForm = styled.div`
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: #F5F5F5;
   padding: 6% 15%;
+
+  @media (max-width: 800px) {
+        padding: 1rem;
+    }
 `
 
 const DivForm = styled.div`
@@ -20,6 +24,10 @@ const DivForm = styled.div`
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @media (max-width: 800px) {
+        width: 100%;
+        margin: 0;
+    }
 `
 
 const Encabezado = styled.div`
@@ -98,6 +106,10 @@ const Parrafo1 = styled.h2`
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.6px;
+
+  @media (max-width: 800px) {
+        width: 90%;
+    }
 `
 
 const Parrafo = styled.h3`
@@ -110,6 +122,10 @@ const Parrafo = styled.h3`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.54px;
+
+  @media (max-width: 800px) {
+        width: 90%;
+    }
 `
 
 const Form = styled.form`
@@ -118,6 +134,9 @@ const Form = styled.form`
   align-items: center;
   width: 80%;
   margin: 0;
+  @media (max-width: 800px) {
+        width: 90%;
+    }
 `;
 
 const H2 = styled.h2`
