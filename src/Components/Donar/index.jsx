@@ -3,13 +3,18 @@ import styled from 'styled-components';
 import imagenlogo from "../../assest/logoglp.png";
 import fotoform from "../../assest/fotoform.png";
 import fondo from "../../assest/fondo.png";
+import SelectableButtons from "../Donar/botones.jsx";
+import StyledCheckbox from "../Donar/verificaciones.jsx";
+import visa from "../../assest/206684_visa_method_card_payment_icon.png";
+import master from "../../assest/70593_mastercard_curved_icon.png";
+import paypal from "../../assest/206675_paypal_method_payment_icon.png";
+
 
 const FondoForm = styled.div`
-  width: auto;
+  width: 100%;
   height: auto;
   background-image: url(${fondo});
-  width: 100%;
-  padding: 6% 15%;
+  padding: 6% 0%;
 
   @media (max-width: 800px) {
         width: auto;
@@ -22,8 +27,9 @@ const DivForm = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 74%;
   height: auto;
+  margin: 0 13%;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -89,6 +95,15 @@ const ImgForm = styled.img`
     }
 `
 
+const TamañoCuerpo = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+`
+
 const Titulo = styled.h1`
     color: #D6D582;
     text-align: center;
@@ -131,6 +146,7 @@ const Parrafo = styled.h3`
   color: #464646;
   text-align: center;
   width: 80%;
+  margin: 0;
   font-size: 1rem;
   font-family: Manrope;
   font-style: normal;
@@ -144,11 +160,34 @@ const Parrafo = styled.h3`
     }
 `
 
+const DivCuanto = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  gap: 30%;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #D6D582;
+`
+
+const Letrachica = styled.h3`
+  color: #464646;
+  width: fit-content;
+  margin: 0;
+  font-size: .9rem;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+`
+
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   margin: 0;
   @media (max-width: 800px) {
         width: 90%;
@@ -157,7 +196,8 @@ const Form = styled.form`
 
 const H2 = styled.h2`
   color: #000;
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
   font-family: Manrope;
   font-style: normal;
   font-weight: 600;
@@ -168,18 +208,36 @@ const H2 = styled.h2`
 const DivIP = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:center;
   flex-wrap: wrap;
-  width: 90%;
   height: auto;
-  
+  gap: 0 1rem;
+`
+
+const DivTarjetas = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+  gap: 2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #4F8A7E;
+  background: #FFF;
+`
+
+const ImgTarj = styled.img`
+  width: 3rem;
+  height: 2.5rem;
+  border-radius: 10px;
 `
 
 const Input = styled.input`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  width:19rem;
+  width: 40%;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -222,32 +280,45 @@ function Donar() {
           <TextLogo>GRANJA LOS PIBES</TextLogo>
         </Encabezado>
         <ImgForm src={fotoform}/>
-        <Titulo>Dona hoy a Granja Los Pibes</Titulo>
-        <Parrafo1>Cada donación nos permite continuar nuestro trabajo y garantizar un futuro más prometedor para la fauna silvestre y los niños.</Parrafo1>
-        <Parrafo>Únete a nuestra misión y se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible. ¡Juntos podemos marcar la diferencia!</Parrafo>
-        <Parrafo1>¡Únete como padrino hoy mismo y sé parte del cambio!</Parrafo1>
-        <Form>
-          <H2>Información Personal</H2>
-          <DivIP>
-            <Input type="text" placeholder="Nombre" />
-            <Input type="text" placeholder="Apellido" />
-            <Input type="email" placeholder="Correo Electrónico" />
-            <Input type="tel" placeholder="Teléfono" />
-            <Input type="text" placeholder="País" />
-            <Input type="text" placeholder="Provincia/Estado" />
-            <Input type="text" placeholder="Ciudad" />
-            <Input type="text" placeholder="Dirección" />
-            <Input type="text" placeholder="Código Postal" />
-          </DivIP>
-          <H2>Información de Pago</H2>
-          <DivIP>
-            <Input type="text" placeholder="Número de Tarjeta" />
-            <Input type="text" placeholder="Fecha de Expiración (MM/AA)" />
-            <Input type="text" placeholder="Código de Seguridad (CVV/CVC)" />
-            <Input type="text" placeholder="Número de Documento" />
-          </DivIP>
-          <Button>Donar</Button>
-        </Form>
+        <TamañoCuerpo>
+            <Titulo>Dona hoy a Granja Los Pibes</Titulo>
+            <Parrafo1>Cada donación nos permite continuar nuestro trabajo y garantizar un futuro más prometedor para la fauna silvestre y los niños.</Parrafo1>
+            <Parrafo>Únete a nuestra misión y se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible. ¡Juntos podemos marcar la diferencia!</Parrafo>
+            <Parrafo1>¡Únete como padrino hoy mismo y sé parte del cambio!</Parrafo1>
+            <DivCuanto>
+              <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
+              <Letrachica>Los montos están expresados en Pesos Argentinos (ARS $)</Letrachica>
+            </DivCuanto>
+            <SelectableButtons/>
+            <StyledCheckbox/>
+            <Form>
+              <H2>Información Personal</H2>
+              <DivIP>
+                <Input type="text" placeholder="Nombre" />
+                <Input type="text" placeholder="Apellido" />
+                <Input type="email" placeholder="Correo Electrónico" />
+                <Input type="tel" placeholder="Teléfono" />
+                <Input type="text" placeholder="País" />
+                <Input type="text" placeholder="Provincia/Estado" />
+                <Input type="text" placeholder="Ciudad" />
+                <Input type="text" placeholder="Dirección" />
+                <Input type="text" placeholder="Código Postal" />
+              </DivIP>
+              <H2>Información de Pago</H2>
+              <DivTarjetas>
+                <ImgTarj src={visa}/>
+                <ImgTarj src={master}/>
+                <ImgTarj src={paypal}/>
+              </DivTarjetas>
+              <DivIP>
+                <Input type="text" placeholder="Número de Tarjeta" />
+                <Input type="text" placeholder="Fecha de Expiración (MM/AA)" />
+                <Input type="text" placeholder="Código de Seguridad (CVV/CVC)" />
+                <Input type="text" placeholder="Número de Documento" />
+              </DivIP>
+              <Button>Donar</Button>
+            </Form>
+        </TamañoCuerpo>
       </DivForm>
     </FondoForm>
   );
