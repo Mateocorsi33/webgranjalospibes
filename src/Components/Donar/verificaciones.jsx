@@ -5,6 +5,11 @@ import React from 'react';
         margin: 0 8px;
         width: 1.5rem;
         height: 1.5rem;
+        @media (max-width: 800px) {
+            width: fit-content;
+            height: fit-content;
+            justify-content: center;
+        }
     `;
 
     const RadioLabel = styled.label`
@@ -18,12 +23,21 @@ import React from 'react';
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.6px;
+        @media (max-width: 800px) {
+            width: fit-content;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+        }
     `;
 
     const RadioContainer = styled.div`
         display: flex;
         align-items: center;
         width: fit-content;
+        @media (max-width: 800px) {
+            flex-direction:column;
+        }
     `;
 
 const DivCheck = styled.div`
@@ -33,6 +47,13 @@ justify-content: center;
 align-items: center;
 margin: 1rem;
 gap: 4rem;
+@media (max-width: 800px) {
+            flex-direction:column;
+            width: 90%;
+            gap:1rem;
+            margin-top:2rem;
+            margin-bottom: 0;
+        }
 `
 
 const Checkbox = styled.input.attrs({ type: 'checkbox' })`
@@ -57,6 +78,13 @@ const CheckboxContainer = styled.div`
 display: flex;
 align-items: center;
 width: fit-content;
+@media (max-width: 800px) {
+            flex-direction:column;
+            width: 90%;
+            margin: 0;
+            gap:.5rem;
+            margin-bottom: 1rem;
+        }
 `;
 
 

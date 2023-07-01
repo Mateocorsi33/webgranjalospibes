@@ -102,6 +102,11 @@ const TamañoCuerpo = styled.div`
   gap: 1rem;
   width: 100%;
   padding: 1rem;
+
+  @media (max-width: 800px) {
+        padding: 0;
+        gap: 2rem;
+    }
 `
 
 const Titulo = styled.h1`
@@ -122,6 +127,7 @@ const Titulo = styled.h1`
         text-align: center;
         align-items: center;
         font-weight: 600;
+        margin: 0;
     }
 `
 
@@ -138,6 +144,7 @@ const Parrafo1 = styled.h2`
 
   @media (max-width: 800px) {
         width: 90%;
+        font-size: 1rem;
         margin: 0;
     }
 `
@@ -156,6 +163,7 @@ const Parrafo = styled.h3`
 
   @media (max-width: 800px) {
         width: 90%;
+        font-size: .9rem;
         margin: 0;
     }
 `
@@ -169,6 +177,12 @@ const DivCuanto = styled.div`
   align-items: center;
   padding-top: 1rem;
   border-top: 1px solid #D6D582;
+  
+  @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
 `
 
 const Letrachica = styled.h3`
@@ -181,6 +195,10 @@ const Letrachica = styled.h3`
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.54px;
+  @media (max-width: 800px) {
+       text-align: center;
+       font-size: .8rem
+    }
 `
 
 const Form = styled.form`

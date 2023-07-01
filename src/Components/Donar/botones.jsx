@@ -10,6 +10,12 @@ const DivBtn = styled.div`
     width:90%;
     margin:1rem 0;
     gap: 1rem;
+
+    @media (max-width: 800px) {
+        flex-direction:column;
+        width: auto;
+        margin: 0;
+    }
 `
 
 const Button = styled.button`
@@ -29,6 +35,10 @@ const Button = styled.button`
     line-height: normal;
     letter-spacing: 0.6px;
     cursor: pointer;
+
+    @media (max-width: 800px) {
+        width: 60%;
+    }
 `;
 
 const Input = styled.input`
@@ -47,6 +57,10 @@ const Input = styled.input`
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.6px;
+
+    @media (max-width: 800px) {
+        width: 60%;
+    }
 `;
 
 export default function SelectableButtons() {
