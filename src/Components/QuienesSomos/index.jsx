@@ -137,7 +137,7 @@ const TituPrincipal = styled.h1`
     display: flex;
     text-align: center;
     color: #595852;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Manrope;
     font-style: normal;
     font-weight: 600;
@@ -161,7 +161,7 @@ const Encabe = styled.h2`
     flex-direction: column;
     color: #595852;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: Manrope;
     font-style: normal;
     font-weight: 600;
@@ -186,7 +186,7 @@ const Parrafo = styled.p`
     height: auto;
     flex-direction: column;
     color: #464646;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: Manrope;
     font-style: normal;
     font-weight: 400;
@@ -200,9 +200,14 @@ const Parrafo = styled.p`
 `
 
 const Fotos = styled.img`
+    width: 50%;
+    height: 30rem;
+
+@media (max-width: 800px) {
     width: 100%;
     height: auto;
     margin: 1rem 0;
+    }   
 `
 
 const Strong = styled.strong`
@@ -241,15 +246,15 @@ const QuienesSomos = () => {
                 </DivCentro>
                 <DivAsociacion>
                 <Encabe>La Asociación Civil Casa del Niño en la Calle</Encabe>
-                    <Fotos src={foto1}/>
-                    <Parrafo>tiene como misión brindar apoyo y oportunidades a niños y niñas en situaciones de vulnerabilidad. A través de programas educativos, talleres y una atención integral, se busca mejorar su calidad de vida, promover su desarrollo personal y empoderarlos para un futuro más equitativo. Además, se enfoca en fortalecer los lazos con los centros educativos y proporcionar un entorno seguro y acogedor.</Parrafo>
-                    <Parrafo>Granja Los Pibes, además de su función ambiental, desempeña un papel crucial como centro de día para niños y niñas en situaciones de vulnerabilidad. Mediante el apoyo educativo, talleres y alimentación saludable, así como vínculos con los centros educativos, se contribuye a mejorar su calidad de vida, empoderamiento y oportunidades. Esta labor conjunta en lo ambiental y social promueve un futuro más equitativo y sostenible para todos.</Parrafo>
                     <Parrafo>La asociación trabaja desde hace más de 30 años para brindar respuestas a las necesidades de niños y familias en situación de vulnerabilidad y exclusión, priorizando la promoción y protección de los derechos del niño. A lo largo de su trayectoria, han atendido a más de 1000 niños en diferentes modalidades, como el Hogar Convivencial, Casa de los Niños y Centro de Desarrollo Infantil. Muchos de los niños que fueron atendidos por la asociación continúan trabajando en el lugar, desempeñándose como educadores, constructores, personal de mantenimiento y atención en el Centro de Rescate de Animales Silvestres.</Parrafo>
-                    <Parrafo>La granja no solo desempeña un papel fundamental en el ámbito ambiental, sino que también cumple un rol social de gran importancia al funcionar como centro de día para niños y niñas en situaciones de vulnerabilidad. A través de su labor, brinda apoyo educativo personalizado, donde se imparten talleres y actividades diseñadas para fortalecer sus habilidades y conocimientos, fomentando su crecimiento y bienestar integral. También se crea un espacio seguro y acogedor para los niños y niñas, brindándoles contención emocional y apoyo psicosocial a través de la escucha activa y el acompañamiento de profesionales capacitados. Además, se encarga de buscarlos, acercarlos a las instituciones educativas adecuadas y colaborar en la creación de un entorno favorable para su aprendizaje y desarrollo. Actualmente, la asociación cuenta con una matrícula de 80 niños de 3 a 18 años, provenientes de los barrios periféricos de la ciudad.</Parrafo>
+                    <Fotos src={foto1}/>
+                    <Parrafo>Tiene como misión brindar apoyo y oportunidades a niños y niñas en situaciones de vulnerabilidad. A través de programas educativos, talleres y una atención integral, se busca mejorar su calidad de vida, promover su desarrollo personal y empoderarlos para un futuro más equitativo. Además, se enfoca en fortalecer los lazos con los centros educativos y proporcionar un entorno seguro y acogedor.</Parrafo>
+                    <Parrafo>Granja Los Pibes, además de su función ambiental, desempeña un papel crucial como centro de día para niños y niñas en situaciones de vulnerabilidad. Mediante el apoyo educativo, talleres y alimentación saludable, así como vínculos con los centros educativos, se contribuye a mejorar su calidad de vida, empoderamiento y oportunidades. Esta labor conjunta en lo ambiental y social promueve un futuro más equitativo y sostenible para todos.</Parrafo>
+                    <Parrafo>También se crea un espacio seguro y acogedor para los niños y niñas, brindándoles contención emocional y apoyo psicosocial a través de la escucha activa y el acompañamiento de profesionales capacitados. Además, se encarga de buscarlos, acercarlos a las instituciones educativas adecuadas y colaborar en la creación de un entorno favorable para su aprendizaje y desarrollo. Actualmente, la asociación cuenta con una matrícula de 80 niños de 3 a 18 años, provenientes de los barrios periféricos de la ciudad.</Parrafo>
                     <Parrafo>Los ejes pedagógicos de su trabajo incluyen la reorganización de la vida cotidiana y la formación integral de los niños, preparándolos para ser miembros activos en una sociedad laboral. Se busca resolver las necesidades inmediatas de manera organizada en tiempo y espacio, y proporcionar las herramientas necesarias para que los niños sean agentes de cambio frente a la injusticia y la desigualdad. Además, se promueve el contacto constante con la naturaleza y el respeto absoluto hacia todas sus manifestaciones. Han creado una granja educativa para generar aprendizaje sobre técnicas agrícolas sostenibles, el cuidado de los animales y la utilización racional de los recursos naturales.</Parrafo>
                 </DivAsociacion>
                 <DivHumedal>
-                    <Encabe>El Humedal</Encabe>
+                    <Encabe>Humedal - Los Coipos</Encabe>
                     <Fotos src={foto2}/>
                     <Parrafo>La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. Se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. En colaboración con el Ministerio de Ambiente de la Nación, se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales. También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo>
                 </DivHumedal>

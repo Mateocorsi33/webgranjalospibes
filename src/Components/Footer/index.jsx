@@ -120,6 +120,8 @@ const Copy = styled.div`
 
 const UbiLink = styled.a`
     cursor: pointer;
+    text-decoration: none;
+    text-decoration-color: none;
     &:hover{
         transition: .3s;
         opacity:.7;
@@ -164,8 +166,8 @@ const Footer = () => {
                 </DivGra>
                 <DivUbi>
                     <Titulos>UBICACIÓN</Titulos>
-                    <Texto><UbiLink>Granja Los Pibes: Pje el Centinela - Tandil.</UbiLink></Texto>
-                    <Texto><UbiLink>Humedal: Km 139 de la ruta Nacional 226.</UbiLink></Texto>
+                    <UbiLink href="https://goo.gl/maps/NsSM96JGPmbQ9DVY6"><Texto>Granja Los Pibes: Pje el Centinela - Tandil.</Texto></UbiLink>
+                    <UbiLink href="https://goo.gl/maps/gnQSLhbHuYQH8ZuA8"><Texto>Humedal: Km 139 de la ruta Nacional 226.</Texto></UbiLink>
                 </DivUbi>
             </DivTexto>
             <DivCopyIconos>
@@ -173,11 +175,11 @@ const Footer = () => {
                     © Copyright - Todos los derechos reservados | Desarrollado por Granja Los Pibes - 2023.
                 </Copy>
                 <Iconos>
-                    <Redes src={facebook}/>
-                    <Redes src={instagram}/>
-                    <Redes src={youtube}/>
-                    <Redes src={email}/>
-                    <Redes src={whatsapp}/>
+                    <UbiLink href='https://www.facebook.com/GranjaLosPibes/'><Redes src={facebook}/></UbiLink>
+                    <UbiLink href='https://instagram.com/granja_los_pibes/'><Redes src={instagram}/></UbiLink>
+                    <UbiLink href=''><Redes src={youtube}/></UbiLink>
+                    <UbiLink href=''><Redes src={email}/></UbiLink>
+                    <UbiLink href="tel:+542494545992"><Redes src={whatsapp}/></UbiLink>
                 </Iconos>
             </DivCopyIconos>
         </DivFooter>

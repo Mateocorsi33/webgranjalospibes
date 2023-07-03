@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import fondo from "../../assest/fondoc.png";
+import Maps from "./maps";
+import Redes from "./redes";
 
 const BackG = styled.div`
     display: flex;
@@ -98,11 +100,18 @@ const Contacto = () => {
             <BackG>
                 <Titulo>Contacto</Titulo>
             </BackG>
-            <DivCont>   
-                <Encabe>Granja Los Pibes</Encabe>
-                <Parrafo>Pje el Centinela - Tandil</Parrafo>
-                <Encabe>Humedal</Encabe>
-                <Parrafo>Km 139 de la ruta Nacional 226.</Parrafo>
+            <DivCont>
+                <Encabe>NUESTROS LUGARES</Encabe>
+                <Maps/>
+            </DivCont>
+            <DivCont>
+                <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
+                <Parrafo><strong>Lunes a Domingo de 10:00 - 18:00 hs</strong></Parrafo>
+                <Parrafo>Las entradas para visitar el complejo tiene un valor de <strong>¡$500 por persona!</strong> Se pueden adquirir en el mismo lugar. <strong>¡Estacionamiento libre y gratuito!</strong></Parrafo>
+            </DivCont>
+            <DivCont>
+                <Encabe>ENCONTRANOS EN</Encabe>
+                <Redes></Redes>
             </DivCont>
         </>
     )
