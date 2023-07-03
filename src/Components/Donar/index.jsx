@@ -18,7 +18,7 @@ const FondoForm = styled.div`
 
   @media (max-width: 800px) {
         width: auto;
-        padding: 2rem;
+        padding: 1rem;
     }
 `
 

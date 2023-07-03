@@ -136,7 +136,7 @@ const DivCierre = styled.div`
 const TituPrincipal = styled.h1`
     display: flex;
     text-align: center;
-    color: #595852;
+    color: #D6D582;
     font-size: 2.5rem;
     font-family: Manrope;
     font-style: normal;
@@ -144,12 +144,14 @@ const TituPrincipal = styled.h1`
     line-height: normal;
     letter-spacing: 2px;
     margin: 1rem;
+    
     @media (max-width: 800px) {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
         font-weight: 600;
         margin: 0;
-        padding-top: 1rem;
+        padding-top: 2rem;
         letter-spacing: 1px;
+        border-top: 2px solid #D6D582;
     }
 `
 

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import mono from "../../../assest/mono.png";
 import humedal from "../../../assest/humedal.png";
 import charla from "../../../assest/charla.png";
@@ -202,7 +203,11 @@ const Boton = styled.button`
     }
 
     @media (max-width: 800px) {
-        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        margin: 1rem;
     }
 `
 
@@ -230,6 +235,20 @@ const ImgIconos = styled.img`
     }
 `
 
+const StyledLink = styled(Link)`
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    &:hover {
+    text-decoration: none;
+  }
+  @media (max-width: 800px) {
+        margin:1rem;
+    }
+`;
+
 
 
 
@@ -246,7 +265,7 @@ const NuestraMision = (props) => {
                     <Cuadro>
                         <TCuadro>CAMPAÑA DE APADRINAMIENTO</TCuadro>
                         <PCuadro>Tu apoyo económico puede marcar la diferencia en la vida de un niño o en la rehabilitación de una especie en peligro. Al convertirte en un padrino, estarás contribuyendo directamente a brindar educación, atención y oportunidades para los niños y al cuidado y rescate de los animales silvestres. Cada donación cuenta y nos acerca un paso más hacia un futuro mejor. ¡Únete como padrino hoy mismo!</PCuadro>
-                        <Boton>SÉ PADRINO</Boton>
+                        <StyledLink to="/donar" id="#" style={{}}><Boton>SÉ PADRINO</Boton></StyledLink>
                     </Cuadro>
                 </Card>
                 <Card>
@@ -255,10 +274,10 @@ const NuestraMision = (props) => {
                         <TCuadro>CORRE LA VOZ</TCuadro>
                         <PCuadro>Comparte nuestra misión en tus redes sociales y en tu comunidad. Cuantas más personas conozcan nuestra labor, más impacto podremos generar. Síguenos en nuestras redes sociales, comparte nuestras publicaciones y etiqueta a tus amigos y familiares. Juntos podemos crear conciencia y llegar a más personas dispuestas a hacer la diferencia.</PCuadro>
                         <Iconos>
-                            <ImgIconos src={facebook}/>
-                            <ImgIconos src={instagram}/>
-                            <ImgIconos src={youtube}/>
-                            <ImgIconos src={whatsapp}/>
+                            <a href='https://www.facebook.com/GranjaLosPibes/'><ImgIconos src={facebook}/></a>
+                            <a href='https://instagram.com/granja_los_pibes/'><ImgIconos src={instagram}/></a>
+                            <a><ImgIconos src={youtube}/></a>
+                            <a  href="tel:+542494545992"><ImgIconos src={whatsapp}/></a>
                         </Iconos>
                     </Cuadro>
                 </Card>
