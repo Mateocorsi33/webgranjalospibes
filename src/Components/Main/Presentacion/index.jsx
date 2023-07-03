@@ -31,10 +31,10 @@ const TituloPortada = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: #464646;
         z-index: 100;
-        margin-top: 0;
+        margin-top: 1.5rem;
     }
 `
 
@@ -110,8 +110,10 @@ const Titu = styled.h1`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 1.3rem;
+        color: #D6D582;
+        font-weight: 600;
+        text-align: start;
     }
 `
 
@@ -129,8 +131,10 @@ const Titu2 = styled.h1`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 1.3rem;
+        color: #D6D582;
+        font-weight: 600;
+        text-align: end;
     }
 `  
 
@@ -147,7 +151,8 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1rem;
+        font-size: .9rem;
+        text-align: start;
     }
 `
 
@@ -166,7 +171,7 @@ const Parra2 = styled.p`
     @media (max-width: 800px) {
         width: fit-content;
         font-size: 1rem;
-        text-align: center;
+        text-align: end;
     }
 `
 
@@ -181,8 +186,8 @@ const Gif = styled.img`
     @media (max-width: 800px) {
         border-radius: 5px;
         box-shadow: none;
-        width: fit-content;
-        height: 20rem;
+        width: 100%;
+        height: auto;
         box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
     }
 `
@@ -198,8 +203,8 @@ const Gif2 = styled.img`
     @media (max-width: 800px) {
         border-radius: 5px;
         box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
-        width: fit-content;
-        height: 20rem;
+        width: 100%;
+        height: auto;
         order: 2;
     }
 `
@@ -209,8 +214,8 @@ const STRONG = styled.h1`
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1.7rem;
-        text-align: center;
+        font-size: 1.6rem;
+        text-align: flex-start;
     }
 `
 

@@ -175,15 +175,21 @@ const StyledLink = styled(Link)`
     }
 `;
 
-
-
 const Logo = () => {
     const [showMenu, setShowMenu] = useState(false);
+
+    function toggleMenu() {
+        setShowMenu(!showMenu);
+      }
+    
+      function closeMenu() {
+        setShowMenu(false);
+      }
     return(
         <>
         <BoxLogo>
             <BoxImgText>
-                <ImgLogo src={imagenlogo} alt="Logo"/>
+                <StyledLink to="/" style={{}}><ImgLogo src={imagenlogo} alt="Logo"/></StyledLink>
                 <DivText>
                     <TextLogo1>GRANJA</TextLogo1>
                     <TextLogo2>LOS PIBES</TextLogo2>
@@ -195,11 +201,11 @@ const Logo = () => {
         </BoxLogo>
         <BoxBarraNav showMenu={showMenu}>
                     <DivBarra1>
-                        <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/donar" style={{}}>DONAR</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/" style={{}} onClick={closeMenu}>INICIO</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/quienes-somos" style={{}} onClick={closeMenu}>QUIÉNES SOMOS</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/contacto" style={{}} onClick={closeMenu}>CONTACTO</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/padrinos" style={{}} onClick={closeMenu}>PADRINOS</StyledLink></Marcador>
+                        <Marcador><StyledLink to="/donar" style={{}} onClick={closeMenu}>DONAR</StyledLink></Marcador>
                     </DivBarra1>
         </BoxBarraNav>
         </>

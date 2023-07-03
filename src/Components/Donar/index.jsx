@@ -122,7 +122,7 @@ const Titulo = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
-        margin-inline: .5rem;
+        width: 90%;
         font-size: 2rem;
         text-align: center;
         align-items: center;
