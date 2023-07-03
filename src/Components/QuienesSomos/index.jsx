@@ -18,6 +18,7 @@ const BackG = styled.div`
         display: flex;
         height:auto;
         background-size: 100%;
+        background-repeat:no-repeat;
     }
 `
 
@@ -33,6 +34,8 @@ const Titulo = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 2rem;
         text-align: center;
         align-items: center;
@@ -46,7 +49,7 @@ const DivQS = styled.div`
     align-items: center;
 
     @media (max-width: 800px) {
-        margin: 1.5rem 1rem;
+        margin: 1rem 1rem;
     }
 `
 
@@ -145,8 +148,7 @@ const TituPrincipal = styled.h1`
     @media (max-width: 800px) {
         font-size: 2.1rem;
         font-weight: 600;
-        width:90%;
-        margin-top: 0;
+        margin: 0;
         padding-top: 1rem;
         letter-spacing: 1px;
     }
