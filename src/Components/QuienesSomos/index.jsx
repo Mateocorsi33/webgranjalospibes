@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import fondo from "../../assest/foto5.png";
-import foto1 from "../../assest/foto.gif";
-import foto2 from "../../assest/foto2.jpg";
-import foto3 from "../../assest/imgdivvv.png";
+import foto1 from "../../assest/foto11.jpg";
+import foto2 from "../../assest/foto22.jpg";
+import foto3 from "../../assest/foto33.png";
+import foto4 from "../../assest/foto44.jpg";
+
 
 
 const BackG = styled.div`
@@ -47,10 +49,7 @@ const DivQS = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    @media (max-width: 800px) {
-        margin: 1rem 1rem;
-    }
+    width: 100%;
 `
 
 const DivEncabezado = styled.section`
@@ -65,7 +64,7 @@ const DivEncabezado = styled.section`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        padding: 2rem;
+        padding: 2rem 0;
         gap: 1rem;
     }
 `
@@ -81,7 +80,7 @@ const DivCentro =styled.div`
     padding: 3rem;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem;
+        padding: 2rem 0;
         gap: 1rem;
     }
 `
@@ -97,7 +96,7 @@ const DivAsociacion =styled.div`
     padding: 3rem;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem;
+        padding: 2rem 0;
         gap: 1rem;
     }
 `
@@ -113,7 +112,7 @@ const DivHumedal =styled.div`
     padding: 3rem;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem;
+        padding: 2rem 0;
         gap: 1rem;
     }
 `
@@ -129,7 +128,7 @@ const DivCierre = styled.div`
     padding: 3rem;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem;
+        padding: 2rem 0;
         gap: 1rem;
     }
 `
@@ -146,7 +145,7 @@ const TituPrincipal = styled.h1`
     letter-spacing: 2px;
     margin: 1rem;
     @media (max-width: 800px) {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
         font-weight: 600;
         margin: 0;
         padding-top: 1rem;
@@ -201,7 +200,7 @@ const Parrafo = styled.p`
 `
 
 const Fotos = styled.img`
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 1rem 0;
 `
@@ -227,14 +226,14 @@ const QuienesSomos = () => {
             <DivQS>
                 <DivEncabezado>
                     <TituPrincipal>GRANJA LOS PIBES</TituPrincipal>
-                    {/* <Fotos src={foto1}/> */}
+                    <Fotos src={foto3}/>
                     <Parrafo>Ubicado en el corazón de nuestra región, se encuentra Granja Los Pibes, un faro de esperanza y acción, que trabaja incansablemente para construir un futuro mejor y poder generar un impacto positivo en la comunidad. La granja aborda como principales problemáticas la conservación ambiental y el desarrollo social de niños y niñas en situaciones de vulnerabilidad.</Parrafo>
                     <Parrafo>Bajo su manto la granja cuenta con el<Strong>Centro de Rescate de Animales Silvestres y la Asociación Civil Casa del Niño en la Calle,</Strong>dos iniciativas complementarias donde convergen el desarrollo social y la conservación ambiental.</Parrafo>
                 </DivEncabezado>
                 <DivCentro>
                     <Encabe>Centro de Rescate de Animales Silvestres</Encabe>
                     <Parrafo>El centro se dedica a la protección y conservación de la flora y fauna nativa. Su labor incansable se enfoca en rescatar y rehabilitar animales víctimas del tráfico ilegal, del mascotismo y la creciente expansión urbana y agrícola promoviendo la conciencia sobre la importancia de preservar nuestra biodiversidad. Mediante estudios veterinarios, cuidados especializados y liberaciones responsables, el centro busca garantizar que los animales recuperados regresen a su hábitat natural de forma exitosa.</Parrafo>
-                    {/* <Fotos src={foto2}/> */}
+                    <Fotos src={foto4}/>
                     <Parrafo>En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial.</Parrafo>
                     <Parrafo>Nuestro enfoque en el rescate, estudios veterinarios y liberaciones demuestra nuestro compromiso inquebrantable con la conservación de la vida silvestre. Al colaborar con la comunidad y trabajar en conjunto con las autoridades, estamos construyendo un futuro donde los animales silvestres puedan prosperar en su hábitat natural. Juntos, estamos marcando la diferencia y protegiendo la maravillosa diversidad de nuestro entorno natural.</Parrafo>
                     <Parrafo>Nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. Realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. Además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados. Esto nos permite proporcionarles los cuidados y tratamientos necesarios, así como obtener datos importantes para la investigación y la implementación de estrategias de conservación efectivas.</Parrafo>
@@ -242,6 +241,7 @@ const QuienesSomos = () => {
                 </DivCentro>
                 <DivAsociacion>
                 <Encabe>La Asociación Civil Casa del Niño en la Calle</Encabe>
+                    <Fotos src={foto1}/>
                     <Parrafo>tiene como misión brindar apoyo y oportunidades a niños y niñas en situaciones de vulnerabilidad. A través de programas educativos, talleres y una atención integral, se busca mejorar su calidad de vida, promover su desarrollo personal y empoderarlos para un futuro más equitativo. Además, se enfoca en fortalecer los lazos con los centros educativos y proporcionar un entorno seguro y acogedor.</Parrafo>
                     <Parrafo>Granja Los Pibes, además de su función ambiental, desempeña un papel crucial como centro de día para niños y niñas en situaciones de vulnerabilidad. Mediante el apoyo educativo, talleres y alimentación saludable, así como vínculos con los centros educativos, se contribuye a mejorar su calidad de vida, empoderamiento y oportunidades. Esta labor conjunta en lo ambiental y social promueve un futuro más equitativo y sostenible para todos.</Parrafo>
                     <Parrafo>La asociación trabaja desde hace más de 30 años para brindar respuestas a las necesidades de niños y familias en situación de vulnerabilidad y exclusión, priorizando la promoción y protección de los derechos del niño. A lo largo de su trayectoria, han atendido a más de 1000 niños en diferentes modalidades, como el Hogar Convivencial, Casa de los Niños y Centro de Desarrollo Infantil. Muchos de los niños que fueron atendidos por la asociación continúan trabajando en el lugar, desempeñándose como educadores, constructores, personal de mantenimiento y atención en el Centro de Rescate de Animales Silvestres.</Parrafo>
@@ -250,6 +250,7 @@ const QuienesSomos = () => {
                 </DivAsociacion>
                 <DivHumedal>
                     <Encabe>El Humedal</Encabe>
+                    <Fotos src={foto2}/>
                     <Parrafo>La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. Se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. En colaboración con el Ministerio de Ambiente de la Nación, se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales. También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo>
                 </DivHumedal>
                 <DivCierre>
