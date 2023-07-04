@@ -18,7 +18,7 @@ const FondoForm = styled.div`
 
   @media (max-width: 800px) {
         width: auto;
-        padding: 1rem;
+        padding: 1.5rem 1rem 4rem 1rem;
     }
 `
 
@@ -125,6 +125,7 @@ const Titulo = styled.h1`
         text-align: center;
         align-items: center;
         font-weight: 600;
+        padding: 0 1rem 0 1rem;
         margin: 0;
     }
 `

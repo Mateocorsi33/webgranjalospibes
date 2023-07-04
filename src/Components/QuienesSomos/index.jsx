@@ -51,6 +51,7 @@ const DivQS = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 3rem;
 `
 
 const DivEncabezado = styled.section`
@@ -61,7 +62,7 @@ const DivEncabezado = styled.section`
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
 
     @media (max-width: 800px) {
@@ -78,7 +79,7 @@ const DivCentro =styled.div`
     background-color: #D7D67F;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
         padding: 2rem 0;
@@ -94,7 +95,7 @@ const DivAsociacion =styled.div`
     background-color: #F5F5F5;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
         padding: 2rem 0;
@@ -110,7 +111,7 @@ const DivHumedal =styled.div`
     background-color: #C7CCA5;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
         padding: 2rem 0;
@@ -126,7 +127,7 @@ const DivCierre = styled.div`
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    padding: 3rem;
+    padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
         padding: 2rem 0;

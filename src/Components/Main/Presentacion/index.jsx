@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import foto from "../../../assest/fotomovil.jpg";
+import foto from "../../../assest/cuatro.jpg";
 import foto2 from "../../../assest/siete.jpg";
 import foto3 from "../../../assest/tres.jpg";
 import foto4 from "../../../assest/14.jpg";

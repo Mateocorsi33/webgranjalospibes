@@ -67,6 +67,7 @@ const DivCopyIconos = styled.div`
     @media (max-width: 800px) {
         flex-direction: column;
         text-align:center;
+        gap:1rem;
     }
 `
 
@@ -75,6 +76,10 @@ const Iconos = styled.div`
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+
+    @media (max-width: 800px) {
+        margin-bottom: 1rem;
+    }
 `
 
 const Redes = styled.img`

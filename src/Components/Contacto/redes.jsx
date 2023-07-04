@@ -15,6 +15,7 @@ const DivRedes = styled.div`
     gap:3rem;
 
     @media (max-width: 800px) {
+        margin: 1rem 0 3rem 0;
         gap: 1rem;
     }
 `

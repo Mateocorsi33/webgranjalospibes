@@ -171,7 +171,6 @@ const StyledLink = styled(Link)`
         font-size:.8rem; 
         width:auto; 
         height:auto; 
-        margin-top: 0.5rem;
     }
 `;
 
