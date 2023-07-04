@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import foto from "../../../assest/cuatro.jpg";
+import foto from "../../../assest/fotomovil.jpg";
 import foto2 from "../../../assest/siete.jpg";
 import foto3 from "../../../assest/tres.jpg";
 import foto4 from "../../../assest/14.jpg";
@@ -16,6 +16,7 @@ const BoxCuerpo = styled.div`
 
     @media (max-width: 800px) {
         margin-top:1rem;
+        width: 85%;
     }
 `
 
@@ -110,7 +111,7 @@ const Titu = styled.h1`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
         text-align: start;
@@ -131,7 +132,7 @@ const Titu2 = styled.h1`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
         text-align: end;
@@ -151,7 +152,7 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: .9rem;
+        font-size: 1rem;
         text-align: start;
     }
 `
@@ -185,10 +186,9 @@ const Gif = styled.img`
 
     @media (max-width: 800px) {
         border-radius: 5px;
-        box-shadow: none;
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
         width: 100%;
         height: auto;
-        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
     }
 `
 
@@ -209,6 +209,7 @@ const Gif2 = styled.img`
     }
 `
 const STRONG = styled.h1`
+    color: #464646;
     font-weight: 600;
     font-size: 36px;
     margin: 0;

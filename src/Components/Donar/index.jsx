@@ -105,15 +105,14 @@ const TamañoCuerpo = styled.div`
 
   @media (max-width: 800px) {
         padding: 0;
-        gap: 2rem;
     }
 `
 
 const Titulo = styled.h1`
     color: #D6D582;
     text-align: center;
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
     font-family: Manrope;
     font-style: normal;
     font-weight: 600;
@@ -122,7 +121,6 @@ const Titulo = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
-        width: 90%;
         font-size: 2rem;
         text-align: center;
         align-items: center;
@@ -299,9 +297,9 @@ function Donar() {
         </Encabezado>
         <ImgForm src={fotoform}/>
         <TamañoCuerpo>
-            <Titulo>Dona hoy a Granja Los Pibes</Titulo>
+            <Titulo>Dona a Granja Los Pibes</Titulo>
             <Parrafo1>Cada donación nos permite continuar nuestro trabajo y garantizar un futuro más prometedor para la fauna silvestre y los niños.</Parrafo1>
-            <Parrafo>Únete a nuestra misión y se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible. ¡Juntos podemos marcar la diferencia!</Parrafo>
+            <Parrafo>Se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible.</Parrafo>
             <Parrafo1>¡Únete como padrino hoy mismo y sé parte del cambio!</Parrafo1>
             <DivCuanto>
               <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
