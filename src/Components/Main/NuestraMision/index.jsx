@@ -257,7 +257,7 @@ const NuestraMision = (props) => {
         <BoxMision>
             <DivText>
                 <Titulo>ÚNETE A <STRONG>NUESTRA MISIÓN</STRONG></Titulo>
-                <Parrafo>En la Asociación Civil Casa del Niño en la Calle, creemos en el poder de la comunidad para generar un impacto positivo en la vida de los niños y en la conservación de la fauna silvestre. Te invitamos a unirte a nuestra misión y ser parte del cambio. Tienes diferentes formas de apoyarnos:</Parrafo>
+                <Parrafo>En Granja Los Pibes, creemos en el poder de la comunidad para generar un impacto positivo en la vida de los niños y en la conservación de la fauna silvestre. Te invitamos a unirte a nuestra misión y ser parte del cambio. Tienes diferentes formas de apoyarnos:</Parrafo>
             </DivText>
             <BoxCard>
                 <Card>
