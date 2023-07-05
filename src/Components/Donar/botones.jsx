@@ -19,9 +19,7 @@ const DivBtn = styled.div`
 `
 
 const Button = styled.button`
-    background-color: ${(props) => (props.selected ? '#fff' : 'transparent')};
     border: 2px solid #D6D582;
-    color: ${(props) => (props.selected ? 'white' : '#BF4F74')};
     margin: 0 1em;
     padding: 0.25em 1em;
     border-radius: 10px;
@@ -36,15 +34,25 @@ const Button = styled.button`
     letter-spacing: 0.6px;
     cursor: pointer;
 
+    && {
+    background-color: ${(props) =>
+      props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+    color: ${(props) => (props.variant === 'contained' ? '#ffffff' : '#464646')};
+    &:hover {
+      background-color: ${(props) =>
+        props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+      color: ${(props) =>
+        props.variant === 'contained' ? '#ffffff' : '#000000'};
+    }
+  }
+
     @media (max-width: 800px) {
         width: 60%;
     }
 `;
 
 const Input = styled.input`
-    background-color: ${(props) => (props.selected ? '#fff' : 'transparent')};
     border: 2px solid #D6D582;
-    color: ${(props) => (props.selected ? 'white' : '#BF4F74')};
     margin: 0 1em;
     padding: 0.25em 1em;
     border-radius: 10px;
@@ -69,7 +77,11 @@ export default function SelectableButtons() {
     const [amount, setAmount] = useState('');
 
     const handleButtonClick = (event) => {
+      if (selectedButton === event.target.value) {
+        setSelectedButton('');
+      } else {
         setSelectedButton(event.target.value);
+      }
     };
 
     const handleAmountChange = (event) => {
