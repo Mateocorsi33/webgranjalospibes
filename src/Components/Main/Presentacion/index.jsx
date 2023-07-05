@@ -110,6 +110,7 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
+        letter-spacing: 1px;
         width: fit-content;
         font-size: 1.4rem;
         color: #D6D582;
@@ -131,6 +132,7 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
+        letter-spacing: 1px;
         width: fit-content;
         font-size: 1.4rem;
         color: #D6D582;
@@ -144,7 +146,7 @@ const Parra = styled.p`
     width: 36rem;
     flex-direction: column;
     margin: 0;
-    color: #586E66;
+    color: #464646;
     font-size: 1.2rem;
     font-family: Manrope;
     line-height: 1.8rem;
@@ -152,7 +154,8 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        letter-spacing: 0;
         text-align: center;
     }
 `
@@ -163,7 +166,7 @@ const Parra2 = styled.p`
     flex-direction: column;
     text-align: end;
     margin: 0;
-    color: #586E66;
+    color: #464646;
     font-size: 1.2rem;
     font-family: Manrope;
     line-height: 1.8rem;
@@ -171,7 +174,8 @@ const Parra2 = styled.p`
 
     @media (max-width: 800px) {
         width: fit-content;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        letter-spacing: 0;
         text-align: center;
     }
 `
