@@ -295,7 +295,7 @@ function Donar() {
   return (
     <FondoForm>
       <DivForm>
-        <Encabezado>
+        <Encabezado id="encabezado">
           <ImgLogo src={imagenlogo} alt="Logo"/>
           <TextLogo>GRANJA LOS PIBES</TextLogo>
         </Encabezado>
