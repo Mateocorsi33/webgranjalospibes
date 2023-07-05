@@ -85,7 +85,6 @@ const DivCentro =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        background-color: #FFFFFF;
         padding: 2rem 0;
         gap: 1rem;
     }

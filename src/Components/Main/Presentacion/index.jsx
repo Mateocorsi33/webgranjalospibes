@@ -114,7 +114,7 @@ const Titu = styled.h1`
         font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
-        text-align: start;
+        text-align: center;
     }
 `
 
@@ -135,7 +135,7 @@ const Titu2 = styled.h1`
         font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
-        text-align: end;
+        text-align: center;
     }
 `  
 
@@ -153,7 +153,7 @@ const Parra = styled.p`
     @media (max-width: 800px) {
         width: fit-content;
         font-size: 1rem;
-        text-align: start;
+        text-align: center;
     }
 `
 
@@ -172,7 +172,7 @@ const Parra2 = styled.p`
     @media (max-width: 800px) {
         width: fit-content;
         font-size: 1rem;
-        text-align: end;
+        text-align: center;
     }
 `
 

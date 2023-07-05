@@ -89,6 +89,7 @@ const Parrafo = styled.p`
     margin: 0;
 
     @media (max-width: 800px) {
+        text-align: center;
         font-size: 1rem;
     }
 `
