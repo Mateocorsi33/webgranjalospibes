@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import fondo from "../../assest/fondopa.png";
+import { Link } from "react-router-dom";
 
 const BackG = styled.div`
     display: flex;
@@ -75,12 +76,12 @@ const Encabe = styled.h1`
 
 const Parrafo = styled.p`
     display: flex;
-    text-align: center;
+    text-align: start;
     width: 100%;
     height: auto;
     flex-direction: column;
     color: #464646;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: Manrope;
     font-style: normal;
     font-weight: 500;
@@ -92,6 +93,51 @@ const Parrafo = styled.p`
     }
 `
 
+const Boton = styled.button`
+    margin: 2.5rem 2rem;
+    background-color: #F48020;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 19rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Manrope;
+    letter-spacing: 2.56px;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+        transition: .3s;
+        opacity: 70%;
+    }
+
+    @media (max-width: 800px) {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        margin: 1rem;
+    }
+`
+
+const StyledLink = styled(Link)`
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    &:hover {
+    text-decoration: none;
+  }
+  @media (max-width: 800px) {
+        margin:1rem;
+    }
+`;
+
+
+
+
 const Padrinos = () => {
     return (
         <>
@@ -100,26 +146,19 @@ const Padrinos = () => {
             </BackG>
             <DivPadrinos>
                 <Encabe>¡Sé un Padrino de la Vida Salvaje y de la Transformación Social!</Encabe>
-                <Parrafo>En el Centro de Rescate Granja los Pibes, trabajamos incansablemente para proteger y cuidar de la flora y fauna autóctonas de nuestra región. Sin embargo, no podemos hacerlo solos. Necesitamos de tu apoyo y compromiso para seguir salvando vidas y preservando nuestra biodiversidad.
-                        Te invitamos a unirte a nuestra campaña de padrinos, una oportunidad única para marcar la diferencia y ser parte activa en la conservación de nuestro entorno natural.
-                        ¿Qué significa ser un Padrino?
-                        Como padrino, tu donación económica mensual o anual se convertirá en un apoyo vital para el funcionamiento y sostenimi
-                </Parrafo>
-                <Parrafo>Rescatar y rehabilitar animales en peligro: Tu contribución nos permitirá brindar refugio, atención veterinaria y cuidados especializados a las especies que han sido víctimas del tráfico ilegal, maltrato o pérdida de hábitat. Juntos, les daremos una segunda oportunidad de vida en su entorno natural.
-                        Proporcionar una alimentación adecuada: Con tu apoyo, podremos garantizar una alimentación balanceada y de calidad para todos los animales bajo nuestro cuidado. Tu contribución se convertirá en un plato de comida que saciará el hambre y fortalecerá su salud.
-                        Fomentar la educación y la conciencia ambiental: Utilizaremos tu donación para desarrollar programas educativos dirigidos a la comunidad local, escuelas y visitantes del centro. Promoveremos el conocimiento sobre la importancia de la conservación de la fauna y flora autóctonas, así como la necesidad de proteger nuestros ecosistemas.
-                </Parrafo>
-                <Encabe>¿Cómo puedes convertirte en un Padrino?</Encabe>
-                <Parrafo>Es muy sencillo unirse a nuestra campaña de padrinos. Elige la modalidad de donación que mejor se ajuste a tus posibilidades:
-                        Donación mensual: Establece una donación mensual que se adapte a tu presupuesto. Cada mes, tu aporte respaldará nuestros esfuerzos continuos en el rescate y rehabilitación de la vida silvestre.
-                        Donación anual: Si prefieres hacer una donación anual, puedes contribuir con una suma fija que será destinada a nuestros programas durante todo el año. Tu generosidad nos permitirá planificar a largo plazo y brindar atención constante a los animales necesitados.
-                        Donación única: Si deseas realizar una donación única, cualquier aporte económico será valioso para nosotros. Cada contribución cuenta y nos ayudará a salvar y proteger a más animales en peligro.
-                        ¡Únete a nuestra misión y sé un héroe para la vida silvestre!
-                        Tu apoyo como padrino marcará la diferencia en la vida de los animales rescatados y en la conservación de nuestro valioso patrimonio natural. Al unirte a nuestra campaña, te convertirás en parte esencial de nuestro equipo de rescate y en un defensor activo de la biodiversidad.
-                        Para ser un padrino o recibir más información, visita nuestro sitio web  o contáctanos directamente. ¡Tu contribución será la voz de aquellos que no pueden hablar!
-                        Gracias por tu generosidad y por ser un aliado en nuestra lucha por la protección y conservación de la flora y fauna autóctonas.
-                        Centro de Rescate Granja los Pibes
-                </Parrafo>
+                <Parrafo>En Granja Los Pibes, trabajamos incansablemente para brindar apoyo y protección a niños y familias en situación de vulnerabilidad. Nuestro compromiso con la promoción de los derechos del niño y la conservación de la fauna silvestre nos impulsa a seguir adelante, pero necesitamos de tu ayuda para lograrlo.</Parrafo>
+                <Parrafo>Hoy te invitamos a ser parte de nuestra campaña de padrinos, una oportunidad única para marcar la diferencia en la vida de estos niños y contribuir a la protección de nuestra invaluable biodiversidad.</Parrafo>
+                <Encabe>¿Qué implica ser un Padrino?</Encabe>
+                <Parrafo>Como padrino, tu donación económica sea por única vez o de manera mensual se convertirá en un pilar fundamental para el sostenimiento de nuestro Centro de Rescate de Animales Silvestres y La Asociación Civil Casa del Niño en la Calle . Con tu generosidad, podremos:</Parrafo>
+                <Parrafo>Brindar cuidado y atención a las especies rescatadas: Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
+                <Parrafo>Mejorar la calidad de vida de los niños: Tu aporte nos ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral. Cada pequeña contribución se convertirá en una gran oportunidad para su futuro.</Parrafo>
+                <Parrafo>Impulsar proyectos de educación ambiental: Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad. Así, fomentaremos la conciencia sobre la importancia de la conservación de la fauna y flora silvestres, y promoveremos una conexión profunda con la naturaleza.</Parrafo>
+                <Encabe>¿Cómo puedes ser un Padrino?</Encabe>
+                <Parrafo>Es muy sencillo unirse a nuestra campaña de padrinos. Simplemente completa nuestro formulario, donde podrás elegir la modalidad de donación que mejor se adapte a tus posibilidades.</Parrafo>
+                <Parrafo>Donación por única vez: Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
+                <Parrafo>Donación mensual: Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
+                <Parrafo>Conviértete en un padrino y sé parte del cambio que queremos ver en el mundo. Tu donación no solo transformará la vida de los niños y la fauna silvestre que rescatamos, sino que también te permitirá formar parte de una comunidad comprometida con el bienestar de los más vulnerables.</Parrafo>
+                <StyledLink to="/donar" id="#" style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>
     )
