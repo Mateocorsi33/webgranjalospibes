@@ -16,7 +16,7 @@ const BoxCuerpo = styled.div`
 
     @media (max-width: 800px) {
         margin-top:1rem;
-        width: 85%;
+        width: 100%;
     }
 `
 
@@ -32,6 +32,7 @@ const TituloPortada = styled.h1`
 
     @media (max-width: 800px) {
         display: flex;
+        width: 90%;
         font-size: 3.5rem;
         color: #464646;
         z-index: 100;
@@ -80,6 +81,7 @@ const DivText = styled.div`
     @media (max-width: 800px) {
         text-align: center;
         align-items: center;
+        border-top: none;
         width: 100%;
     }
 `
@@ -93,6 +95,7 @@ const DivText2 = styled.div`
 
     @media (max-width: 800px) {
         align-items: center;
+        border-top: none;
         order: 1;
         width: 100%;
     }
@@ -110,8 +113,10 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
+        border-top: 4px solid #D6D582;
+        padding-top: 1.5rem;
         letter-spacing: 0.5px;
-        width: fit-content;
+        width: 90%;
         font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
@@ -132,8 +137,10 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
+        border-top: 4px solid #D6D582;
+        padding-top: 1.5rem;
         letter-spacing: 0.5px;
-        width: fit-content;
+        width: 90%;
         font-size: 1.4rem;
         color: #D6D582;
         font-weight: 600;
@@ -153,7 +160,7 @@ const Parra = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: fit-content;
+        width: 90%;
         font-size: 1.1rem;
         letter-spacing: 0;
         text-align: center;
@@ -173,7 +180,7 @@ const Parra2 = styled.p`
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
-        width: fit-content;
+        width: 90%;
         font-size: 1.1rem;
         letter-spacing: 0;
         text-align: center;
@@ -211,8 +218,6 @@ const GifM = styled.img`
 
     @media (max-width: 800px) {
         display: flex;
-        border-radius: 5px;
-        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
         width: 100%;
         height: auto;
         opacity: 80%;
@@ -261,6 +266,7 @@ const Presentacion = () => {
             <DivContent>
                 <DivText>
                     <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
+                    <GifM src={foto3}/>
                     <Parra>
                     El mascotismo, la expansión de la frontera urbana-agrícola y el tráfico ilegal de animales representan los principales focos de conflicto que amenazan nuestra valiosa flora y fauna. En respuesta a estos desafíos, consideramos de vital importancia concientizar y unir esfuerzos para proteger y preservar nuestro hábitat natural. 
                     </Parra>
@@ -271,6 +277,7 @@ const Presentacion = () => {
                 <Gif2 src={foto4}/>
                 <DivText2>
                     <Titu2><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
+                    <GifM src={foto4}/>
                     <Parra2>
                     El centro de rescate desempeña un papel esencial al funcionar como un centro de día para niños y niñas en situaciones de vulnerabilidad. Se busca brindar un apoyo integral a través de actividades educativas, talleres, charlas y servicios de comedor. Además, se compromete en facilitar el acceso a los centros educativos correspondientes. De esta manera, se convierte en un punto de encuentro para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor. 
                     </Parra2>
