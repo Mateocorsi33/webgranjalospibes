@@ -140,6 +140,12 @@ const StyledLink = styled(Link)`
 
 
 const Padrinos = () => {
+
+    const handleClick = () => {
+        const element = document.getElementById('encabezado');
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <>
             <BackG>
@@ -159,7 +165,7 @@ const Padrinos = () => {
                 <Parrafo>Donación por única vez: Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
                 <Parrafo>Donación mensual: Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
                 <Parrafo>Conviértete en un padrino y sé parte del cambio que queremos ver en el mundo. Tu donación no solo transformará la vida de los niños y la fauna silvestre que rescatamos, sino que también te permitirá formar parte de una comunidad comprometida con el bienestar de los más vulnerables.</Parrafo>
-                <StyledLink to="/donar" id="#" style={{}}><Boton>APADRINARSE</Boton></StyledLink>
+                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>
     )

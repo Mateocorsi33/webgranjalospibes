@@ -251,6 +251,12 @@ const StyledLink = styled(Link)`
 
 
 const NuestraMision = (props) => {
+
+    const handleClick = () => {
+        const element = document.getElementById('encabezado');
+        element.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <BoxMision>
             <DivText>
@@ -263,7 +269,7 @@ const NuestraMision = (props) => {
                     <Cuadro>
                         <TCuadro>CAMPAÑA DE APADRINAMIENTO</TCuadro>
                         <PCuadro>Tu apoyo económico puede marcar la diferencia en la vida de un niño o en la rehabilitación de una especie en peligro. Al convertirte en un padrino, estarás contribuyendo directamente a brindar educación, atención y oportunidades para los niños y al cuidado y rescate de los animales silvestres. Cada donación cuenta y nos acerca un paso más hacia un futuro mejor. ¡Únete como padrino hoy mismo!</PCuadro>
-                        <StyledLink to='/donar#encabezado' style={{}}><Boton>APADRINARSE</Boton></StyledLink>
+                        <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
                     </Cuadro>
                 </Card>
                 <Card>
