@@ -117,7 +117,7 @@ const DivHumedal =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem 0;
+        padding: 2rem 0 0 0;
         gap: 1rem;
     }
 `
@@ -135,6 +135,7 @@ const DivCierre = styled.div`
     @media (max-width: 800px) {
         align-items: center;
         justify-content:center;
+        margin-top: 2rem;
         padding: 2rem 0;
         gap: 1rem;
     }
@@ -169,7 +170,7 @@ const Encabe = styled.h2`
     width: 100%;
     height: auto;
     flex-direction: column;
-    color: #595852;
+    color: #464646;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
     font-size: 2.2rem;
     font-family: Manrope;
@@ -209,6 +210,28 @@ const Parrafo = styled.p`
     }
 `
 
+const Parrafo2 = styled.p`
+    display: flex;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 10%;
+
+    @media (max-width: 800px) {
+        font-size: 1rem;
+        width: 90%;
+    }
+`
+
+
+
 const Fotos = styled.img`
     width: 45%;
     height: auto;
@@ -217,7 +240,7 @@ const Fotos = styled.img`
 @media (max-width: 800px) {
     width: 100%;
     height: auto;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     }   
 `
 
@@ -260,12 +283,12 @@ const QuienesSomos = () => {
                 </DivEncabezado>
                 <DivCentro>
                     <Encabe>Centro de Rescate de Animales Silvestres</Encabe>
-                    <Parrafo>El centro se dedica a la protección y conservación de la flora y fauna nativa. Su labor incansable se enfoca en rescatar y rehabilitar animales víctimas del tráfico ilegal, del mascotismo y la creciente expansión urbana y agrícola promoviendo la conciencia sobre la importancia de preservar nuestra biodiversidad. Mediante estudios veterinarios, cuidados especializados y liberaciones responsables, el centro busca garantizar que los animales recuperados regresen a su hábitat natural de forma exitosa.</Parrafo>
+                    <Parrafo2>El centro se dedica a la protección y conservación de la flora y fauna nativa. Su labor incansable se enfoca en rescatar y rehabilitar animales víctimas del tráfico ilegal, del mascotismo y la creciente expansión urbana y agrícola promoviendo la conciencia sobre la importancia de preservar nuestra biodiversidad. Mediante estudios veterinarios, cuidados especializados y liberaciones responsables, el centro busca garantizar que los animales recuperados regresen a su hábitat natural de forma exitosa.</Parrafo2>
                     <Fotos src={foto4}/>
-                    <Parrafo>En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial.</Parrafo>
-                    <Parrafo>Nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. Realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. Además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados.</Parrafo>
+                    <Parrafo2>En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial.</Parrafo2>
+                    <Parrafo2>Nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. Realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. Además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados.</Parrafo2>
                     <Fotos src={foto5}/>
-                    <Parrafo>Nuestro objetivo principal es lograr que los animales rescatados puedan regresar a su hábitat natural lo antes posible. Trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. Esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo>
+                    <Parrafo2>Nuestro objetivo principal es lograr que los animales rescatados puedan regresar a su hábitat natural lo antes posible. Trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. Esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo2>
                 </DivCentro>
                 <DivAsociacion>
                 <Encabe>La Asociación Civil Casa del Niño en la Calle</Encabe>
@@ -277,15 +300,13 @@ const QuienesSomos = () => {
                 </DivAsociacion>
                 <DivHumedal>
                     <Encabe>Humedal - Los Coipos</Encabe>
-                    <Fotos src={foto3}/>
-                    <Parrafo>La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. Se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. Se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales.</Parrafo>
+                    <Parrafo2>La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. Se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. Se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales.</Parrafo2>
                     <Fotos src={foto6}/>
-                    <Parrafo>También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo>
+                    <Parrafo2>También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo2>
                     <Fotos src={foto2}/>
                 </DivHumedal>
                 <DivCierre>
                     <Parrafo><Strong>En Granja los Pibes, la esperanza y la acción se entrelazan para crear un impacto positivo en la sociedad y en el medio ambiente. Es un llamado a unir fuerzas, a generar conciencia y a trabajar juntos para construir un mundo más equitativo, sostenible y lleno de oportunidades para todos. Granja los Pibes nos muestra que, con compromiso y dedicación, podemos marcar la diferencia y dejar un legado duradero para las generaciones venideras.</Strong></Parrafo>
-                    {/* <Fotos src={foto8}/> */}
                 </DivCierre>
             </DivQS>
         </>
