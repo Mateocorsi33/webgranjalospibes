@@ -8,7 +8,7 @@ import foto4 from "../../assest/opt3.jpg";
 import foto5 from "../../assest/opt2.jpg";
 import foto6 from "../../assest/opt7.jpg";
 import foto8 from "../../assest/opt8.jpg";
-import video from "../../assest/videogranja.mp4";
+import video from "../../assest/videogranja.webm";
 
 
 

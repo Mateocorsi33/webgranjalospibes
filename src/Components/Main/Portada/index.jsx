@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import video from "../../../assest/movie.mp4";
+import video from "../../../assest/movie.webm";
 
 
 const BoxPortada = styled.div`
@@ -9,12 +9,10 @@ const BoxPortada = styled.div`
     width: 100%;
     margin: 0;
 `
-
 const VideoBackground = styled.div`
   display: flex;
   width: 100%;
 `;
-
 const Video = styled.video`
     position: relative;
     width: 100%;
@@ -25,13 +23,11 @@ const Video = styled.video`
         height: auto;
     }
 `
-
 const DivText = styled.div`
     margin: 23% 12% 0;
     position: absolute;
     z-index: 2;
 `
-
 const Titulo = styled.h1`
     font-family: 'Manrope', sans-serif;
     color: #ffffff;
@@ -47,7 +43,6 @@ const Titulo = styled.h1`
         display: none;
     }
 `
-
 const GradientOverlay = styled.div`  
     position: absolute;
     top: 80%;   
