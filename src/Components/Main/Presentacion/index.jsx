@@ -110,7 +110,7 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         width: fit-content;
         font-size: 1.4rem;
         color: #D6D582;
@@ -132,7 +132,7 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         width: fit-content;
         font-size: 1.4rem;
         color: #D6D582;
@@ -189,10 +189,7 @@ const Gif = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        border-radius: 5px;
-        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: auto;
+        display: none;
     }
 `
 
@@ -205,13 +202,25 @@ const Gif2 = styled.img`
     box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
+        display: none;
+    }
+`
+
+const GifM = styled.img`
+    display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
         border-radius: 5px;
         box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
         width: 100%;
         height: auto;
-        order: 2;
+        opacity: 80%;
+        margin: 1rem 0 1.5rem 0;
     }
 `
+
+
 const STRONG = styled.h1`
     color: #464646;
     font-weight: 600;
@@ -231,6 +240,7 @@ const Presentacion = () => {
             <DivContent>
                 <DivText>
                     <Titu>GRANJA LOS PIBES: CONTRIBUYENDO A LA CONCIENCIACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
+                    <GifM src={foto}/>
                     <Parra> 
                     El centro de rescate Granja Los Pibes, ha asumido la importante tarea de concientizar a la comunidad sobre los cuidados y conservación de la flora y fauna de nuestra region. A través de su incansable labor, el centro busca preservar la riqueza y la biodiversidad que nos rodea.
                     Su enfoque principal radica en la conservación de la flora y fauna autóctonas, consideradas tesoros vivos de nuestra región.
@@ -242,6 +252,7 @@ const Presentacion = () => {
                 <Gif2 src={foto2}/>
                 <DivText2>
                     <Titu2>APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
+                    <GifM src={foto2}/>
                     <Parra2> 
                     En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial. A través de acciones de rescate, estudios veterinarios y liberaciones oportunas, trabajamos incansablemente para asegurar el bienestar y la supervivencia de los animales silvestres.
                     </Parra2>
