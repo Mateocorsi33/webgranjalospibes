@@ -80,12 +80,14 @@ const StyledLink = styled(Link)`
     color: #464646;
   &:hover {
     text-decoration: none;
+    color: #464646;
   }
 
   @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
         align-items:center;
+        color: #464646;
         font-size: 0.8rem;
         width: 100%;
         margin:0;

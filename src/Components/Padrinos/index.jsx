@@ -36,6 +36,7 @@ const Titulo = styled.h1`
         text-align: center;
         align-items: center;
         font-weight: 500;
+        padding: 1rem;
     }
 `
 
@@ -48,7 +49,7 @@ const DivPadrinos = styled.div`
 
     @media (max-width: 800px) {
         margin: 1.5rem 1rem;
-        gap: 1rem;
+        gap: 3.5rem;
     }
 `
 
@@ -78,7 +79,7 @@ const Encabe = styled.h1`
 
 const Parrafo = styled.p`
     display: flex;
-    text-align: start;
+    text-align: center;
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -138,6 +139,27 @@ const StyledLink = styled(Link)`
     }
 `;
 
+const Strong = styled.strong`
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    color: #464646;
+    font-size: 1.3rem;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+
+    @media (max-width: 800px) {
+        text-align: center;
+        margin-bottom:0.5rem;
+        font-size: 1.3rem;
+    }
+`
+
 
 
 const Padrinos = () => {
@@ -155,18 +177,18 @@ const Padrinos = () => {
             <DivPadrinos>
                 <Encabe>¡Sé un Padrino de la Vida Salvaje y de la Transformación Social!</Encabe>
                 <Parrafo>En Granja Los Pibes, trabajamos incansablemente para brindar apoyo y protección a niños y familias en situación de vulnerabilidad. Nuestro compromiso con la promoción de los derechos del niño y la conservación de la fauna silvestre nos impulsa a seguir adelante, pero necesitamos de tu ayuda para lograrlo.</Parrafo>
-                <Parrafo>Hoy te invitamos a ser parte de nuestra campaña de padrinos, una oportunidad única para marcar la diferencia en la vida de estos niños y contribuir a la protección de nuestra invaluable biodiversidad.</Parrafo>
                 <CarouselImg/>
+                <Parrafo>Hoy te invitamos a ser parte de nuestra campaña de padrinos, una oportunidad única para marcar la diferencia en la vida de estos niños y contribuir a la protección de nuestra invaluable biodiversidad.</Parrafo>
                 <Encabe>¿Qué implica ser un Padrino?</Encabe>
                 <Parrafo>Como padrino, tu donación económica sea por única vez o de manera mensual se convertirá en un pilar fundamental para el sostenimiento de nuestro Centro de Rescate de Animales Silvestres y La Asociación Civil Casa del Niño en la Calle . Con tu generosidad, podremos:</Parrafo>
-                <Parrafo>Brindar cuidado y atención a las especies rescatadas: Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
-                <Parrafo>Mejorar la calidad de vida de los niños: Tu aporte nos ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral. Cada pequeña contribución se convertirá en una gran oportunidad para su futuro.</Parrafo>
-                <Parrafo>Impulsar proyectos de educación ambiental: Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad. Así, fomentaremos la conciencia sobre la importancia de la conservación de la fauna y flora silvestres, y promoveremos una conexión profunda con la naturaleza.</Parrafo>
+                <Parrafo><Strong>Brindar cuidado y atención a las especies rescatadas:</Strong> Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
+                <Parrafo><Strong>Mejorar la calidad de vida de los niños:</Strong> Ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral.</Parrafo>
+                <Parrafo><Strong>Impulsar proyectos de educación ambiental:</Strong> Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad.</Parrafo>
                 <Encabe>¿Cómo puedes ser un Padrino?</Encabe>
-                <Parrafo>Es muy sencillo unirse a nuestra campaña de padrinos. Simplemente completa nuestro formulario, donde podrás elegir la modalidad de donación que mejor se adapte a tus posibilidades.</Parrafo>
-                <Parrafo>Donación por única vez: Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
-                <Parrafo>Donación mensual: Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
-                <Parrafo>Conviértete en un padrino y sé parte del cambio que queremos ver en el mundo. Tu donación no solo transformará la vida de los niños y la fauna silvestre que rescatamos, sino que también te permitirá formar parte de una comunidad comprometida con el bienestar de los más vulnerables.</Parrafo>
+                <Parrafo><Strong>Simplemente completa nuestro formulario, donde podrás elegir la modalidad de donación que mejor se adapte a tus posibilidades.</Strong></Parrafo>
+                <Parrafo><Strong>Donación por única vez:</Strong> Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
+                <Parrafo><Strong>Donación mensual:</Strong> Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
+                <Parrafo><Strong>Conviértete en un padrino y sé parte del cambio que queremos ver en el mundo.</Strong></Parrafo>
                 <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>

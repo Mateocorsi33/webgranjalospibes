@@ -46,6 +46,7 @@ const Titulo = styled.h1`
         text-align: center;
         align-items: center;
         font-weight: 500;
+        padding: 1rem;
     }
 `
 

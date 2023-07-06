@@ -162,6 +162,7 @@ const StyledLink = styled(Link)`
     color: #464646;
   &:hover {
     text-decoration: none;
+    color: #464646;
   }
 
   @media (max-width: 800px) {
