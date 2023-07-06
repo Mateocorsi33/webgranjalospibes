@@ -48,7 +48,7 @@ const DivCont = styled.div`
 
     @media (max-width: 800px) {
         margin: 1.5rem 1rem;
-        gap: 1rem;
+        gap: 2rem;
     }
 `
 

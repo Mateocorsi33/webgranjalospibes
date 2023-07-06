@@ -70,8 +70,8 @@ const DivEncabezado = styled.section`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        padding: 2rem 0;
-        gap: 2rem;
+        padding: 3.3rem 0;
+        gap: 2.8rem;
     }
 `
 
@@ -86,8 +86,8 @@ const DivCentro =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem 0;
-        gap: 2rem;
+        padding: 2.5rem 0 3.6rem 0;
+        gap: 2.8rem;
     }
 `
 
@@ -102,8 +102,8 @@ const DivAsociacion =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem 0;
-        gap: 2rem;
+        padding: 2.5rem 0 3.6rem 0;
+        gap: 2.8rem;
     }
 `
 
@@ -119,7 +119,7 @@ const DivHumedal =styled.div`
     gap: 2rem;
     @media (max-width: 800px) {
         padding: 2rem 0 0 0;
-        gap: 2rem;
+        gap: 2.8rem;
     }
 `
 

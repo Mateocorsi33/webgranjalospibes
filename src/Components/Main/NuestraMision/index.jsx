@@ -21,12 +21,14 @@ const BoxMision = styled.div`
 
     @media (max-width: 800px) {
         box-shadow: none;
+        gap:.5rem;
     }
 `
 
 const DivText = styled.div`
     text-align: center;
     margin-top: 4rem;
+
 `
 
 const DivText2 = styled.div`
@@ -63,7 +65,7 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         width: auto;
-        padding: 0 2rem;
+        padding: 2rem;
         font-size:1rem;
     }
 `
@@ -179,7 +181,7 @@ const PCuadro = styled.p`
 
     @media (max-width: 800px) {
         font-size: 16px;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 `
 
@@ -207,7 +209,7 @@ const Boton = styled.button`
         align-items: center;
         justify-content:center;
         width: 100%;
-        margin: 1rem;
+        margin: 0 1rem .5rem 1rem;
     }
 `
 
@@ -219,7 +221,7 @@ const Iconos = styled.div`
     margin: 6rem 2rem 0 2rem;
 
     @media (max-width: 800px) {
-        margin: 3rem 0;
+        margin: 0 1rem 1.2rem 1rem;
         gap: 1rem;
     }
 `
