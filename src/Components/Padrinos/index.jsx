@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import fondo from "../../assest/fondopa.png";
 import { Link } from "react-router-dom";
+import CarouselImg from "./fotos";
+
 
 const BackG = styled.div`
     display: flex;
@@ -138,7 +140,6 @@ const StyledLink = styled(Link)`
 
 
 
-
 const Padrinos = () => {
 
     const handleClick = () => {
@@ -155,6 +156,7 @@ const Padrinos = () => {
                 <Encabe>¡Sé un Padrino de la Vida Salvaje y de la Transformación Social!</Encabe>
                 <Parrafo>En Granja Los Pibes, trabajamos incansablemente para brindar apoyo y protección a niños y familias en situación de vulnerabilidad. Nuestro compromiso con la promoción de los derechos del niño y la conservación de la fauna silvestre nos impulsa a seguir adelante, pero necesitamos de tu ayuda para lograrlo.</Parrafo>
                 <Parrafo>Hoy te invitamos a ser parte de nuestra campaña de padrinos, una oportunidad única para marcar la diferencia en la vida de estos niños y contribuir a la protección de nuestra invaluable biodiversidad.</Parrafo>
+                <CarouselImg/>
                 <Encabe>¿Qué implica ser un Padrino?</Encabe>
                 <Parrafo>Como padrino, tu donación económica sea por única vez o de manera mensual se convertirá en un pilar fundamental para el sostenimiento de nuestro Centro de Rescate de Animales Silvestres y La Asociación Civil Casa del Niño en la Calle . Con tu generosidad, podremos:</Parrafo>
                 <Parrafo>Brindar cuidado y atención a las especies rescatadas: Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
