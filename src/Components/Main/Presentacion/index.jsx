@@ -75,6 +75,7 @@ const DivContent2 = styled.div`
 const DivText = styled.div`
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     border-top: 4px solid #D6D582;
     width: 20%;
 
@@ -89,6 +90,7 @@ const DivText = styled.div`
 const DivText2 = styled.div`
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
     align-items: flex-end;
     border-top: 4px solid #D6D582;
     width: 20%;

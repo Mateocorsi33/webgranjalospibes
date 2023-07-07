@@ -180,7 +180,7 @@ const Encabe = styled.h2`
     line-height: normal;
     letter-spacing: -1px;
     margin: 0 10%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-top: 2rem;
 
     @media (max-width: 800px) {
@@ -203,7 +203,7 @@ const Parrafo = styled.p`
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 10%;
+    margin: 1rem 10% 3rem 10%;
 
     @media (max-width: 800px) {
         font-size: 1rem;

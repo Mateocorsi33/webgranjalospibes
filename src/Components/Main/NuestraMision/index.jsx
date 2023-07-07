@@ -44,7 +44,7 @@ const Titulo = styled.h1`
     font-size: 40px;
     font-weight: 300;
     font-family: Manrope;
-    margin: 0;
+    margin-top: 3rem;
     @media (max-width: 800px) {
         text-align: center;
         width: auto;
@@ -57,6 +57,7 @@ const Parrafo = styled.p`
     display: flex;
     flex-direction: column;
     justify-content: center;  
+    margin: 3rem 0;
     width: 59rem;
     color: #FFF;
     text-align: center;

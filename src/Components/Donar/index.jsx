@@ -268,9 +268,13 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 2rem 0 2rem 0;
   width: 14rem;
-  padding: 10px;
+  padding: 8px 10px 12px 10px;
   border-radius: 10px;
   border: none;
   background-color: #F58220;
