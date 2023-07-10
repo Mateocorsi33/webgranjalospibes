@@ -37,6 +37,7 @@ const TituloPortada = styled.h1`
         color: #464646;
         z-index: 100;
         margin-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 `
 
@@ -83,6 +84,8 @@ const DivText = styled.div`
         text-align: center;
         align-items: center;
         border-top: none;
+        padding-top: .8rem;
+        gap: 1.2rem;
         width: 100%;
     }
 `
@@ -98,6 +101,8 @@ const DivText2 = styled.div`
     @media (max-width: 800px) {
         align-items: center;
         border-top: none;
+        padding-top: 1rem;
+        gap: 1.2rem;
         order: 1;
         width: 100%;
     }

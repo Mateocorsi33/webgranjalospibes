@@ -12,6 +12,10 @@ const DivFooter = styled.div`
     flex-direction: column;
     width: 100%;
     background-color: #586E66;
+
+    @media (max-width: 800px) {
+        padding-top: 3rem;
+    }
 `
 
 const DivTexto = styled.div`

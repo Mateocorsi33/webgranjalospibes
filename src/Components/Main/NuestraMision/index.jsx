@@ -29,11 +29,18 @@ const DivText = styled.div`
     text-align: center;
     margin-top: 4rem;
 
+    @media (max-width: 800px) {
+        margin-top: 2rem;
+    }
 `
 
 const DivText2 = styled.div`
     text-align: center;
     margin: 0.5rem 0 5rem 0;
+
+    @media (max-width: 800px) {
+        margin: 0 0 4rem 0;
+    }
 `
 
 const Titulo = styled.h1`
@@ -66,8 +73,9 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         width: auto;
-        padding: 2rem;
-        font-size:1rem;
+        margin: 1.5rem 0;
+        padding: 1rem 2rem;
+        font-size: 1rem;
     }
 `
 
