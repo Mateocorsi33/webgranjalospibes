@@ -3,6 +3,11 @@ import styled from "styled-components";
 import fondo from "../../assest/fondopa.png";
 import { Link } from "react-router-dom";
 import CarouselImg from "./fotos";
+import iconoUno from "../../assest/huella.png";
+import iconoDos from "../../assest/niños.png";
+import iconoTres from "../../assest/ambiental.png";
+
+
 
 
 const BackG = styled.div`
@@ -160,6 +165,19 @@ const Strong = styled.strong`
     }
 `
 
+// const Img = styled.img`
+//     display: none;
+   
+//     @media (max-width: 800px) {
+//      display: flex;
+//      align-items: center;
+//      width: 7rem;
+//      height: 7rem;
+//     }
+// `
+
+
+
 
 
 const Padrinos = () => {
@@ -182,8 +200,11 @@ const Padrinos = () => {
                 <Encabe>¿Qué implica ser un Padrino?</Encabe>
                 <Parrafo>Como padrino, tu donación económica sea por única vez o de manera mensual se convertirá en un pilar fundamental para el sostenimiento de nuestro Centro de Rescate de Animales Silvestres y La Asociación Civil Casa del Niño en la Calle . Con tu generosidad, podremos:</Parrafo>
                 <Parrafo><Strong>Brindar cuidado y atención a las especies rescatadas:</Strong> Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
+                {/* <Img src={iconoUno}/> */}
                 <Parrafo><Strong>Mejorar la calidad de vida de los niños:</Strong> Ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral.</Parrafo>
+                {/* <Img src={iconoDos}/> */}
                 <Parrafo><Strong>Impulsar proyectos de educación ambiental:</Strong> Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad.</Parrafo>
+                {/* <Img src={iconoTres}/> */}
                 <Encabe>¿Cómo puedes ser un Padrino?</Encabe>
                 <Parrafo><Strong>Simplemente completa nuestro formulario, donde podrás elegir la modalidad de donación que mejor se adapte a tus posibilidades.</Strong></Parrafo>
                 <Parrafo><Strong>Donación por única vez:</Strong> Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>

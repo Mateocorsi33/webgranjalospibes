@@ -105,6 +105,8 @@ const LinkMapa = styled.a`
     &:hover{
         transition: .3s;
         opacity: 70%;
+        text-decoration: none;
+        color: #F58220;
     }
 `
 

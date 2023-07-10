@@ -23,55 +23,52 @@ const StyledCarousel = styled(Carousel)`
     }
 `
 
+const Img = styled.img`
+    display: none;
+    
+    @media (max-width: 800px) {
+        display: flex;
+        margin:0;
+        width: 100%;
+    }
+`
+
+
+
 
 function CarouselImg() {
   return (
-    <StyledCarousel>
+    <StyledCarousel interval={3000}>
         <Carousel.Item>
-            <img className="d-block w-100" src={foto1} alt="Granja"/>
+            <Img className="d-block w-100" src={foto1} alt="Granja"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={foto2}
-            alt="Second slide"
-            />
-
-            <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img
-            className="d-block w-100"
-            src={foto3}
-            alt="Third slide"
-            />
-            <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-            </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-            <img className="d-block w-100" src={foto4} alt=""/>
+            <Img className="d-block w-100" src={foto2} alt="Second slide"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img className="d-block w-100" src={foto5} alt=""/>
+            <Img className="d-block w-100" src={foto3} alt="Third slide"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img className="d-block w-100" src={foto6} alt=""/>
+            <Img className="d-block w-100" src={foto4} alt=""/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img className="d-block w-100" src={foto7} alt=""/>
+            <Img className="d-block w-100" src={foto5} alt=""/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-            <img className="d-block w-100" src={foto8} alt=""/>
+            <Img className="d-block w-100" src={foto6} alt=""/>
+            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <Img className="d-block w-100" src={foto7} alt=""/>
+            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <Img className="d-block w-100" src={foto8} alt=""/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
     </StyledCarousel>
