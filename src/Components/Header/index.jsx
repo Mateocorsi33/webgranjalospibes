@@ -6,7 +6,7 @@ import BarraNav from "./BarraNav/Index";
 const DivHeader = styled.div`
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 
 
     @media (max-width: 800px) {

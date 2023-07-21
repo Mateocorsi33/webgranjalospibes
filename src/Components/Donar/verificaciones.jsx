@@ -23,6 +23,7 @@ import React from 'react';
         font-weight: 400;
         line-height: normal;
         letter-spacing: 0.6px;
+        margin: 0;
         @media (max-width: 800px) {
             width: fit-content;
             justify-content: center;
@@ -72,6 +73,7 @@ font-family: Manrope;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin: 0;
 `;
 
 const CheckboxContainer = styled.div`

@@ -21,7 +21,9 @@ const DivRedes = styled.div`
 `
 
 const LinkRedes = styled.a`
-    
+     &:hover {
+        transform: scale(1.1);
+    }
     
     @media (max-width: 800px) {
                 

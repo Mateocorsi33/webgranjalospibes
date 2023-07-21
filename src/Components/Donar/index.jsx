@@ -176,7 +176,8 @@ const DivCuanto = styled.div`
   align-items: center;
   padding-top: 1rem;
   border-top: 1px solid #D6D582;
-  
+  margin-top: 2rem; 
+
   @media (max-width: 800px) {
         flex-direction: column;
         align-items: center;
@@ -220,7 +221,8 @@ const H2 = styled.h2`
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.42px;
-`
+  margin-top: 3rem;
+  `
 
 const DivIP = styled.div`
   display: flex;
@@ -229,6 +231,7 @@ const DivIP = styled.div`
   flex-wrap: wrap;
   height: auto;
   gap: 0 1rem;
+  padding: 1rem 0;
 `
 
 const DivTarjetas = styled.div`
@@ -284,6 +287,7 @@ const Button = styled.button`
     &:hover {
         transition: .3s;
         opacity: 70%;
+        transform: scale(1.05);
     }
 
   @media (max-width: 800px) {

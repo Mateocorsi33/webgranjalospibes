@@ -53,11 +53,12 @@ const Boton = styled.button`
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.05em;
-    color: #464646;
+    color: #ffffff;
     cursor: pointer;
     &:hover {
         transition: .3s;
-        background-color: #D9B36F;
+        transform: scale(1.1);
+        background-color: #c9c86f ;
         color: #ffffff;
     }
 

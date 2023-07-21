@@ -8,8 +8,9 @@ const DivBtn = styled.div`
     align-items: center;
     justify-content: center;
     width:90%;
-    margin:1rem 0;
+    margin: 1rem 0;
     gap: 1rem;
+    padding: 1rem 0;
 
     @media (max-width: 800px) {
         flex-direction:column;

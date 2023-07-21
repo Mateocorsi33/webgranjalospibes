@@ -17,7 +17,7 @@ const BoxMision = styled.div`
     width: 100%;
     height: fit-content;
     background-color: #D6D582;
-    box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 800px) {
         box-shadow: none;

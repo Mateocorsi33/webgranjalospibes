@@ -11,6 +11,7 @@ const DivFooter = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 4.5rem 0 2rem 0;
     background-color: #586E66;
 
     @media (max-width: 800px) {
@@ -130,23 +131,24 @@ const Copy = styled.div`
 const UbiLink = styled.a`
     cursor: pointer;
     text-decoration: none;
-    text-decoration-color: none;
     &:hover{
+        text-decoration:none;
         transition: .3s;
-        opacity:.7;
+        opacity:.7;     
     }
 `
 
 const StyledLink = styled(Link)`
-    text-decoration: none;
     font-family: Manrope;
     font-size: 0.8rem;
     font-weight: 300;
     color: #ffffff;
-    text-decoration: none;
     margin: 0.3rem 0;
+    text-decoration: none;
     cursor: pointer;
     &:hover {
+        text-decoration: none;
+        color: #D6D582;
         transition: .3s;
         opacity:.7;
     }
