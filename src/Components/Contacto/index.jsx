@@ -25,7 +25,7 @@ const Titulo = styled.h1`
     font-size: 5.2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.02em;
 
