@@ -29,7 +29,7 @@ const Titulo = styled.h1`
     color: #FFF;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
     font-size: 5.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -69,7 +69,7 @@ const Encabe = styled.h1`
     color: #D6D582;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
     font-size: 2.5rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -90,9 +90,9 @@ const Parrafo = styled.p`
     flex-direction: column;
     color: #464646;
     font-size: 1.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     margin: 0;
 
@@ -112,7 +112,7 @@ const Boton = styled.button`
     height: 3rem;
     font-size: 1rem;
     font-weight: 400;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2.56px;
     color: #ffffff;
     cursor: pointer;
@@ -152,7 +152,7 @@ const Strong = styled.strong`
     flex-direction: column;
     color: #464646;
     font-size: 1.3rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

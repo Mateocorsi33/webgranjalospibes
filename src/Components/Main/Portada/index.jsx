@@ -29,10 +29,10 @@ const DivText = styled.div`
     z-index: 2;
 `
 const Titulo = styled.h1`
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 5.2rem;
-    font-weight: 300;
+    font-size: 5.5rem;
+    font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 6rem;
     width: 100%;

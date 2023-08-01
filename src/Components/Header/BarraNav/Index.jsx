@@ -43,7 +43,7 @@ const Marcador = styled.div`
 `
 
 const Boton = styled.button`
-    background-color: #D6D582;
+    background-color: #c9c86f;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     width: 8rem;
@@ -58,7 +58,7 @@ const Boton = styled.button`
     &:hover {
         transition: .3s;
         transform: scale(1.1);
-        background-color: #c9c86f ;
+        background-color: #D6D582 ;
         color: #ffffff;
     }
 
@@ -74,21 +74,21 @@ const Boton = styled.button`
 
 const StyledLink = styled(Link)`
     text-decoration: none;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.05em;
-    color: #464646;
+    color: #7D8F69;
   &:hover {
     text-decoration: none;
-    color: #464646;
+    color: #7D8F69;
   }
 
   @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
         align-items:center;
-        color: #464646;
+        color: #557153;
         font-size: 0.8rem;
         width: 100%;
         margin:0;

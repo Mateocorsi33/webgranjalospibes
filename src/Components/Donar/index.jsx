@@ -113,7 +113,7 @@ const Titulo = styled.h1`
     text-align: center;
     margin-top: 1.5rem;
     font-size: 2.5rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -135,7 +135,7 @@ const Parrafo1 = styled.h2`
   text-align: center;
   width: 80%;
   font-size: 1.2rem;
-  font-family: Manrope;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -154,7 +154,7 @@ const Parrafo = styled.h3`
   width: 80%;
   margin: 0;
   font-size: 1rem;
-  font-family: Manrope;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -190,7 +190,7 @@ const Letrachica = styled.h3`
   width: fit-content;
   margin: 0;
   font-size: .9rem;
-  font-family: Manrope;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -216,7 +216,7 @@ const H2 = styled.h2`
   color: #000;
   text-align: center;
   font-size: 1rem;
-  font-family: Manrope;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;

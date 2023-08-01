@@ -28,7 +28,7 @@ const Button = styled.button`
     color: #000;
     text-align: center;
     font-size: 20px;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -61,7 +61,7 @@ const Input = styled.input`
     color: #000;
     text-align: center;
     font-size: 20px;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

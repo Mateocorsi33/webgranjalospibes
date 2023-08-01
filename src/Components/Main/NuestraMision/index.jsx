@@ -14,6 +14,7 @@ const BoxMision = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 6rem;
     width: 100%;
     height: fit-content;
     background-color: #D6D582;
@@ -21,6 +22,7 @@ const BoxMision = styled.div`
 
     @media (max-width: 800px) {
         box-shadow: none;
+        padding-bottom: 3rem;
         gap:.5rem;
     }
 `
@@ -50,13 +52,14 @@ const Titulo = styled.h1`
     color: #464646;
     font-size: 40px;
     font-weight: 300;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 3rem;
     @media (max-width: 800px) {
         text-align: center;
         width: auto;
         font-size: 1.5rem;
         padding: 0 2rem;
+        font-weight: 400;
     }
 `
 
@@ -69,13 +72,13 @@ const Parrafo = styled.p`
     color: #FFF;
     text-align: center;
     font-size: 20px;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 800px) {
         width: auto;
         margin: 1.5rem 0;
         padding: 1rem 2rem;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 `
 
@@ -172,9 +175,10 @@ const TCuadro = styled.h1`
     color: #464646;
     text-align: center;
     font-size: 30px;
-    font-family: Manrope;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     margin-top: 6rem;
+    margin-bottom: 1.5rem;
 
     @media (max-width: 800px) {
         font-size: 26px;
@@ -184,8 +188,8 @@ const TCuadro = styled.h1`
 const PCuadro = styled.p`
     color: #464646;
     text-align: center;
-    font-size: 18px;
-    font-family: Manrope;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     margin: 0 2rem;
 
     @media (max-width: 800px) {
@@ -203,9 +207,9 @@ const Boton = styled.button`
     width: 19rem;
     height: 3rem;
     font-size: 1rem;
-    font-weight: 400;
-    font-family: Manrope;
-    letter-spacing: 2.56px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
     color: #ffffff;
     cursor: pointer;
     &:hover {

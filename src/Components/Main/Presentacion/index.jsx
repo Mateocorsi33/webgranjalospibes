@@ -23,9 +23,7 @@ const BoxCuerpo = styled.div`
 const TituloPortada = styled.h1`
     display: none;
     flex-direction: column;
-    color: #464646;
-    font-size: 40px;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -33,9 +31,10 @@ const TituloPortada = styled.h1`
     @media (max-width: 800px) {
         display: flex;
         width: 90%;
-        font-size: 3.5rem;
-        color: #464646;
+        color: #557153;
+        font-size: 3rem;
         z-index: 100;
+        font-weight: 600;
         margin-top: 1.5rem;
         padding-bottom: 1.5rem;
     }
@@ -112,20 +111,21 @@ const Titu = styled.h1`
     display: flex;
     width: 36rem;
     flex-direction: column;
-    color: #464646;
-    font-size: 2.125rem;
-    font-weight: 400;
-    font-family: Manrope;
-    line-height: 2.625rem;
+    color: #7D8F69;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5rem;
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        border-top: 4px solid #D6D582;
-        padding-top: 1.5rem;
+        border-top: 4px solid #A9AF7E;
+        padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.4rem;
-        color: #D6D582;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #557153;
         font-weight: 600;
         text-align: center;
     }
@@ -136,20 +136,21 @@ const Titu2 = styled.h1`
     width: 36rem;
     flex-direction: column;
     text-align: end;
-    color: #464646;
-    font-size: 2.125rem;
-    font-weight: 400;
-    font-family: Manrope;
-    line-height: 2.625rem;
+    color: #7D8F69;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.5rem;
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        border-top: 4px solid #D6D582;
-        padding-top: 1.5rem;
+        border-top: 4px solid #A9AF7E;
+        padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.4rem;
-        color: #D6D582;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #557153;
         font-weight: 600;
         text-align: center;
     }
@@ -161,14 +162,17 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #464646;
-    font-size: 1.2rem;
-    font-family: Manrope;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
         width: 90%;
         font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
         letter-spacing: 0;
         text-align: center;
     }
@@ -181,14 +185,17 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #464646;
-    font-size: 1.2rem;
-    font-family: Manrope;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
     letter-spacing: 0.9px;
 
     @media (max-width: 800px) {
         width: 90%;
         font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
         letter-spacing: 0;
         text-align: center;
     }
@@ -234,18 +241,19 @@ const GifM = styled.img`
 
 
 const STRONG = styled.h1`
-    color: #464646;
-    font-weight: 600;
+    color: #D6D582;
+    font-weight: 800;
     font-size: 36px;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: flex-start;
     }
 `
 
 const Presentacion = () => {
+
     return (
         <BoxCuerpo>
                 <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>

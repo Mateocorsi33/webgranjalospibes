@@ -32,9 +32,9 @@ const Titulo = styled.h1`
     color: #FFF;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
     font-size: 5.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 0.02em;
 
@@ -148,11 +148,10 @@ const TituPrincipal = styled.h1`
     justify-content: center;
     color: #D6D582;
     font-size: 2.5rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 2px;
     margin: 1rem 10%;
     
     @media (max-width: 800px) {
@@ -174,7 +173,7 @@ const Encabe = styled.h2`
     color: #464646;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
     font-size: 2.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -199,7 +198,7 @@ const Parrafo = styled.p`
     flex-direction: column;
     color: #464646;
     font-size: 1.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -219,7 +218,7 @@ const Parrafo2 = styled.p`
     flex-direction: column;
     color: #ffffff;
     font-size: 1.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -248,7 +247,7 @@ const Fotos = styled.img`
 const Strong = styled.strong`
     color: #464646;
     font-size: 1.4rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     @media (max-width: 800px) {

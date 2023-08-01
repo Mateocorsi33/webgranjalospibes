@@ -11,7 +11,7 @@ const BoxLogo = styled.div`
     align-items: center;
     width: 15%;
     height: 4.5rem;
-    background-color: #586E66;
+    background-color: #557153;
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-evenly;
@@ -30,8 +30,8 @@ const BoxImgText = styled.div`
     }
 `
 const ImgLogo = styled.img`
-    width: 3rem;
-    height: 3rem;
+    width: 2.7rem;
+    height: 2.7rem;
     border-radius: 100%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 
@@ -40,7 +40,7 @@ const ImgLogo = styled.img`
     }
 `
 const DivText = styled.div`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
 
     @media (max-width: 800px) {
@@ -88,10 +88,10 @@ const BotonMenu = styled.button`
         display: flex;
         justify-content:center;
         align-items: center;
-        background-color: #586E66;
+        background-color: #557153;
         border-radius: 10px;
-        width: 3rem;
-        height: 2rem;
+        width: 2rem;
+        height: 1rem;
         margin: 1rem;
         border: none;
         font-family: Manrope;
@@ -111,8 +111,8 @@ const BotonMenu = styled.button`
 const ImgMenu = styled.img`
     display: flex;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
 
     &:hover {
             transition: .3s;

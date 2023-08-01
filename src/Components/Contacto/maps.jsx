@@ -73,23 +73,24 @@ const ImgMapa = styled.img`
 `
 
 const Titulo = styled.h1`
-    color: #000;
+    color: #557153;
     text-align: center;
-    font-size: 1.7rem;
-    font-family: Manrope;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin: 1rem 0 0 0;
+    padding-inline: .5rem;
 `
 
 const Parrafo = styled.p`
     color: #464646;
     text-align: center;
-    font-size: 1.3rem;
-    font-family: Manrope;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     margin: 0.3rem 0 1rem 0;
     width: 80%;
@@ -98,7 +99,7 @@ const Parrafo = styled.p`
 const LinkMapa = styled.a`
     color: #F58220;
     font-size: 1.2rem;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;

@@ -23,14 +23,14 @@ const DivTexto = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 1rem 6rem;
+    margin: 2rem 6rem;
     gap: 8rem;
 
     @media (max-width: 800px) {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
     }
 `
 
@@ -97,7 +97,7 @@ const Redes = styled.img`
 `
 
 const Titulos = styled.h1`
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 500;
     color: #D6D582;
@@ -109,7 +109,7 @@ const Titulos = styled.h1`
 const Texto = styled.p`
     width: 17rem;
     margin: 0.3rem 0;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 0.66px;
@@ -121,7 +121,7 @@ const Texto = styled.p`
 const Copy = styled.div`
     display: flex;
     margin: 0.8rem 0;
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 0.66px;
@@ -139,7 +139,7 @@ const UbiLink = styled.a`
 `
 
 const StyledLink = styled(Link)`
-    font-family: Manrope;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 300;
     color: #ffffff;
