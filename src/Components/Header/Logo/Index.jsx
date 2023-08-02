@@ -142,8 +142,14 @@ const DivBarra1 = styled.div`
         display: flex;
         flex-direction: column;
         width: auto;
-        gap:0.5rem;
-        margin: 0.5rem auto;
+        position: absolute;
+        background-color: #ffffff;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+        margin: 0;
+        padding: 1rem 0;
+        border-bottom: 2px solid #557153;
     }
 `
 
@@ -171,7 +177,7 @@ const StyledLink = styled(Link)`
         align-items:center; 
         font-size:.8rem; 
         width:auto; 
-        height:auto; 
+        height:auto;
     }
 `;
 
