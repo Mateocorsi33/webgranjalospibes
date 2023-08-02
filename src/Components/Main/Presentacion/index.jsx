@@ -4,6 +4,25 @@ import foto from "../../../assest/cuatro.jpg";
 import foto2 from "../../../assest/siete.jpg";
 import foto3 from "../../../assest/tres.jpg";
 import foto4 from "../../../assest/14.jpg";
+import fondo from "../../../assest/fondo9.png";
+
+
+const Fondo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(${fondo});
+    background-attachment: fixed;
+    background-size: cover;
+    width:100%;
+    height: auto;
+    z-index: -1;
+
+  @media (max-width: 800px) {
+      background-attachment: fixed;
+  }
+`
 
 const BoxCuerpo = styled.div`
     display: flex;
@@ -12,7 +31,6 @@ const BoxCuerpo = styled.div`
     align-items: center;
     margin-top: 3.5rem;
     width: 80%;
-    background-color: #ffffff;
 
     @media (max-width: 800px) {
         margin-top:1rem;
@@ -45,8 +63,8 @@ const DivContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8rem;
-    gap: 5rem;
+    padding-bottom: 11rem;
+    gap: 9rem;
 
     @media (max-width: 800px) {
         flex-direction: column;
@@ -62,8 +80,8 @@ const DivContent2 = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8rem;
-    gap: 5rem;
+    padding-bottom: 11rem;
+    gap: 9rem;
     @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -161,17 +179,18 @@ const Parra = styled.p`
     width: 36rem;
     flex-direction: column;
     margin: 0;
-    color: #464646;
-    font-size: 1rem;
+    color: #557153;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2rem;
     letter-spacing: 0.9px;
+    padding-top: .5rem;
 
     @media (max-width: 800px) {
         width: 90%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
         text-align: center;
@@ -184,17 +203,19 @@ const Parra2 = styled.p`
     flex-direction: column;
     text-align: end;
     margin: 0;
-    color: #464646;
-    font-size: 1rem;
+    color: #557153;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 2rem;
     letter-spacing: 0.9px;
+    padding-top: .5rem;
+
 
     @media (max-width: 800px) {
         width: 90%;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
         text-align: center;
@@ -204,10 +225,10 @@ const Parra2 = styled.p`
 const Gif = styled.img`
     width: 26rem;
     height: 26rem;
-    border-radius: 50%;
+    border-radius: 5px;
     margin: 0;
-    opacity: 80%;
-    box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
+    /* opacity: 80%; */
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
         display: none;
@@ -217,10 +238,10 @@ const Gif = styled.img`
 const Gif2 = styled.img`
     width: 26.34rem;
     height: 26.34rem;
-    border-radius: 50%;
+    border-radius: 5px;
     margin: 0;
-    opacity: 80%;
-    box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
+    /* opacity: 80%; */
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
         display: none;
@@ -255,50 +276,51 @@ const STRONG = styled.h1`
 const Presentacion = () => {
 
     return (
-        <BoxCuerpo>
-                <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>
-            <DivContent>
-                <DivText>
-                    <Titu>GRANJA LOS PIBES: CONTRIBUYENDO A LA CONCIENCIACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
-                    <GifM src={foto}/>
-                    <Parra> 
-                    El centro de rescate Granja Los Pibes, ha asumido la importante tarea de concientizar a la comunidad sobre los cuidados y conservación de la flora y fauna de nuestra region. A través de su incansable labor, el centro busca preservar la riqueza y la biodiversidad que nos rodea.
-                    Su enfoque principal radica en la conservación de la flora y fauna autóctonas, consideradas tesoros vivos de nuestra región.
-                    </Parra>
-                </DivText>
-                <Gif src={foto}/>
-            </DivContent>
-            <DivContent2>
-                <Gif2 src={foto2}/>
-                <DivText2>
-                    <Titu2>APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
-                    <GifM src={foto2}/>
-                    <Parra2> 
-                    En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial. A través de acciones de rescate, estudios veterinarios y liberaciones oportunas, trabajamos incansablemente para asegurar el bienestar y la supervivencia de los animales silvestres.
-                    </Parra2>
-                </DivText2>
-            </DivContent2>
-            <DivContent>
-                <DivText>
-                    <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
-                    <GifM src={foto3}/>
-                    <Parra>
-                    El mascotismo, la expansión de la frontera urbana-agrícola y el tráfico ilegal de animales representan los principales focos de conflicto que amenazan nuestra valiosa flora y fauna. En respuesta a estos desafíos, consideramos de vital importancia concientizar y unir esfuerzos para proteger y preservar nuestro hábitat natural. 
-                    </Parra>
-                </DivText>
-                <Gif src={foto3}/>
-            </DivContent>
-            <DivContent2>
-                <Gif2 src={foto4}/>
-                <DivText2>
-                    <Titu2><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
-                    <GifM src={foto4}/>
-                    <Parra2>
-                    El centro de rescate desempeña un papel esencial al funcionar como un centro de día para niños y niñas en situaciones de vulnerabilidad. Se busca brindar un apoyo integral a través de actividades educativas, talleres, charlas y servicios de comedor. Además, se compromete en facilitar el acceso a los centros educativos correspondientes. De esta manera, se convierte en un punto de encuentro para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor. 
-                    </Parra2>
-                </DivText2>
-            </DivContent2>
-        </BoxCuerpo>
+        <Fondo>
+            <BoxCuerpo>
+                    <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>
+                <DivContent>
+                    <DivText>
+                        <Titu>CONTRIBUYENDO A LA CONCIENCIACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
+                        <GifM src={foto}/>
+                        <Parra> 
+                        HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD SOBRE LOS CUIDADOS Y CONSERVACIÓN. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
+                        </Parra>
+                    </DivText>
+                    <Gif src={foto}/>
+                </DivContent>
+                <DivContent2>
+                    <Gif2 src={foto2}/>
+                    <DivText2>
+                        <Titu2>APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
+                        <GifM src={foto2}/>
+                        <Parra2> 
+                        A TRAVÉS DE ACCIONES DE RESCATE, ESTUDIOS VETERINARIOS Y LIBERACIONES, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL, PARA ASEGURAR EL BIENESTAR Y LA SUPERVIVENCIA DE LOS ANIMALES SILVESTRES.
+                        </Parra2>
+                    </DivText2>
+                </DivContent2>
+                <DivContent>
+                    <DivText>
+                        <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
+                        <GifM src={foto3}/>
+                        <Parra>
+                        EN RESPUESTA A ESTOS DESAFÍOS, QUE REPRESENTAN LOS PRINCIPALES FOCOS DE CONFLICTO, CONSIDERAMOS DE VITAL IMPORTANCIA CONCIENTIZAR Y UNIR ESFUERZOS PARA PROTEGER Y PRESERVAR NUESTRO HÁBITAT NATURAL.
+                        </Parra>
+                    </DivText>
+                    <Gif src={foto3}/>
+                </DivContent>
+                <DivContent2>
+                    <Gif2 src={foto4}/>
+                    <DivText2>
+                        <Titu2><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
+                        <GifM src={foto4}/>
+                        <Parra2>
+                        FUNCIONAMIENTO DEL CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD. SE BUSCA BRINDAR UN APOYO INTEGRAL, PARA EL CRECIMIENTO Y DESARROLLO DE LOS NIÑOS Y NIÑAS, PROPORCIONÁNDOLES OPORTUNIDADES EDUCATIVAS PARA UN FUTURO MEJOR.
+                        </Parra2>
+                    </DivText2>
+                </DivContent2>
+            </BoxCuerpo>
+        </Fondo>
     )
 }
 

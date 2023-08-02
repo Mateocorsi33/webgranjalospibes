@@ -85,7 +85,7 @@ const Titulo = styled.h1`
 `
 
 const Parrafo = styled.p`
-    color: #464646;
+    color: #557153;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;

@@ -47,7 +47,7 @@ const DivCont = styled.div`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        margin: 1.5rem 1rem;
+        margin: 5rem 1rem;
         gap: 2rem;
     }
 `
@@ -82,7 +82,7 @@ const Parrafo = styled.p`
     width: 100%;
     height: auto;
     flex-direction: column;
-    color: #464646;
+    color: #557153;
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -108,8 +108,8 @@ const Contacto = () => {
             </DivCont>
             <DivCont>
                 <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
-                <Parrafo><strong>Lunes a Domingo de 10:00 - 18:00 hs</strong></Parrafo>
-                <Parrafo>Las entradas para visitar el complejo tiene un valor de <strong>¡$500 por persona!</strong> Se pueden adquirir en el mismo lugar. <strong>¡Estacionamiento libre y gratuito!</strong></Parrafo>
+                <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:00 HS</strong></Parrafo>
+                <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>¡$500 POR PERSONA!</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
             </DivCont>
             <DivCont>
                 <Encabe>ENCONTRANOS EN</Encabe>

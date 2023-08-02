@@ -71,7 +71,7 @@ const DivEncabezado = styled.section`
 
     @media (max-width: 800px) {
         padding: 3.3rem 0;
-        gap: 2.8rem;
+        gap: 1.5rem;
     }
 `
 
@@ -83,10 +83,10 @@ const DivCentro =styled.div`
     background-color: #D7D67F;
     width: 100%;
     height: auto;
-    padding: 3rem 0;
-    gap: 2rem;
+    padding: 4rem 0 6rem 0;
+    gap: 3.5rem;
     @media (max-width: 800px) {
-        padding: 2.5rem 0 3.6rem 0;
+        padding: 4rem 0 6rem 0;
         gap: 2.8rem;
     }
 `
@@ -102,8 +102,8 @@ const DivAsociacion =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2.5rem 0 3.6rem 0;
-        gap: 2.8rem;
+        padding: 4rem 0 3.6rem 0;
+        gap: 2rem;
     }
 `
 
@@ -118,7 +118,7 @@ const DivHumedal =styled.div`
     padding: 3rem 0;
     gap: 2rem;
     @media (max-width: 800px) {
-        padding: 2rem 0 0 0;
+        padding: 4rem 0 0 0;
         gap: 2.8rem;
     }
 `
@@ -136,7 +136,7 @@ const DivCierre = styled.div`
     @media (max-width: 800px) {
         align-items: center;
         justify-content:center;
-        margin-top: 2rem;
+        margin-top: 3rem;
         padding: 2rem 0;
         gap: 1rem;
     }
@@ -152,7 +152,7 @@ const TituPrincipal = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 1rem 10%;
+    margin: 3rem 10% 0 10%;
     
     @media (max-width: 800px) {
         font-size: 2.3rem;
@@ -186,7 +186,7 @@ const Encabe = styled.h2`
         font-size: 1.5rem;
         width:90%;
         margin-top: 0;
-        padding-top: 1rem;
+        padding-top: 2.5rem;
     }
 `
 
@@ -196,13 +196,12 @@ const Parrafo = styled.p`
     width: 80%;
     height: auto;
     flex-direction: column;
-    color: #464646;
-    font-size: 1.2rem;
+    color: #557153;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 1rem 10% 3rem 10%;
+    font-weight: 500;
+    line-height: 1.8rem;
+    margin: 1rem 10% 2rem 10%;
 
     @media (max-width: 800px) {
         font-size: 1rem;
@@ -217,11 +216,11 @@ const Parrafo2 = styled.p`
     height: auto;
     flex-direction: column;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 500;
+    line-height: 1.8rem;
     margin: 0 10%;
 
     @media (max-width: 800px) {
@@ -238,9 +237,9 @@ const Fotos = styled.img`
     border-radius: 2px;
 
 @media (max-width: 800px) {
-    width: 100%;
-    height: auto;
-    margin: 1rem 0 0 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
     }   
 `
 
@@ -275,38 +274,40 @@ const QuienesSomos = () => {
             <DivQS>
                 <DivEncabezado>
                     <TituPrincipal>GRANJA LOS PIBES</TituPrincipal>
-                    <Parrafo>Ubicado en el corazón de nuestra región, se encuentra Granja Los Pibes, un faro de esperanza y acción, que trabaja incansablemente para construir un futuro mejor y poder generar un impacto positivo en la comunidad. La granja aborda como principales problemáticas la conservación ambiental y el desarrollo social de niños y niñas en situaciones de vulnerabilidad.</Parrafo>
+                    <Parrafo>
+                        UBICADO EN EL CORAZÓN DE NUESTRA REGIÓN, SE ENCUENTRA GRANJA LOS PIBES, UN FARO DE ESPERANZA Y ACCIÓN, QUE TRABAJA INCANSABLEMENTE PARA CONSTRUIR UN FUTURO MEJOR Y PODER GENERAR UN IMPACTO POSITIVO EN LA COMUNIDAD. LA GRANJA ABORDA COMO PRINCIPALES PROBLEMÁTICAS LA CONSERVACIÓN AMBIENTAL Y EL DESARROLLO SOCIAL DE NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD.
+                    </Parrafo>
                     <Video autoPlay muted loop>
                         <source src={video} type="video/mp4" />
                     </Video>
-                    <Parrafo>Bajo su manto la granja cuenta con el<Strong>Centro de Rescate de Animales Silvestres y la Asociación Civil Casa del Niño en la Calle,</Strong>dos iniciativas complementarias donde convergen el desarrollo social y la conservación ambiental.</Parrafo>
+                    <Parrafo>BAJO SU MANTO LA GRANJA CUENTA CON EL<Strong>CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE,</Strong>DOS INICIATIVAS COMPLEMENTARIAS DONDE CONVERGEN EL DESARROLLO SOCIAL Y LA CONSERVACIÓN AMBIENTAL.</Parrafo>
                 </DivEncabezado>
                 <DivCentro>
-                    <Encabe>Centro de Rescate de Animales Silvestres</Encabe>
-                    <Parrafo2>El centro se dedica a la protección y conservación de la flora y fauna nativa. Su labor incansable se enfoca en rescatar y rehabilitar animales víctimas del tráfico ilegal, del mascotismo y la creciente expansión urbana y agrícola promoviendo la conciencia sobre la importancia de preservar nuestra biodiversidad. Mediante estudios veterinarios, cuidados especializados y liberaciones responsables, el centro busca garantizar que los animales recuperados regresen a su hábitat natural de forma exitosa.</Parrafo2>
+                    <Encabe>CENTRO DE RESCATE DE ANIMALES SILVESTRES</Encabe>
+                    <Parrafo2>EL CENTRO SE DEDICA A LA PROTECCIÓN Y CONSERVACIÓN DE LA FLORA Y FAUNA NATIVA. SU LABOR INCANSABLE SE ENFOCA EN RESCATAR Y REHABILITAR ANIMALES VÍCTIMAS DEL TRÁFICO ILEGAL, DEL MASCOTISMO Y LA CRECIENTE EXPANSIÓN URBANA Y AGRÍCOLA PROMOVIENDO LA CONCIENCIA SOBRE LA IMPORTANCIA DE PRESERVAR NUESTRA BIODIVERSIDAD. MEDIANTE ESTUDIOS VETERINARIOS, CUIDADOS ESPECIALIZADOS Y LIBERACIONES RESPONSABLES, EL CENTRO BUSCA GARANTIZAR QUE LOS ANIMALES RECUPERADOS REGRESEN A SU HÁBITAT NATURAL DE FORMA EXITOSA.</Parrafo2>
                     <Fotos src={foto4}/>
-                    <Parrafo2>En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial.</Parrafo2>
-                    <Parrafo2>Nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. Realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. Además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados.</Parrafo2>
+                    <Parrafo2>EN UN ESFUERZO POR PRESERVAR LA VIDA SILVESTRE Y SU HÁBITAT NATURAL, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL.</Parrafo2>
+                    <Parrafo2>NUESTRO EQUIPO ESPECIALIZADO ESTÁ PREPARADO PARA ATENDER SITUACIONES DE EMERGENCIA RELACIONADAS CON ANIMALES SILVESTRES EN PELIGRO. REALIZAMOS RESCATES CUIDADOSOS Y BRINDAMOS LA ATENCIÓN NECESARIA, OFRECIENDO UN REFUGIO SEGURO Y LOS TRATAMIENTOS MÉDICOS ADECUADOS PARA SU REHABILITACIÓN. ADEMÁS, LLEVAMOS A CABO ESTUDIOS VETERINARIOS EXHAUSTIVOS PARA EVALUAR EL ESTADO DE SALUD DE LOS ANIMALES RESCATADOS.</Parrafo2>
                     <Fotos src={foto5}/>
-                    <Parrafo2>Nuestro objetivo principal es lograr que los animales rescatados puedan regresar a su hábitat natural lo antes posible. Trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. Esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo2>
+                    <Parrafo2>NUESTRO OBJETIVO PRINCIPAL ES LOGRAR QUE LOS ANIMALES RESCATADOS PUEDAN REGRESAR A SU HÁBITAT NATURAL LO ANTES POSIBLE. TRABAJAMOS EN ESTRECHA COLABORACIÓN CON EXPERTOS EN CONSERVACIÓN PARA DETERMINAR EL MOMENTO Y EL LUGAR ADECUADOS PARA SU LIBERACIÓN. ESTO NOS ASEGURA QUE TENGAN LAS MEJORES OPORTUNIDADES DE REINTEGRARSE A SU ENTORNO Y CONTINUAR SU CICLO DE VIDA NATURAL.</Parrafo2>
                 </DivCentro>
                 <DivAsociacion>
-                <Encabe>La Asociación Civil Casa del Niño en la Calle</Encabe>
-                    <Parrafo>La asociación trabaja desde hace más de 30 años para brindar respuestas a las necesidades de niños y familias en situación de vulnerabilidad y exclusión, priorizando la promoción y protección de los derechos del niño. A lo largo de su trayectoria, han atendido a más de 1000 niños en diferentes modalidades, como el Hogar Convivencial, Casa de los Niños y Centro de Desarrollo Infantil.</Parrafo>
+                <Encabe>LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE</Encabe>
+                    <Parrafo>LA ASOCIACIÓN TRABAJA DESDE HACE MÁS DE 30 AÑOS PARA BRINDAR RESPUESTAS A LAS NECESIDADES DE NIÑOS Y FAMILIAS EN SITUACIÓN DE VULNERABILIDAD Y EXCLUSIÓN, PRIORIZANDO LA PROMOCIÓN Y PROTECCIÓN DE LOS DERECHOS DEL NIÑO. A LO LARGO DE SU TRAYECTORIA, HAN ATENDIDO A MÁS DE 1000 NIÑOS EN DIFERENTES MODALIDADES, COMO EL HOGAR CONVIVENCIAL, CASA DE LOS NIÑOS Y CENTRO DE DESARROLLO INFANTIL.</Parrafo>
                     <Fotos src={foto8}/>
-                    <Parrafo>Muchos de los niños que fueron atendidos por la asociación continúan trabajando en el lugar, desempeñándose como educadores, constructores, personal de mantenimiento y atención en el Centro de Rescate de Animales Silvestres.</Parrafo>
+                    <Parrafo>MUCHOS DE LOS NIÑOS QUE FUERON ATENDIDOS POR LA ASOCIACIÓN CONTINÚAN TRABAJANDO EN EL LUGAR, DESEMPEÑÁNDOSE COMO EDUCADORES, CONSTRUCTORES, PERSONAL DE MANTENIMIENTO Y ATENCIÓN EN EL CENTRO DE RESCATE DE ANIMALES SILVESTRES.</Parrafo>
                     <Fotos src={foto1}/>
-                    <Parrafo>Además de su función ambiental, desempeña un papel crucial como centro de día para niños y niñas en situaciones de vulnerabilidad brindando apoyo y oportunidades. A través de programas educativos, talleres y una atención integral, se busca mejorar su calidad de vida, promover su desarrollo personal y empoderarlos para un futuro más equitativo. Además, se enfoca en fortalecer los lazos con los centros educativos y proporcionar un entorno seguro y acogedor.</Parrafo>
+                    <Parrafo>ADEMÁS DE SU FUNCIÓN AMBIENTAL, DESEMPEÑA UN PAPEL CRUCIAL COMO CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD BRINDANDO APOYO Y OPORTUNIDADES. A TRAVÉS DE PROGRAMAS EDUCATIVOS, TALLERES Y UNA ATENCIÓN INTEGRAL, SE BUSCA MEJORAR SU CALIDAD DE VIDA, PROMOVER SU DESARROLLO PERSONAL Y EMPODERARLOS PARA UN FUTURO MÁS EQUITATIVO. ADEMÁS, SE ENFOCA EN FORTALECER LOS LAZOS CON LOS CENTROS EDUCATIVOS Y PROPORCIONAR UN ENTORNO SEGURO Y ACOGEDOR.</Parrafo>
                 </DivAsociacion>
                 <DivHumedal>
-                    <Encabe>Humedal - Los Coipos</Encabe>
-                    <Parrafo2>La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. Se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. Se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales.</Parrafo2>
+                    <Encabe>HUMEDAL - LOS COIPOS</Encabe>
+                    <Parrafo2>LA ASOCIACIÓN VE LA OPORTUNIDAD DE CONTRIBUIR A LA CONSERVACIÓN Y PROTECCIÓN DEL HUMEDAL UBICADO EN EL KILÓMETRO 139 DE LA RUTA NACIONAL 226. SE LLEVA A CABO UNA INVESTIGACIÓN Y MONITOREO DE LA DIVERSIDAD DE ESPECIES PRESENTES, RESPETANDO LA CONSERVACIÓN DE LA BIODIVERSIDAD. SE HA CONSTRUIDO UN SENDERO AMBIENTAL PARA QUE LAS ESCUELAS DE LA REGIÓN CONOZCAN LA IMPORTANCIA Y PROBLEMÁTICAS DE ESTOS ESPACIOS NATURALES.</Parrafo2>
                     <Fotos src={foto6}/>
-                    <Parrafo2>También se implementa un programa socioeducativo para formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. Los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales.</Parrafo2>
+                    <Parrafo2>TAMBIÉN SE IMPLEMENTA UN PROGRAMA SOCIOEDUCATIVO PARA FORMACIÓN Y DIVULGACIÓN SOBRE LA CONSERVACIÓN Y LA IMPORTANCIA DE ESTOS AMBIENTES, A TRAVÉS DE CHARLAS EN LAS ESCUELAS DE LA CIUDAD. LOS PROFESIONALES DE LA ASOCIACIÓN, CON SU EXPERIENCIA EN BIOLOGÍA, VETERINARIA, MANEJO DE FAUNA Y CONSERVACIÓN, ESTÁN COMPROMETIDOS EN DESPERTAR EL INTERÉS DE LOS ESTUDIANTES HACIA EL CUIDADO Y PROTECCIÓN DE LOS AMBIENTES NATURALES.</Parrafo2>
                     <Fotos src={foto2}/>
                 </DivHumedal>
                 <DivCierre>
-                    <Parrafo><Strong>En Granja los Pibes, la esperanza y la acción se entrelazan para crear un impacto positivo en la sociedad y en el medio ambiente. Es un llamado a unir fuerzas, a generar conciencia y a trabajar juntos para construir un mundo más equitativo, sostenible y lleno de oportunidades para todos. Granja los Pibes nos muestra que, con compromiso y dedicación, podemos marcar la diferencia y dejar un legado duradero para las generaciones venideras.</Strong></Parrafo>
+                    <Parrafo><Strong>EN GRANJA LOS PIBES, LA ESPERANZA Y LA ACCIÓN SE ENTRELAZAN PARA CREAR UN IMPACTO POSITIVO EN LA SOCIEDAD Y EN EL MEDIO AMBIENTE. ES UN LLAMADO A UNIR FUERZAS, A GENERAR CONCIENCIA Y A TRABAJAR JUNTOS PARA CONSTRUIR UN MUNDO MÁS EQUITATIVO, SOSTENIBLE Y LLENO DE OPORTUNIDADES PARA TODOS. GRANJA LOS PIBES NOS MUESTRA QUE, CON COMPROMISO Y DEDICACIÓN, PODEMOS MARCAR LA DIFERENCIA Y DEJAR UN LEGADO DURADERO PARA LAS GENERACIONES VENIDERAS.</Strong></Parrafo>
                 </DivCierre>
             </DivQS>
         </>
