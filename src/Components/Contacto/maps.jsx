@@ -17,7 +17,7 @@ const DivMapas = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0;
+        gap: 1rem;
     }
 `
 
@@ -32,13 +32,10 @@ const DivCard = styled.div`
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 3rem 0;
-    &:hover {
-        transform: scale(1.1);
-    }
     
     @media (max-width: 800px) {
-        width: 90%;
-        margin: 1rem 0;
+        width: 75%;
+        margin: 2rem 0;
     }
 `
 
@@ -118,20 +115,20 @@ export default function Maps() {
     return(
         <DivMapas>
             <DivCard>
-                <DivGranja>
-                    <ImgMapa src={mapaGranja}/>
-                    <Titulo>Granja Los Pibes:</Titulo>
-                    <Parrafo>Pje El Centinela, Tandil, Buenos Aires.</Parrafo>
-                    <LinkMapa href="https://goo.gl/maps/NsSM96JGPmbQ9DVY6">Ver en mapa</LinkMapa>
-                </DivGranja>
+                    <DivGranja>
+                        <ImgMapa src={mapaGranja}/>
+                        <Titulo>Granja Los Pibes:</Titulo>
+                        <Parrafo>Pje El Centinela, Tandil, Buenos Aires.</Parrafo>
+                        <LinkMapa href="https://goo.gl/maps/NsSM96JGPmbQ9DVY6">Ver en mapa</LinkMapa>
+                    </DivGranja>
             </DivCard>
             <DivCard>
-                <DivHumedal>
-                    <ImgMapa src={mapaHumedal}/>
-                    <Titulo>Humedal - Los Coipos:</Titulo>
-                    <Parrafo>Km 139 de la ruta Nacional 226.</Parrafo>
-                    <LinkMapa href="https://goo.gl/maps/gnQSLhbHuYQH8ZuA8">Ver en mapa</LinkMapa>
-                </DivHumedal>
+                    <DivHumedal>
+                        <ImgMapa src={mapaHumedal}/>
+                        <Titulo>Humedal - Los Coipos:</Titulo>
+                        <Parrafo>Km 139 de la ruta Nacional 226.</Parrafo>
+                        <LinkMapa href="https://goo.gl/maps/gnQSLhbHuYQH8ZuA8">Ver en mapa</LinkMapa>
+                    </DivHumedal>
             </DivCard>
         </DivMapas>
     )

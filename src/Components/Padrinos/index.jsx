@@ -68,7 +68,7 @@ const Encabe = styled.h1`
     flex-direction: column;
     color: #D6D582;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -78,7 +78,7 @@ const Encabe = styled.h1`
     border-top: 2px solid #D6D582;
 
     @media (max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 `
 
@@ -93,12 +93,14 @@ const Parrafo = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5rem;
     margin: 0;
+    padding: 1.5rem;
 
     @media (max-width: 800px) {
         text-align: center;
-        font-size: 1rem;
+        font-size: .9rem;
+        padding: 0;
     }
 `
 
@@ -125,7 +127,7 @@ const Boton = styled.button`
         display: flex;
         align-items: center;
         justify-content:center;
-        width: 100%;
+        width: 75%;
         margin: 1rem;
     }
 `
@@ -150,7 +152,7 @@ const Strong = styled.strong`
     width: 100%;
     height: auto;
     flex-direction: column;
-    color: #464646;
+    color: #557153;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -161,7 +163,7 @@ const Strong = styled.strong`
     @media (max-width: 800px) {
         text-align: center;
         margin-bottom:0.5rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 `
 
@@ -193,23 +195,23 @@ const Padrinos = () => {
                 <Titulo>Padrinos</Titulo>
             </BackG>
             <DivPadrinos>
-                <Encabe>¡Sé un Padrino de la Vida Salvaje y de la Transformación Social!</Encabe>
-                <Parrafo>En Granja Los Pibes, trabajamos incansablemente para brindar apoyo y protección a niños y familias en situación de vulnerabilidad. Nuestro compromiso con la promoción de los derechos del niño y la conservación de la fauna silvestre nos impulsa a seguir adelante, pero necesitamos de tu ayuda para lograrlo.</Parrafo>
+                <Encabe>¡SÉ UN PADRINO DE LA VIDA SALVAJE Y DE LA TRANSFORMACIÓN SOCIAL!</Encabe>
+                <Parrafo>EN GRANJA LOS PIBES, TRABAJAMOS INCANSABLEMENTE PARA BRINDAR APOYO Y PROTECCIÓN A NIÑOS Y FAMILIAS EN SITUACIÓN DE VULNERABILIDAD. NUESTRO COMPROMISO CON LA PROMOCIÓN DE LOS DERECHOS DEL NIÑO Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE NOS IMPULSA A SEGUIR ADELANTE, PERO NECESITAMOS DE TU AYUDA PARA LOGRARLO.</Parrafo>
                 <CarouselImg/>
-                <Parrafo>Hoy te invitamos a ser parte de nuestra campaña de padrinos, una oportunidad única para marcar la diferencia en la vida de estos niños y contribuir a la protección de nuestra invaluable biodiversidad.</Parrafo>
-                <Encabe>¿Qué implica ser un Padrino?</Encabe>
-                <Parrafo>Como padrino, tu donación económica sea por única vez o de manera mensual se convertirá en un pilar fundamental para el sostenimiento de nuestro Centro de Rescate de Animales Silvestres y La Asociación Civil Casa del Niño en la Calle . Con tu generosidad, podremos:</Parrafo>
-                <Parrafo><Strong>Brindar cuidado y atención a las especies rescatadas:</Strong> Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
+                <Parrafo>HOY TE INVITAMOS A SER PARTE DE NUESTRA CAMPAÑA DE PADRINOS, UNA OPORTUNIDAD ÚNICA PARA MARCAR LA DIFERENCIA EN LA VIDA DE ESTOS NIÑOS Y CONTRIBUIR A LA PROTECCIÓN DE NUESTRA INVALUABLE BIODIVERSIDAD.</Parrafo>
+                <Encabe>¿QUÉ IMPLICA SER UN PADRINO?</Encabe>
+                <Parrafo>COMO PADRINO, TU DONACIÓN ECONÓMICA SEA POR ÚNICA VEZ O DE MANERA MENSUAL SE CONVERTIRÁ EN UN PILAR FUNDAMENTAL PARA EL SOSTENIMIENTO DE NUESTRO CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE . CON TU GENEROSIDAD, PODREMOS:</Parrafo>
+                <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong> TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
                 {/* <Img src={iconoUno}/> */}
-                <Parrafo><Strong>Mejorar la calidad de vida de los niños:</Strong> Ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral.</Parrafo>
+                <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong> AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
                 {/* <Img src={iconoDos}/> */}
-                <Parrafo><Strong>Impulsar proyectos de educación ambiental:</Strong> Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad.</Parrafo>
+                <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong> CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
                 {/* <Img src={iconoTres}/> */}
-                <Encabe>¿Cómo puedes ser un Padrino?</Encabe>
-                <Parrafo><Strong>Simplemente completa nuestro formulario, donde podrás elegir la modalidad de donación que mejor se adapte a tus posibilidades.</Strong></Parrafo>
-                <Parrafo><Strong>Donación por única vez:</Strong> Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
-                <Parrafo><Strong>Donación mensual:</Strong> Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
-                <Parrafo><Strong>Conviértete en un padrino y sé parte del cambio que queremos ver en el mundo.</Strong></Parrafo>
+                <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
+                <Parrafo><Strong>SIMPLEMENTE COMPLETA NUESTRO FORMULARIO, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
+                <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
+                <Parrafo><Strong>DONACIÓN MENSUAL:</Strong> ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                <Parrafo><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
                 <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>

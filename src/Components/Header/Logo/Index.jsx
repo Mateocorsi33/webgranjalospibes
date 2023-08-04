@@ -17,6 +17,8 @@ const BoxLogo = styled.div`
         justify-content: space-evenly;
         gap: 60%;
         width: 100%;
+        height: auto;
+        padding: .3rem 0;
     }
 `
 const BoxImgText = styled.div`
@@ -30,8 +32,8 @@ const BoxImgText = styled.div`
     }
 `
 const ImgLogo = styled.img`
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 100%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
 
@@ -111,8 +113,8 @@ const BotonMenu = styled.button`
 const ImgMenu = styled.img`
     display: flex;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.2rem;
+    height: 2.2rem;
 
     &:hover {
             transition: .3s;
@@ -123,8 +125,8 @@ const ImgMenu = styled.img`
 const ImgClose = styled.img`
     display: flex;
     align-items: center;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 
     &:hover {
             transition: .3s;

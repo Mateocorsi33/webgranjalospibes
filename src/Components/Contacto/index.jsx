@@ -62,7 +62,7 @@ const Encabe = styled.h1`
     flex-direction: column;
     color: #D6D582;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -72,7 +72,7 @@ const Encabe = styled.h1`
     border-top: 2px solid #D6D582;
 
     @media (max-width: 800px) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 `
 
@@ -83,15 +83,15 @@ const Parrafo = styled.p`
     height: auto;
     flex-direction: column;
     color: #557153;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 2.5rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 2rem;
     }
 `
@@ -108,7 +108,7 @@ const Contacto = () => {
             </DivCont>
             <DivCont>
                 <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
-                <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:00 HS</strong></Parrafo>
+                <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
                 <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>¡$500 POR PERSONA!</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
             </DivCont>
             <DivCont>

@@ -13,10 +13,12 @@ const DivRedes = styled.div`
     justify-content: center;
     align-items: center;
     gap:3rem;
+    padding: 3rem 0 6rem 0;
 
     @media (max-width: 800px) {
         margin: 1rem 0 3rem 0;
         gap: 1rem;
+        padding: 0;
     }
 `
 

@@ -172,7 +172,7 @@ const Encabe = styled.h2`
     flex-direction: column;
     color: #464646;
     text-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
