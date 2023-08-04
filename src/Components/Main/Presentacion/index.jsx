@@ -176,7 +176,7 @@ const Titu2 = styled.h1`
 
 const Parra = styled.p`
     display: flex;
-    width: auto;
+    width: 36rem;
     flex-direction: column;
     margin: 0;
     color: #557153;
@@ -188,7 +188,7 @@ const Parra = styled.p`
     padding-top: .5rem;
 
     @media (max-width: 800px) {
-        width: 90%;
+        width: 95%;
         font-size: .9rem;
         line-height: 2rem;
         font-weight: 400;
@@ -199,7 +199,7 @@ const Parra = styled.p`
 
 const Parra2 = styled.p`
     display: flex;
-    width: auto;
+    width: 36rem;
     flex-direction: column;
     text-align: end;
     margin: 0;
@@ -213,7 +213,7 @@ const Parra2 = styled.p`
 
 
     @media (max-width: 800px) {
-        width: 90%;
+        width: 95%;
         font-size: .9rem;
         line-height: 2rem;
         font-weight: 400;

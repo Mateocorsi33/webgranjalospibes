@@ -59,6 +59,19 @@ const DivPadrinos = styled.div`
 `
 
 
+const DivParrafos = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    @media (max-width: 800px) {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap:2rem;
+    }
+`
+
 
 const Encabe = styled.h1`
     display: flex;
@@ -159,11 +172,13 @@ const Strong = styled.strong`
     font-weight: 600;
     line-height: normal;
     margin: 0;
+    padding-bottom: 1rem;
 
     @media (max-width: 800px) {
         text-align: center;
         margin-bottom:0.5rem;
         font-size: 1.2rem;
+        padding-bottom: 0;
     }
 `
 
@@ -201,16 +216,20 @@ const Padrinos = () => {
                 <Parrafo>HOY TE INVITAMOS A SER PARTE DE NUESTRA CAMPAÑA DE PADRINOS, UNA OPORTUNIDAD ÚNICA PARA MARCAR LA DIFERENCIA EN LA VIDA DE ESTOS NIÑOS Y CONTRIBUIR A LA PROTECCIÓN DE NUESTRA INVALUABLE BIODIVERSIDAD.</Parrafo>
                 <Encabe>¿QUÉ IMPLICA SER UN PADRINO?</Encabe>
                 <Parrafo>COMO PADRINO, TU DONACIÓN ECONÓMICA SEA POR ÚNICA VEZ O DE MANERA MENSUAL SE CONVERTIRÁ EN UN PILAR FUNDAMENTAL PARA EL SOSTENIMIENTO DE NUESTRO CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE . CON TU GENEROSIDAD, PODREMOS:</Parrafo>
-                <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong> TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
-                {/* <Img src={iconoUno}/> */}
-                <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong> AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
-                {/* <Img src={iconoDos}/> */}
-                <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong> CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
-                {/* <Img src={iconoTres}/> */}
+                <DivParrafos>
+                    <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong> TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
+                    {/* <Img src={iconoUno}/> */}
+                    <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong> AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
+                    {/* <Img src={iconoDos}/> */}
+                    <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong> CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
+                    {/* <Img src={iconoTres}/> */}
+                </DivParrafos>
                 <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
                 <Parrafo><Strong>SIMPLEMENTE COMPLETA NUESTRO FORMULARIO, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
-                <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
-                <Parrafo><Strong>DONACIÓN MENSUAL:</Strong> ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                <DivParrafos>
+                    <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
+                    <Parrafo><Strong>DONACIÓN MENSUAL:</Strong> ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                </DivParrafos>
                 <Parrafo><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
                 <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
