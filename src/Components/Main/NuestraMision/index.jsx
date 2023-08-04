@@ -295,8 +295,8 @@ const NuestraMision = (props) => {
                         <Iconos>
                             <a href='https://www.facebook.com/GranjaLosPibes/'><ImgIconos src={facebook}/></a>
                             <a href='https://instagram.com/granja_los_pibes/'><ImgIconos src={instagram}/></a>
-                            <a><ImgIconos src={youtube}/></a>
-                            <a  href="tel:+542494545992"><ImgIconos src={whatsapp}/></a>
+                            <a href='https://www.youtube.com/@granjalospibes/'><ImgIconos src={youtube}/></a>
+                            <a  href="https://wa.me/message/MGKRGV2LBP5CK1"><ImgIconos src={whatsapp}/></a>
                         </Iconos>
                     </Cuadro>
                 </Card>

@@ -52,8 +52,8 @@ export default function Redes() {
         <DivRedes>
             <LinkRedes href='https://www.facebook.com/GranjaLosPibes/'><ImgRedes src={facebook}/></LinkRedes>
             <LinkRedes href='https://instagram.com/granja_los_pibes/'><ImgRedes src={instagram}/></LinkRedes>
-            <LinkRedes><ImgRedes src={youtube}/></LinkRedes>
-            <LinkRedes href="tel:+542494545992"><ImgRedes src={whatsapp}/></LinkRedes>
+            <LinkRedes href='https://www.youtube.com/@granjalospibes/'><ImgRedes src={youtube}/></LinkRedes>
+            <LinkRedes href="https://wa.me/message/MGKRGV2LBP5CK1"><ImgRedes src={whatsapp}/></LinkRedes>
             <LinkRedes><ImgRedes src={email}/></LinkRedes>
         </DivRedes>
     )
