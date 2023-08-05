@@ -3,9 +3,12 @@ import styled from "styled-components";
 import fondo from "../../assest/fondopa.png";
 import { Link } from "react-router-dom";
 import CarouselImg from "./fotos";
-import iconoUno from "../../assest/huella.png";
+import iconoUno from "../../assest/buho.png";
 import iconoDos from "../../assest/niños.png";
 import iconoTres from "../../assest/ambiental.png";
+import iconoCuatro from "../../assest/tilde.png";
+import iconoCinco from "../../assest/diamante.png";
+
 
 
 
@@ -68,6 +71,19 @@ const DivParrafos = styled.div`
        display: flex;
        flex-direction: column;
        align-items: center;
+       gap:5rem;
+    }
+`
+
+const Divisores = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 800px) {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
        gap:2rem;
     }
 `
@@ -101,8 +117,8 @@ const Parrafo = styled.p`
     width: 100%;
     height: auto;
     flex-direction: column;
-    color: #464646;
-    font-size: 1.2rem;
+    color: #557153;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -112,7 +128,7 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         text-align: center;
-        font-size: .9rem;
+        font-size: .8rem;
         padding: 0;
     }
 `
@@ -166,7 +182,7 @@ const Strong = styled.strong`
     height: auto;
     flex-direction: column;
     color: #557153;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -182,16 +198,21 @@ const Strong = styled.strong`
     }
 `
 
-// const Img = styled.img`
-//     display: none;
+const Img = styled.img`
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 6.5rem;
+     height: 6.5rem;
    
-//     @media (max-width: 800px) {
-//      display: flex;
-//      align-items: center;
-//      width: 7rem;
-//      height: 7rem;
-//     }
-// `
+    @media (max-width: 800px) {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 6.5rem;
+     height: 6.5rem;
+    }
+`
 
 
 
@@ -217,18 +238,35 @@ const Padrinos = () => {
                 <Encabe>¿QUÉ IMPLICA SER UN PADRINO?</Encabe>
                 <Parrafo>COMO PADRINO, TU DONACIÓN ECONÓMICA SEA POR ÚNICA VEZ O DE MANERA MENSUAL SE CONVERTIRÁ EN UN PILAR FUNDAMENTAL PARA EL SOSTENIMIENTO DE NUESTRO CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE . CON TU GENEROSIDAD, PODREMOS:</Parrafo>
                 <DivParrafos>
-                    <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong> TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
-                    {/* <Img src={iconoUno}/> */}
-                    <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong> AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
-                    {/* <Img src={iconoDos}/> */}
-                    <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong> CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
-                    {/* <Img src={iconoTres}/> */}
+                    <Divisores>
+                        <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong></Parrafo>
+                        <Img src={iconoUno}/>
+                        <Parrafo>TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
+                    </Divisores> 
+                    <Divisores>  
+                        <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong></Parrafo>
+                        <Img src={iconoDos}/>
+                        <Parrafo>AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
+                    </Divisores> 
+                    <Divisores>   
+                        <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong></Parrafo>
+                        <Img src={iconoTres}/>
+                        <Parrafo>CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
+                    </Divisores>
                 </DivParrafos>
                 <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
                 <Parrafo><Strong>SIMPLEMENTE COMPLETA NUESTRO FORMULARIO, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
                 <DivParrafos>
-                    <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
-                    <Parrafo><Strong>DONACIÓN MENSUAL:</Strong> ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                    <Divisores>
+                        <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong></Parrafo>
+                        <Img src={iconoCuatro}/>
+                        <Parrafo> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
+                    </Divisores>
+                    <Divisores>
+                        <Parrafo><Strong>DONACIÓN MENSUAL:</Strong></Parrafo>
+                        <Img src={iconoCinco}/>
+                        <Parrafo>ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                    </Divisores>
                 </DivParrafos>
                 <Parrafo><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
                 <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>

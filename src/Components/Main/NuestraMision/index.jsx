@@ -115,7 +115,7 @@ const Card = styled.div`
         margin:0;
         width: auto;
         height: auto;
-        margin: 0 12%;
+        margin: 0 8%;
     }
 `
 const Eclipse1 = styled.div`
@@ -224,7 +224,7 @@ const Boton = styled.button`
         align-items: center;
         justify-content:center;
         width: 100%;
-        margin: 0 15% .5rem 15%;
+        margin: 0 10% .5rem 10%;
     }
 `
 

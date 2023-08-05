@@ -155,7 +155,7 @@ const TituPrincipal = styled.h1`
     margin: 3rem 10% 0 10%;
     
     @media (max-width: 800px) {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         font-weight: 600;
         margin: 0;
         padding-top: 2rem;
@@ -175,7 +175,7 @@ const Encabe = styled.h2`
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: -1px;
     margin: 0 10%;
@@ -183,10 +183,11 @@ const Encabe = styled.h2`
     padding-top: 2rem;
 
     @media (max-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width:90%;
         margin-top: 0;
         padding-top: 2.5rem;
+        font-weight: 600;
     }
 `
 
@@ -199,12 +200,12 @@ const Parrafo = styled.p`
     color: #557153;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.8rem;
     margin: 1rem 10% 2rem 10%;
 
     @media (max-width: 800px) {
-        font-size: 1rem;
+        font-size: .9rem;
         width: 90%;
     }
 `
@@ -219,12 +220,12 @@ const Parrafo2 = styled.p`
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.8rem;
     margin: 0 10%;
 
     @media (max-width: 800px) {
-        font-size: 1rem;
+        font-size: .9rem;
         width: 90%;
     }
 `

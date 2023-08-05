@@ -93,6 +93,7 @@ const Parrafo = styled.p`
     @media (max-width: 800px) {
         font-size: .9rem;
         line-height: 2rem;
+        font-weight: 400;
     }
 `
 
