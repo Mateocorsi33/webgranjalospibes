@@ -1,0 +1,222 @@
+import React, { useState } from 'react';
+import styled from 'styled-components';
+
+const DivUnico = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 2rem;
+    padding: 1rem 0 4rem 0;
+
+    @media (max-width: 800px) {
+        width: auto;
+    }
+`
+const DivMensual = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 2rem;
+    padding: 1rem 0 4rem 0;
+
+    @media (max-width: 800px) {
+        width: auto;
+    }
+`
+
+
+const Parrafo1 = styled.h2`
+  color: #557153;
+  text-align: center;
+  width: 80%;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+
+  @media (max-width: 800px) {
+        width: 90%;
+        font-size: 1rem;
+        margin: 0;
+    }
+`
+
+const DivBtn = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:90%;
+    margin: 1rem 0;
+    gap: 2rem;
+    padding: 1rem 0 4rem 0;
+    border-bottom: 1px solid #D6D582;
+
+    @media (max-width: 800px) {
+        flex-direction:column;
+        width: auto;
+        gap: 2rem;
+    }
+`
+
+
+const Button = styled.button`
+    border: 2px solid #D6D582;
+    margin: 0 1em;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+
+    && {
+    background-color: ${(props) =>
+      props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+    color: ${(props) => (props.variant === 'contained' ? '#ffffff' : '#464646')};
+    &:hover {
+      background-color: ${(props) =>
+        props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+      color: ${(props) =>
+        props.variant === 'contained' ? '#ffffff' : '#000000'};
+        transform: scale(1.1);
+    }
+  }
+
+    @media (max-width: 800px) {
+        width:100%;
+    }
+`;
+
+export default function Opciones() {
+
+    const [selectedButton, setSelectedButton] = useState('');
+    const [amount, setAmount] = useState('');
+
+    const handleButtonClick = (event) => {
+      if (selectedButton === event.target.value) {
+        setSelectedButton('');
+      } else {
+        setSelectedButton(event.target.value);
+      }
+    };
+
+    const handleAmountChange = (event) => {
+        setAmount(event.target.value);
+    };
+
+    
+
+  return (
+    <>
+      <Parrafo1>SELECCIONA DE QUÉ MANERA QUIERES HACER TU DONACIÓN.</Parrafo1>
+      <DivBtn>
+        <Button
+          variant={selectedButton === "button1" ? "contained" : "outlined"}
+          color="primary"
+          value="button1"
+          onClick={handleButtonClick}
+        >
+          {" "}
+          ÚNICA VEZ{" "}
+        </Button>
+        <Button
+          variant={selectedButton === "button2" ? "contained" : "outlined"}
+          color="primary"
+          value="button2"
+          onClick={handleButtonClick}
+        >
+          {" "}
+          MENSUALMENTE{" "}
+        </Button>
+      </DivBtn>
+
+      {selectedButton === "button1" && 
+        <DivUnico>
+        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR POR UNICA VEZ</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
+        <DivBtn>
+          <a href='http://mpago.la/2hqn9Bo'>
+          <Button
+            variant={selectedButton === 'button1' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button1"
+            onClick={handleButtonClick}
+          >
+            $ 500,00
+          </Button>
+          </a>
+          <a href='http://mpago.la/2armr4H'>
+          <Button
+            variant={selectedButton === 'button2' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button2"
+            onClick={handleButtonClick}
+          >
+            $ 1000,00
+          </Button>
+          </a>
+          <a href='http://mpago.la/1VVfhTQ'>
+          <Button
+            variant={selectedButton === 'button3' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button3"
+            onClick={handleButtonClick}
+          >
+            $ 2000,00
+          </Button>
+          </a>
+        </DivBtn>
+        </DivUnico>
+      }
+      {selectedButton === "button2" && 
+      <DivMensual>
+        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR MENSUALMENTE</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
+        <DivBtn>
+          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
+          <Button
+            variant={selectedButton === 'button1' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button1"
+            onClick={handleButtonClick}
+          >
+            $ 500,00
+          </Button>
+          </a>
+          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
+          <Button
+            variant={selectedButton === 'button2' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button2"
+            onClick={handleButtonClick}
+          >
+            $ 1000,00
+          </Button>
+          </a>
+          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cc8aca790275'>
+          <Button
+            variant={selectedButton === 'button3' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button3"
+            onClick={handleButtonClick}
+          >
+            $ 2000,00
+          </Button>
+          </a>
+        </DivBtn>
+      </DivMensual>
+      }
+    </>
+  );
+}

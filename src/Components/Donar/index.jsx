@@ -3,11 +3,8 @@ import styled from 'styled-components';
 import imagenlogo from "../../assest/logoglp.png";
 import fotoform from "../../assest/fotoform.png";
 import fondo from "../../assest/fondo.png";
-import SelectableButtons from "../Donar/botones.jsx";
-import StyledCheckbox from "../Donar/verificaciones.jsx";
-import visa from "../../assest/206684_visa_method_card_payment_icon.png";
-import master from "../../assest/70593_mastercard_curved_icon.png";
-import paypal from "../../assest/206675_paypal_method_payment_icon.png";
+// import SelectableButtons from "../Donar/botones.jsx";
+import Opciones from './Opciones';
 
 
 const FondoForm = styled.div`
@@ -202,33 +199,6 @@ const Letrachica = styled.h3`
     }
 `
 
-// const Button = styled.button`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   text-align: center;
-//   margin: 2rem 0 2rem 0;
-//   width: 14rem;
-//   padding: 8px 10px 12px 10px;
-//   border-radius: 10px;
-//   border: none;
-//   background-color: #F58220;
-//   color: #fff;
-//   font-size: 1.5rem;
-//   cursor: pointer;
-//     &:hover {
-//         transition: .3s;
-//         opacity: 70%;
-//         transform: scale(1.05);
-//     }
-
-//   @media (max-width: 800px) {
-//         width: 10rem;
-//         font-size: 1rem;
-//     }
-// `;
-
-
 
 function Donar() {
 
@@ -247,11 +217,9 @@ function Donar() {
               <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
               <Letrachica>Los montos están expresados en Pesos Argentinos (ARS $)</Letrachica>
             </DivCuanto>
-            <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO, DONDE PODRÁS DECIDIR SI HACERLO POR ÚNICA VEZ O MENSUALMENTE.</Parrafo1>
-            <SelectableButtons/>
+            <Opciones/>
             <Parrafo>SE PARTE DEL CAMBIO POSITIVO EN LA VIDA DE LOS NIÑOS Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TU APOYO ES FUNDAMENTAL PARA LOGRAR UN FUTURO MÁS JUSTO Y SOSTENIBLE.</Parrafo>
             <Parrafo1>¡ÚNETE COMO PADRINO HOY MISMO Y SÉ PARTE DEL CAMBIO!</Parrafo1>
-            {/* <Button>Donar</Button> */}
         </TamañoCuerpo>
       </DivForm>
     </FondoForm>
