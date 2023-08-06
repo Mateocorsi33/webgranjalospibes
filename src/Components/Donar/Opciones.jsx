@@ -226,7 +226,7 @@ export default function Opciones() {
             $ 500,00
           </Button>
           </Link>
-          <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
+          <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c01bd80189cc89ea0b044a'>
           <Button
             variant={selectedButton === 'button2' ? 'contained' : 'outlined'}
             color="primary"
