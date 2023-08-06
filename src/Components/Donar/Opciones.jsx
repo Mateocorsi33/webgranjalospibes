@@ -12,6 +12,7 @@ const DivUnico = styled.div`
 
     @media (max-width: 800px) {
         width: auto;
+        padding: 0;
     }
 `
 const DivMensual = styled.div`
@@ -25,6 +26,7 @@ const DivMensual = styled.div`
 
     @media (max-width: 800px) {
         width: auto;
+        padding: 0;
     }
 `
 
@@ -52,7 +54,7 @@ const DivBtn = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width:90%;
+    width: auto;
     margin: 1rem 0;
     gap: 2rem;
     padding: 1rem 0 4rem 0;
@@ -60,9 +62,39 @@ const DivBtn = styled.div`
 
     @media (max-width: 800px) {
         flex-direction:column;
-        width: auto;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
         gap: 2rem;
     }
+`
+
+const DivBtn2 = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    margin: 1rem 0;
+    gap: 2rem;
+    padding: 1rem 0 4rem 0;
+    border-bottom: 1px solid #D6D582;
+
+    @media (max-width: 800px) {
+        flex-direction:column;
+        width: 60%;
+        gap: 2rem;
+    }
+`
+
+const Link = styled.a`
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    &:hover{
+        text-decoration: none;
+    }
+
 `
 
 
@@ -146,8 +178,8 @@ export default function Opciones() {
       {selectedButton === "button1" && 
         <DivUnico>
         <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR POR UNICA VEZ</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
-        <DivBtn>
-          <a href='http://mpago.la/2hqn9Bo'>
+        <DivBtn2>
+          <Link href='http://mpago.la/2hqn9Bo'>
           <Button
             variant={selectedButton === 'button1' ? 'contained' : 'outlined'}
             color="primary"
@@ -156,8 +188,8 @@ export default function Opciones() {
           >
             $ 500,00
           </Button>
-          </a>
-          <a href='http://mpago.la/2armr4H'>
+          </Link>
+          <Link href='http://mpago.la/2armr4H'>
           <Button
             variant={selectedButton === 'button2' ? 'contained' : 'outlined'}
             color="primary"
@@ -166,8 +198,8 @@ export default function Opciones() {
           >
             $ 1000,00
           </Button>
-          </a>
-          <a href='http://mpago.la/1VVfhTQ'>
+          </Link>
+          <Link href='http://mpago.la/1VVfhTQ'>
           <Button
             variant={selectedButton === 'button3' ? 'contained' : 'outlined'}
             color="primary"
@@ -176,15 +208,15 @@ export default function Opciones() {
           >
             $ 2000,00
           </Button>
-          </a>
-        </DivBtn>
+          </Link>
+        </DivBtn2>
         </DivUnico>
       }
       {selectedButton === "button2" && 
       <DivMensual>
         <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR MENSUALMENTE</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
-        <DivBtn>
-          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
+        <DivBtn2>
+          <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
           <Button
             variant={selectedButton === 'button1' ? 'contained' : 'outlined'}
             color="primary"
@@ -193,8 +225,8 @@ export default function Opciones() {
           >
             $ 500,00
           </Button>
-          </a>
-          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
+          </Link>
+          <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
           <Button
             variant={selectedButton === 'button2' ? 'contained' : 'outlined'}
             color="primary"
@@ -203,8 +235,8 @@ export default function Opciones() {
           >
             $ 1000,00
           </Button>
-          </a>
-          <a href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cc8aca790275'>
+          </Link>
+          <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cc8aca790275'>
           <Button
             variant={selectedButton === 'button3' ? 'contained' : 'outlined'}
             color="primary"
@@ -213,8 +245,8 @@ export default function Opciones() {
           >
             $ 2000,00
           </Button>
-          </a>
-        </DivBtn>
+          </Link>
+        </DivBtn2>
       </DivMensual>
       }
     </>
