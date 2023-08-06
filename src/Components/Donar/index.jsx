@@ -176,7 +176,7 @@ const DivCuanto = styled.div`
   align-items: center;
   padding-top: 1rem;
   border-top: 1px solid #D6D582;
-  margin-top: 2rem; 
+  margin: 2rem 0 3rem 0; 
 
   @media (max-width: 800px) {
         flex-direction: column;
@@ -201,100 +201,31 @@ const Letrachica = styled.h3`
     }
 `
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  margin: 0;
-  @media (max-width: 800px) {
-        width: 90%;
-    }
-`;
+// const Button = styled.button`
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   margin: 2rem 0 2rem 0;
+//   width: 14rem;
+//   padding: 8px 10px 12px 10px;
+//   border-radius: 10px;
+//   border: none;
+//   background-color: #F58220;
+//   color: #fff;
+//   font-size: 1.5rem;
+//   cursor: pointer;
+//     &:hover {
+//         transition: .3s;
+//         opacity: 70%;
+//         transform: scale(1.05);
+//     }
 
-const H2 = styled.h2`
-  color: #000;
-  text-align: center;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  margin-top: 3rem;
-  `
-
-const DivIP = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-  flex-wrap: wrap;
-  height: auto;
-  gap: 0 1rem;
-  padding: 1rem 0;
-`
-
-const DivTarjetas = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  height: fit-content;
-  margin: 1rem;
-  gap: 2rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  border: 1px solid #4F8A7E;
-  background: #FFF;
-`
-
-const ImgTarj = styled.img`
-  width: 3rem;
-  height: 2.5rem;
-  border-radius: 10px;
-`
-
-const Input = styled.input`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 40%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #4F8A7E;
-  background: #FFF;
-
-  @media (max-width: 800px) {
-        width: 100%;
-        font-size: 1rem;
-    }
-`;
-
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 2rem 0 2rem 0;
-  width: 14rem;
-  padding: 8px 10px 12px 10px;
-  border-radius: 10px;
-  border: none;
-  background-color: #F58220;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-    &:hover {
-        transition: .3s;
-        opacity: 70%;
-        transform: scale(1.05);
-    }
-
-  @media (max-width: 800px) {
-        width: 10rem;
-        font-size: 1rem;
-    }
-`;
+//   @media (max-width: 800px) {
+//         width: 10rem;
+//         font-size: 1rem;
+//     }
+// `;
 
 
 
@@ -317,35 +248,9 @@ function Donar() {
               <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
               <Letrachica>Los montos están expresados en Pesos Argentinos (ARS $)</Letrachica>
             </DivCuanto>
+            <Parrafo1>Selecciona uno de los links de pago y termina de realizar tu donación a través de Mercado Pago, donde podrás decidir si hacerlo por única vez o mensualmente.</Parrafo1>
             <SelectableButtons/>
-            <StyledCheckbox/>
-            <Form>
-              <H2>Información Personal</H2>
-              <DivIP>
-                <Input type="text" placeholder="Nombre" />
-                <Input type="text" placeholder="Apellido" />
-                <Input type="email" placeholder="Correo Electrónico" />
-                <Input type="tel" placeholder="Teléfono" />
-                <Input type="text" placeholder="País" />
-                <Input type="text" placeholder="Provincia/Estado" />
-                <Input type="text" placeholder="Ciudad" />
-                <Input type="text" placeholder="Dirección" />
-                <Input type="text" placeholder="Código Postal" />
-              </DivIP>
-              <H2>Información de Pago</H2>
-              <DivTarjetas>
-                <ImgTarj src={visa}/>
-                <ImgTarj src={master}/>
-                <ImgTarj src={paypal}/>
-              </DivTarjetas>
-              <DivIP>
-                <Input type="text" placeholder="Número de Tarjeta" />
-                <Input type="text" placeholder="Fecha de Expiración (MM/AA)" />
-                <Input type="text" placeholder="Código de Seguridad (CVV/CVC)" />
-                <Input type="text" placeholder="Número de Documento" />
-              </DivIP>
-              <Button>Donar</Button>
-            </Form>
+            {/* <Button>Donar</Button> */}
         </TamañoCuerpo>
       </DivForm>
     </FondoForm>

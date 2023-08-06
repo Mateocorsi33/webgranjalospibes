@@ -255,7 +255,7 @@ const GifM = styled.img`
         display: flex;
         width: 100%;
         height: auto;
-        opacity: 80%;
+        opacity: 95%;
         margin: 1rem 0 1.5rem 0;
     }
 `

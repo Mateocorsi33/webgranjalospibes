@@ -9,20 +9,21 @@ const DivBtn = styled.div`
     justify-content: center;
     width:90%;
     margin: 1rem 0;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem 0;
 
     @media (max-width: 800px) {
         flex-direction:column;
         width: auto;
-        margin: 0;
+        margin: 1rem 0 3rem 0;
+        gap: 2rem;
     }
 `
 
 const Button = styled.button`
     border: 2px solid #D6D582;
     margin: 0 1em;
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #000;
@@ -48,14 +49,15 @@ const Button = styled.button`
   }
 
     @media (max-width: 800px) {
-        width: 60%;
+        width: 70%;
+        padding: 0.5em 1em;
     }
 `;
 
 const Input = styled.input`
     border: 2px solid #D6D582;
     margin: 0 1em;
-    padding: 0.25em 1em;
+    padding: 0.5em 1em;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #000;
@@ -68,7 +70,9 @@ const Input = styled.input`
     letter-spacing: 0.6px;
 
     @media (max-width: 800px) {
-        width: 60%;
+        width: 70%;
+        padding: 0.5em 1em;
+
     }
 `;
 

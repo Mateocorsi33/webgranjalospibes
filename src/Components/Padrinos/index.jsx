@@ -10,9 +10,6 @@ import iconoCuatro from "../../assest/tilde.png";
 import iconoCinco from "../../assest/diamante.png";
 
 
-
-
-
 const BackG = styled.div`
     display: flex;
     align-items: center;
