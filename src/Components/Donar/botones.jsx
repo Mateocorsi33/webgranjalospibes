@@ -4,18 +4,17 @@ import styled from 'styled-components';
 const DivBtn = styled.div`
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width:90%;
     margin: 1rem 0;
     gap: 2rem;
-    padding: 1rem 0;
+    padding: 1rem 0 4rem 0;
+    border-bottom: 1px solid #D6D582;
 
     @media (max-width: 800px) {
         flex-direction:column;
         width: auto;
-        margin: 1rem 0 3rem 0;
         gap: 2rem;
     }
 `
@@ -23,7 +22,7 @@ const DivBtn = styled.div`
 const Button = styled.button`
     border: 2px solid #D6D582;
     margin: 0 1em;
-    padding: 0.5em 1em;
+    padding: 1em 1.5em;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #000;
@@ -45,36 +44,36 @@ const Button = styled.button`
         props.variant === 'contained' ? '#D6D582' : '#ffffff'};
       color: ${(props) =>
         props.variant === 'contained' ? '#ffffff' : '#000000'};
+        transform: scale(1.1);
     }
   }
 
     @media (max-width: 800px) {
-        width: 70%;
-        padding: 0.5em 1em;
+        width:100%;
     }
 `;
 
-const Input = styled.input`
-    border: 2px solid #D6D582;
-    margin: 0 1em;
-    padding: 0.5em 1em;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #000;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.6px;
+// const Input = styled.input`
+//     border: 2px solid #D6D582;
+//     margin: 0 1em;
+//     padding: 0.5em 1em;
+//     border-radius: 10px;
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//     color: #000;
+//     text-align: center;
+//     font-size: 20px;
+//     font-family: 'Montserrat', sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: normal;
+//     letter-spacing: 0.6px;
 
-    @media (max-width: 800px) {
-        width: 70%;
-        padding: 0.5em 1em;
+//     @media (max-width: 800px) {
+//         width: 70%;
+//         padding: 0.5em 1em;
 
-    }
-`;
+//     }
+// `;
 
 export default function SelectableButtons() {
 
@@ -120,7 +119,7 @@ export default function SelectableButtons() {
       >
         $ 2000,00
       </Button>
-      <label htmlFor="amount"></label>
+      {/* <label htmlFor="amount"></label>
       <Input
         placeholder='Otro monto'
         type="number"
@@ -128,7 +127,7 @@ export default function SelectableButtons() {
         name="amount"
         value={amount}
         onChange={handleAmountChange}
-      />
+      /> */}
     </DivBtn>
   );
 }

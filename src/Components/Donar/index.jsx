@@ -87,7 +87,7 @@ const TextLogo = styled.h2`
 
 const ImgForm = styled.img`
   width: 100%;
-  height: 20rem;
+  height: 18rem;
 
   @media (max-width: 800px) {
         width: 100%;
@@ -101,10 +101,10 @@ const TamañoCuerpo = styled.div`
   align-items: center;
   gap: 1rem;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0 4rem 0;
 
   @media (max-width: 800px) {
-        padding: 0;
+      padding: 1rem 0 4rem 0;
     }
 `
 
@@ -131,10 +131,10 @@ const Titulo = styled.h1`
 `
 
 const Parrafo1 = styled.h2`
-  color: #464646;
+  color: #557153;
   text-align: center;
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -149,11 +149,11 @@ const Parrafo1 = styled.h2`
 `
 
 const Parrafo = styled.h3`
-  color: #464646;
+  color: #557153;
   text-align: center;
   width: 80%;
   margin: 0;
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -163,7 +163,7 @@ const Parrafo = styled.h3`
   @media (max-width: 800px) {
         width: 90%;
         font-size: .9rem;
-        margin: 0;
+        margin: 0 0 1rem 0;
     }
 `
 
@@ -182,6 +182,7 @@ const DivCuanto = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content:center;
+        margin: 1.5rem 0 1.5rem 0; 
     }
 `
 
@@ -240,16 +241,16 @@ function Donar() {
         </Encabezado>
         <ImgForm src={fotoform}/>
         <TamañoCuerpo>
-            <Titulo>Dona a Granja Los Pibes</Titulo>
-            <Parrafo1>Cada donación nos permite continuar nuestro trabajo y garantizar un futuro más prometedor para la fauna silvestre y los niños.</Parrafo1>
-            <Parrafo>Se parte del cambio positivo en la vida de los niños y la conservación de la fauna silvestre. Tu apoyo es fundamental para lograr un futuro más justo y sostenible.</Parrafo>
-            <Parrafo1>¡Únete como padrino hoy mismo y sé parte del cambio!</Parrafo1>
+            <Titulo>DONA A GRANJA LOS PIBES</Titulo>
+            <Parrafo1>CADA DONACIÓN NOS PERMITE CONTINUAR NUESTRO TRABAJO Y GARANTIZAR UN FUTURO MÁS PROMETEDOR PARA LA FAUNA SILVESTRE Y LOS NIÑOS.</Parrafo1>
             <DivCuanto>
               <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
               <Letrachica>Los montos están expresados en Pesos Argentinos (ARS $)</Letrachica>
             </DivCuanto>
-            <Parrafo1>Selecciona uno de los links de pago y termina de realizar tu donación a través de Mercado Pago, donde podrás decidir si hacerlo por única vez o mensualmente.</Parrafo1>
+            <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO, DONDE PODRÁS DECIDIR SI HACERLO POR ÚNICA VEZ O MENSUALMENTE.</Parrafo1>
             <SelectableButtons/>
+            <Parrafo>SE PARTE DEL CAMBIO POSITIVO EN LA VIDA DE LOS NIÑOS Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TU APOYO ES FUNDAMENTAL PARA LOGRAR UN FUTURO MÁS JUSTO Y SOSTENIBLE.</Parrafo>
+            <Parrafo1>¡ÚNETE COMO PADRINO HOY MISMO Y SÉ PARTE DEL CAMBIO!</Parrafo1>
             {/* <Button>Donar</Button> */}
         </TamañoCuerpo>
       </DivForm>
