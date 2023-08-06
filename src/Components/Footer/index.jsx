@@ -191,7 +191,7 @@ const Footer = () => {
                     <UbiLink href='https://www.facebook.com/GranjaLosPibes/'><Redes src={facebook}/></UbiLink>
                     <UbiLink href='https://instagram.com/granja_los_pibes/'><Redes src={instagram}/></UbiLink>
                     <UbiLink href='https://www.youtube.com/@granjalospibes/'><Redes src={youtube}/></UbiLink>
-                    <UbiLink href=''><Redes src={email}/></UbiLink>
+                    <UbiLink href="mailto: granjalospibesong@gmail.com"><Redes src={email}/></UbiLink>
                     <UbiLink href="https://wa.me/message/MGKRGV2LBP5CK1"><Redes src={whatsapp}/></UbiLink>
                 </Iconos>
             </DivCopyIconos>
