@@ -209,6 +209,16 @@ export default function Opciones() {
             $ 2000,00
           </Button>
           </Link>
+          <Link href='https://link.mercadopago.com.ar/granjalospibes'>
+          <Button
+            variant={selectedButton === 'button4' ? 'contained' : 'outlined'}
+            color="primary"
+            value="button4"
+            onClick={handleButtonClick}
+          >
+            Definir monto
+          </Button>
+          </Link>
         </DivBtn2>
         </DivUnico>
       }
