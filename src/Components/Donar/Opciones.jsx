@@ -39,7 +39,7 @@ const Parrafo1 = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.5rem;
   letter-spacing: 0.6px;
 
   @media (max-width: 800px) {
@@ -153,7 +153,7 @@ export default function Opciones() {
 
   return (
     <>
-      <Parrafo1>SELECCIONA DE QUÉ MANERA QUIERES HACER TU DONACIÓN.</Parrafo1>
+      <Parrafo1>Selecciona de qué manera quieres hacer tu donación. Puedes <strong>DONAR POR ÚNICA VEZ</strong> o <strong>CONVERTIRTE EN PADRINO</strong> donando mensualmente.</Parrafo1>
       <DivBtn>
         <Button
           variant={selectedButton === "button1" ? "contained" : "outlined"}
@@ -171,7 +171,7 @@ export default function Opciones() {
           onClick={handleButtonClick}
         >
           {" "}
-          MENSUALMENTE{" "}
+          SER PADRINO{" "}
         </Button>
       </DivBtn>
 
@@ -224,7 +224,7 @@ export default function Opciones() {
       }
       {selectedButton === "button2" && 
       <DivMensual>
-        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR MENSUALMENTE</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
+        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR MENSUALMENTE COMO PADRINO</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
         <DivBtn2>
           <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
           <Button
