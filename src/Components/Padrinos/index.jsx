@@ -53,8 +53,8 @@ const DivPadrinos = styled.div`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        margin: 1.5rem 1rem;
-        gap: 3.5rem;
+        margin: 1.5rem 2.5rem 8rem 2.5rem;
+        gap: 4rem;
     }
 `
 
@@ -81,6 +81,7 @@ const Divisores = styled.div`
        display: flex;
        flex-direction: column;
        align-items: center;
+       margin: 1rem 0;
        gap:2rem;
     }
 `
@@ -154,7 +155,7 @@ const Boton = styled.button`
         align-items: center;
         justify-content:center;
         width: 75%;
-        margin: 1rem;
+        margin: 0;
     }
 `
 
@@ -190,7 +191,7 @@ const Strong = styled.strong`
     @media (max-width: 800px) {
         text-align: center;
         margin-bottom:0.5rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-bottom: 0;
     }
 `

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Portada from "./Portada";
 import Presentacion from "./Presentacion";
 import NuestraMision from "./NuestraMision";
+// import Guia from "./GuiaSierras";
 // import Imagenes from "./Imagenes";
 
 const BoxMain = styled.div`
@@ -17,6 +18,7 @@ const Main = () => {
         <BoxMain>
             <Portada/>
             <Presentacion/>
+            {/* <Guia/> */}
             <NuestraMision/>
             {/* <Imagenes/> */}
         </BoxMain>

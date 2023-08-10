@@ -145,10 +145,11 @@ const DivBarra1 = styled.div`
         flex-direction: column;
         width: auto;
         position: absolute;
-        background-color: #ffffff;
+        background-color: #fff;
+        opacity: 90%;
         width: 100%;
         height: auto;
-        gap: 1rem;
+        gap: 1.4rem;
         margin: 0;
         padding: 1rem 0;
         border-bottom: 2px solid #557153;
@@ -170,16 +171,16 @@ const StyledLink = styled(Link)`
     color: #464646;
   &:hover {
     text-decoration: none;
-    color: #464646;
+    color: #557153;
   }
 
   @media (max-width: 800px) {
         display: flex;
         justify-content:center; 
         align-items:center; 
-        font-size:.8rem; 
-        width:auto; 
-        height:auto;
+        font-size:.8rem;
+        width: auto; 
+        height: auto;
     }
 `;
 
@@ -208,13 +209,13 @@ const Logo = () => {
                 </BotonMenu>
         </BoxLogo>
         <BoxBarraNav showMenu={showMenu}>
-                    <DivBarra1>
-                        <Marcador><StyledLink to="/" style={{}} onClick={closeMenu}>INICIO</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/quienes-somos" style={{}} onClick={closeMenu}>QUIÉNES SOMOS</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/contacto" style={{}} onClick={closeMenu}>CONTACTO</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/padrinos" style={{}} onClick={closeMenu}>PADRINOS</StyledLink></Marcador>
-                        <Marcador><StyledLink to="/donar" style={{}} onClick={closeMenu}>DONAR</StyledLink></Marcador>
-                    </DivBarra1>
+                <DivBarra1>
+                    <Marcador><StyledLink to="/" style={{}} onClick={closeMenu}>INICIO</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/quienes-somos" style={{}} onClick={closeMenu}>QUIÉNES SOMOS</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/contacto" style={{}} onClick={closeMenu}>CONTACTO</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/padrinos" style={{}} onClick={closeMenu}>PADRINOS</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/donar" style={{}} onClick={closeMenu}>DONAR</StyledLink></Marcador>
+                </DivBarra1>
         </BoxBarraNav>
         </>
     )
