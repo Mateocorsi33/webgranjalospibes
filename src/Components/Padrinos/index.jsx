@@ -100,7 +100,7 @@ const Encabe = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 0;
+    margin: 4rem 0 0 0;
     padding-top: 2rem;
     border-top: 2px solid #D6D582;
 
@@ -132,7 +132,7 @@ const Parrafo = styled.p`
 `
 
 const Boton = styled.button`
-    margin: 2.5rem 2rem;
+    margin: 0 2rem 8rem 2rem;
     background-color: #F48020;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -253,7 +253,7 @@ const Padrinos = () => {
                     </Divisores>
                 </DivParrafos>
                 <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
-                <Parrafo><Strong>SIMPLEMENTE COMPLETA NUESTRO FORMULARIO, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
+                <Parrafo><Strong>SIMPLEMENTE ENTRA EN APADRINARSE, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
                 <DivParrafos>
                     <Divisores>
                         <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong></Parrafo>
