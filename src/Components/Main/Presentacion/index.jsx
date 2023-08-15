@@ -50,7 +50,7 @@ const TituloPortada = styled.h1`
         display: flex;
         width: 90%;
         color: #557153;
-        font-size: 3rem;
+        font-size: 2.5rem;
         z-index: 100;
         font-weight: 600;
         margin-top: 1.5rem;
@@ -278,7 +278,7 @@ const Presentacion = () => {
     return (
         <Fondo>
             <BoxCuerpo>
-                    <TituloPortada>CONOCER PARA CONSERVAR</TituloPortada>
+                    <TituloPortada>CONOCER PARA CUIDAR Y CONSERVAR</TituloPortada>
                 <DivContent>
                     <DivText>
                         <Titu>CONTRIBUYENDO A LA CONCIENCIACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>

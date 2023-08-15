@@ -31,7 +31,7 @@ const DivText = styled.div`
 const Titulo = styled.h1`
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 6rem;
@@ -66,8 +66,8 @@ export default function Portada () {
                     <source src={video} type="video/mp4" />
                 </Video>
                 <DivText>
-                    <Titulo>CONOCER</Titulo>
-                    <Titulo>PARA CONSERVAR</Titulo>
+                    <Titulo>CONOCER PARA</Titulo>
+                    <Titulo>CUIDAR Y CONSERVAR</Titulo>
                 </DivText>
                 <GradientOverlay />
             </VideoBackground>
