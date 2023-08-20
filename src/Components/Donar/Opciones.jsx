@@ -61,11 +61,12 @@ const DivBtn = styled.div`
     border-bottom: 1px solid #D6D582;
 
     @media (max-width: 800px) {
-        flex-direction:column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 75%;
-        gap: 2rem;
+        width: 90%;
+        gap: 1rem;
+        padding: 1rem 0 2rem 0;
     }
 `
 
@@ -80,9 +81,10 @@ const DivBtn2 = styled.div`
     border-bottom: 1px solid #D6D582;
 
     @media (max-width: 800px) {
-        flex-direction:column;
-        width: 60%;
-        gap: 2rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 0 0 4rem 0;
     }
 `
 
@@ -122,13 +124,15 @@ const Button = styled.button`
       background-color: ${(props) =>
         props.variant === 'contained' ? '#D6D582' : '#ffffff'};
       color: ${(props) =>
-        props.variant === 'contained' ? '#ffffff' : '#000000'};
+        props.variant === 'contained' ? '#ffffff' : '#557153'};
         transform: scale(1.1);
     }
   }
 
     @media (max-width: 800px) {
         width:100%;
+        font-size: 1rem;
+        padding: 1rem 1rem;
     }
 `;
 
@@ -171,7 +175,7 @@ export default function Opciones() {
           onClick={handleButtonClick}
         >
           {" "}
-          SER PADRINO{" "}
+          PADRINO{" "}
         </Button>
       </DivBtn>
 

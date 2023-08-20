@@ -121,7 +121,7 @@ const Titulo = styled.h1`
         font-size: 2rem;
         text-align: center;
         align-items: center;
-        font-weight: 600;
+        font-weight: 800;
         padding: 0 1rem 0 1rem;
         margin: 0;
     }
@@ -140,7 +140,7 @@ const Parrafo1 = styled.h2`
 
   @media (max-width: 800px) {
         width: 90%;
-        font-size: 1rem;
+        font-size: .8rem;
         margin: 0;
     }
 `
@@ -159,7 +159,7 @@ const Parrafo = styled.h3`
 
   @media (max-width: 800px) {
         width: 90%;
-        font-size: .9rem;
+        font-size: .8rem;
         margin: 0 0 1rem 0;
     }
 `
@@ -195,7 +195,7 @@ const Letrachica = styled.h3`
   letter-spacing: 0.54px;
   @media (max-width: 800px) {
        text-align: center;
-       font-size: .8rem
+       font-size: .7rem
     }
 `
 
@@ -211,13 +211,13 @@ function Donar() {
         </Encabezado>
         <ImgForm src={fotoform}/>
         <TamañoCuerpo>
-            <Titulo>DONA A GRANJA LOS PIBES</Titulo>
-            <Parrafo1>CADA DONACIÓN NOS PERMITE CONTINUAR NUESTRO TRABAJO Y GARANTIZAR UN FUTURO MÁS PROMETEDOR PARA LA FAUNA SILVESTRE Y LOS NIÑOS.</Parrafo1>
+            <Titulo>ÚNETE A GRANJA LOS PIBES</Titulo>
             <DivCuanto>
               <Letrachica><strong>¿CUÁNTO QUERÉS DONAR?</strong></Letrachica>
-              <Letrachica>Los montos están expresados en Pesos Argentinos (ARS $)</Letrachica>
+              <Letrachica>Montos expresados en Pesos Argentinos (ARS $)</Letrachica>
             </DivCuanto>
             <Opciones/>
+            <Parrafo1>CADA DONACIÓN NOS PERMITE CONTINUAR NUESTRO TRABAJO Y GARANTIZAR UN FUTURO MÁS PROMETEDOR PARA LA FAUNA SILVESTRE Y LOS NIÑOS.</Parrafo1>
             <Parrafo>SE PARTE DEL CAMBIO POSITIVO EN LA VIDA DE LOS NIÑOS Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TU APOYO ES FUNDAMENTAL PARA LOGRAR UN FUTURO MÁS JUSTO Y SOSTENIBLE.</Parrafo>
             <Parrafo1>¡ÚNETE COMO PADRINO HOY MISMO Y SÉ PARTE DEL CAMBIO!</Parrafo1>
         </TamañoCuerpo>
