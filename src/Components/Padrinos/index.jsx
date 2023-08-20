@@ -53,8 +53,7 @@ const DivPadrinos = styled.div`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        margin: 1.5rem 2.5rem 8rem 2.5rem;
-        gap: 4rem;
+        margin: 1.5rem 1.5rem 8rem 1.5rem;
     }
 `
 
@@ -68,7 +67,7 @@ const DivParrafos = styled.div`
        display: flex;
        flex-direction: column;
        align-items: center;
-       gap:5rem;
+       gap:3rem;
     }
 `
 
@@ -83,6 +82,23 @@ const Divisores = styled.div`
        align-items: center;
        margin: 1rem 0;
        gap:2rem;
+    }
+`
+
+const DivisoresCard = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 800px) {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       border-radius: 10px;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+       margin: 1rem 1.5rem;
+       padding: 2rem;
+       gap:1rem;
     }
 `
 
@@ -106,6 +122,7 @@ const Encabe = styled.h1`
 
     @media (max-width: 800px) {
         font-size: 1.5rem;
+        margin: 1rem 0 0 0;
     }
 `
 
@@ -126,7 +143,7 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         text-align: center;
-        font-size: .8rem;
+        font-size: .7rem;
         padding: 0;
     }
 `
@@ -148,6 +165,7 @@ const Boton = styled.button`
     &:hover {
         transition: .3s;
         opacity: 70%;
+        transform: scale(1.1);
     }
 
     @media (max-width: 800px) {
@@ -191,7 +209,30 @@ const Strong = styled.strong`
     @media (max-width: 800px) {
         text-align: center;
         margin-bottom:0.5rem;
-        font-size: 1rem;
+        font-size: .8rem;
+        padding-bottom: 0;
+    }
+`
+
+const StrongCard = styled.strong`
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    color: #557153;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 1rem;
+
+    @media (max-width: 800px) {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: .9rem;
         padding-bottom: 0;
     }
 `
@@ -255,16 +296,16 @@ const Padrinos = () => {
                 <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
                 <Parrafo><Strong>SIMPLEMENTE ENTRA EN APADRINARSE, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
                 <DivParrafos>
-                    <Divisores>
-                        <Parrafo><Strong>DONACIÓN POR ÚNICA VEZ:</Strong></Parrafo>
+                    <DivisoresCard>
                         <Img src={iconoCuatro}/>
+                        <Parrafo><StrongCard>DONACIÓN POR ÚNICA VEZ:</StrongCard></Parrafo>
                         <Parrafo> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
-                    </Divisores>
-                    <Divisores>
-                        <Parrafo><Strong>DONACIÓN MENSUAL:</Strong></Parrafo>
+                    </DivisoresCard>
+                    <DivisoresCard>
                         <Img src={iconoCinco}/>
+                        <Parrafo><StrongCard>DONACIÓN MENSUAL:</StrongCard></Parrafo>
                         <Parrafo>ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
-                    </Divisores>
+                    </DivisoresCard>
                 </DivParrafos>
                 <Parrafo><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
                 <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
