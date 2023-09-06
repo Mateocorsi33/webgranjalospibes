@@ -5,6 +5,7 @@ import fotoform from "../../assest/fotoform.png";
 import fondo from "../../assest/fondo.png";
 // import SelectableButtons from "../Donar/botones.jsx";
 import Opciones from './Opciones';
+import whatsapp from "../../assest/waboton.png";
 
 
 const FondoForm = styled.div`
@@ -199,6 +200,58 @@ const Letrachica = styled.h3`
     }
 `
 
+const Recomendaciones = styled.div`
+  display: none;
+
+  @media (max-width: 800px) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      font-size: .7rem
+    }
+`
+
+const Whatsapp = styled.button`
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+  border: none;
+  padding: .9rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #67C15E;
+  margin: 1rem 0 2rem 0;
+  cursor: pointer;
+
+  &:hover {
+        transition: .3s;
+        opacity: 90%;
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 800px) {
+        
+    }
+`
+
+const ImgWA = styled.img`
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+`
+const Link = styled.a`
+  display: flex;
+  text-decoration: none;
+  &:hover {
+        text-decoration: none;
+    }
+`
+
 
 function Donar() {
 
@@ -217,6 +270,8 @@ function Donar() {
               <Letrachica>Montos expresados en Pesos Argentinos (ARS $)</Letrachica>
             </DivCuanto>
             <Opciones/>
+            <Parrafo1>SI TENÉS INCOVENIENTES PARA REALIZAR LA TRANSACCIÓN, COMUNÍCATE CON NOSOTROS POR WHATSAPP, PARA PODER RESOLVERLO.</Parrafo1>
+            <Link href="https://wa.me/message/MGKRGV2LBP5CK1"><Whatsapp><ImgWA src={whatsapp}/>Contactanos</Whatsapp></Link>
             <Parrafo>SE PARTE DEL CAMBIO POSITIVO EN LA VIDA DE LOS NIÑOS Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TU APOYO ES FUNDAMENTAL PARA LOGRAR UN FUTURO MÁS JUSTO Y SOSTENIBLE.</Parrafo>
             <Parrafo1>¡ÚNETE COMO PADRINO HOY MISMO Y SÉ PARTE DEL CAMBIO!</Parrafo1>
         </TamañoCuerpo>
