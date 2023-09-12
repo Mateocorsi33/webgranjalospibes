@@ -12,7 +12,8 @@ const DivFooter = styled.div`
     flex-direction: column;
     width: 100%;
     padding: 4.5rem 0 2rem 0;
-    background-color: #586E66;
+    background-color: #557153;
+    box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 800px) {
         padding-top: 3rem;
@@ -91,6 +92,7 @@ const Iconos = styled.div`
 
 const Redes = styled.img`
     width: 2rem;
+    border-radius: 50px;
     cursor: pointer;
     &:hover{
         transition: .3s;
