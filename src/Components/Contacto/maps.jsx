@@ -114,7 +114,7 @@ const LinkMapa = styled.a`
 export default function Maps() {
     return(
         <DivMapas>
-            <DivCard>
+            <DivCard data-aos="flip-up">
                     <DivGranja>
                         <ImgMapa src={mapaGranja}/>
                         <Titulo>Granja Los Pibes:</Titulo>
@@ -122,7 +122,7 @@ export default function Maps() {
                         <LinkMapa href="https://goo.gl/maps/NsSM96JGPmbQ9DVY6">Ver en mapa</LinkMapa>
                     </DivGranja>
             </DivCard>
-            <DivCard>
+            <DivCard data-aos="flip-up">
                     <DivHumedal>
                         <ImgMapa src={mapaHumedal}/>
                         <Titulo>Humedal - Los Coipos:</Titulo>

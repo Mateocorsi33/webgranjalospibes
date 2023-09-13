@@ -116,7 +116,7 @@ const Encabe = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
     padding-top: 2rem;
     border-top: 2px solid #D6D582;
 
@@ -270,45 +270,47 @@ const Padrinos = () => {
                 <Titulo>Padrinos</Titulo>
             </BackG>
             <DivPadrinos>
-                <Encabe>¡SÉ UN PADRINO DE LA VIDA SALVAJE Y DE LA TRANSFORMACIÓN SOCIAL!</Encabe>
-                <Parrafo>EN GRANJA LOS PIBES, TRABAJAMOS INCANSABLEMENTE PARA BRINDAR APOYO Y PROTECCIÓN A NIÑOS Y FAMILIAS EN SITUACIÓN DE VULNERABILIDAD. NUESTRO COMPROMISO CON LA PROMOCIÓN DE LOS DERECHOS DEL NIÑO Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE NOS IMPULSA A SEGUIR ADELANTE, PERO NECESITAMOS DE TU AYUDA PARA LOGRARLO.</Parrafo>
+                <Encabe data-aos="zoom-in">¡SÉ UN PADRINO DE LA VIDA SALVAJE Y DE LA TRANSFORMACIÓN SOCIAL!</Encabe>
+                <Parrafo data-aos="zoom-in">EN GRANJA LOS PIBES, TRABAJAMOS INCANSABLEMENTE PARA BRINDAR APOYO Y PROTECCIÓN A NIÑOS Y FAMILIAS EN SITUACIÓN DE VULNERABILIDAD. NUESTRO COMPROMISO CON LA PROMOCIÓN DE LOS DERECHOS DEL NIÑO Y LA CONSERVACIÓN DE LA FAUNA SILVESTRE NOS IMPULSA A SEGUIR ADELANTE, PERO NECESITAMOS DE TU AYUDA PARA LOGRARLO.</Parrafo>
                 <CarouselImg/>
-                <Parrafo>HOY TE INVITAMOS A SER PARTE DE NUESTRA CAMPAÑA DE PADRINOS, UNA OPORTUNIDAD ÚNICA PARA MARCAR LA DIFERENCIA EN LA VIDA DE ESTOS NIÑOS Y CONTRIBUIR A LA PROTECCIÓN DE NUESTRA INVALUABLE BIODIVERSIDAD.</Parrafo>
-                <Encabe>¿QUÉ IMPLICA SER UN PADRINO?</Encabe>
-                <Parrafo>COMO PADRINO, TU DONACIÓN ECONÓMICA SEA POR ÚNICA VEZ O DE MANERA MENSUAL SE CONVERTIRÁ EN UN PILAR FUNDAMENTAL PARA EL SOSTENIMIENTO DE NUESTRO CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE . CON TU GENEROSIDAD, PODREMOS:</Parrafo>
+                <Parrafo data-aos="zoom-in">HOY TE INVITAMOS A SER PARTE DE NUESTRA CAMPAÑA DE PADRINOS, UNA OPORTUNIDAD ÚNICA PARA MARCAR LA DIFERENCIA EN LA VIDA DE ESTOS NIÑOS Y CONTRIBUIR A LA PROTECCIÓN DE NUESTRA INVALUABLE BIODIVERSIDAD.</Parrafo>
+                <Encabe data-aos="zoom-in">¿QUÉ IMPLICA SER UN PADRINO?</Encabe>
+                <Parrafo data-aos="zoom-in">COMO PADRINO, TU DONACIÓN ECONÓMICA SEA POR ÚNICA VEZ O DE MANERA MENSUAL SE CONVERTIRÁ EN UN PILAR FUNDAMENTAL PARA EL SOSTENIMIENTO DE NUESTRO CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE . CON TU GENEROSIDAD, PODREMOS:</Parrafo>
                 <DivParrafos>
-                    <Divisores>
+                    <Divisores data-aos="zoom-in">
                         <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong></Parrafo>
                         <Img src={iconoUno}/>
                         <Parrafo>TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
                     </Divisores> 
-                    <Divisores>  
+                    <Divisores data-aos="zoom-in">  
                         <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong></Parrafo>
                         <Img src={iconoDos}/>
                         <Parrafo>AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
                     </Divisores> 
-                    <Divisores>   
+                    <Divisores data-aos="zoom-in">   
                         <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong></Parrafo>
                         <Img src={iconoTres}/>
                         <Parrafo>CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
                     </Divisores>
                 </DivParrafos>
-                <Encabe>¿CÓMO PUEDES SER UN PADRINO?</Encabe>
-                <Parrafo><Strong>SIMPLEMENTE ENTRA EN APADRINARSE, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
+                <Encabe data-aos="zoom-in">¿CÓMO PUEDES SER UN PADRINO?</Encabe>
+                <Parrafo data-aos="zoom-in"><Strong>SIMPLEMENTE ENTRA EN APADRINARSE, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
                 <DivParrafos>
-                    <DivisoresCard>
+                    <DivisoresCard data-aos="zoom-in">
                         <Img src={iconoCuatro}/>
                         <Parrafo><StrongCard>DONACIÓN POR ÚNICA VEZ:</StrongCard></Parrafo>
                         <Parrafo> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
                     </DivisoresCard>
-                    <DivisoresCard>
+                    <DivisoresCard data-aos="zoom-in">
                         <Img src={iconoCinco}/>
                         <Parrafo><StrongCard>DONACIÓN MENSUAL:</StrongCard></Parrafo>
                         <Parrafo>ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
                     </DivisoresCard>
                 </DivParrafos>
-                <Parrafo><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
-                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
+                <Parrafo data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
+                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>
     )

@@ -16,7 +16,7 @@ const FondoForm = styled.div`
 
   @media (max-width: 800px) {
         width: auto;
-        padding: 1.5rem .5rem 4rem .5rem;
+        padding: 2rem .5rem 8rem .5rem;
     }
 `
 
@@ -31,6 +31,9 @@ const DivForm = styled.div`
   border-radius: 10px;
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  animation: fadeIn;
+  animation-duration: 2s;
+
   @media (max-width: 800px) {
         width: 100%;
         gap: 1rem;
@@ -113,9 +116,11 @@ const Titulo = styled.h1`
     font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     letter-spacing: 0.9px;
+    animation: tada;
+    animation-duration: 2s;
 
     @media (max-width: 800px) {
         display: flex;

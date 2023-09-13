@@ -47,7 +47,7 @@ const DivCont = styled.div`
     gap: 2rem;
 
     @media (max-width: 800px) {
-        margin: 5rem 1rem;
+        margin: 1.8rem 1rem 2rem 1rem;
         gap: 2rem;
     }
 `
@@ -67,12 +67,13 @@ const Encabe = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 0;
+    margin: 3rem 0 0 0;
     padding-top: 2rem;
     border-top: 2px solid #D6D582;
 
     @media (max-width: 800px) {
         font-size: 1.5rem;
+        margin: 1rem 0 0 0;
     }
 `
 
@@ -103,17 +104,17 @@ const Contacto = () => {
             <BackG>
                 <Titulo>Contacto</Titulo>
             </BackG>
-            <DivCont>
+            <DivCont data-aos="zoom-in">
                 <Encabe>NUESTROS LUGARES</Encabe>
                 <Maps/>
             </DivCont>
             <DivCont>
-                <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
-                <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
-                <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>$1000 PARA ADULTOS</strong> Y DE <strong>$500 MENORES DE 10 AÑOS.</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
+                <Encabe data-aos="zoom-in">HORARIOS DE LA GRANJA LOS PIBES</Encabe>
+                <Parrafo data-aos="zoom-in"><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
+                <Parrafo data-aos="zoom-in">LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>$1000 PARA ADULTOS</strong> Y DE <strong>$500 MENORES DE 10 AÑOS.</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
             </DivCont>
             <DivCont>
-                <Encabe>ENCONTRANOS EN</Encabe>
+                <Encabe data-aos="zoom-in">ENCONTRANOS EN</Encabe>
                 <Redes></Redes>
             </DivCont>
         </>

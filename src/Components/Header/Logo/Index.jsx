@@ -141,6 +141,8 @@ const DivBarra1 = styled.div`
     align-items: center;
     gap: 2rem;
     margin-left: 4%;
+    animation: fadeInDown;
+    animation-duration: .2s;
 
     @media (max-width: 800px) {
         display: flex;
@@ -148,13 +150,14 @@ const DivBarra1 = styled.div`
         width: auto;
         position: absolute;
         background-color: #fff;
-        opacity: 90%;
+        opacity: 97%;
         width: 100%;
         height: auto;
         gap: 1.4rem;
         margin: 0;
         padding: 1rem 0;
         border-bottom: 2px solid #557153;
+        z-index: 1;
     }
 `
 
@@ -171,6 +174,8 @@ const StyledLink = styled(Link)`
     font-weight: bold;
     letter-spacing: 0.05em;
     color: #464646;
+    animation: fadeInLeft;
+    animation-duration: 1s;
   &:hover {
     text-decoration: none;
     color: #557153;
