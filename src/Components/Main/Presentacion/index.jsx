@@ -110,6 +110,7 @@ const DivText = styled.div`
         padding-top: .8rem;
         gap: 1.2rem;
         width: 100%;
+        overflow: hidden;
     }
 `
 
@@ -120,6 +121,7 @@ const DivText2 = styled.div`
     align-items: flex-end;
     border-top: 4px solid #D6D582;
     width: 20%;
+    
 
     @media (max-width: 800px) {
         align-items: center;
@@ -128,6 +130,7 @@ const DivText2 = styled.div`
         gap: 1.2rem;
         order: 1;
         width: 100%;
+        overflow: hidden;
     }
 `
 

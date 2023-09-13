@@ -277,12 +277,12 @@ const NuestraMision = (props) => {
 
     return (
         <BoxMision>
-            <DivText>
+            <DivText data-aos="fade-up" data-aos-duration="2000">
                 <Titulo>ÚNETE A <STRONG>NUESTRA MISIÓN</STRONG></Titulo>
                 <Parrafo>EN GRANJA LOS PIBES, CREEMOS EN EL PODER DE LA COMUNIDAD PARA GENERAR UN IMPACTO POSITIVO EN LA VIDA DE LOS NIÑOS Y EN LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TE INVITAMOS A UNIRTE A NUESTRA MISIÓN Y SER PARTE DEL CAMBIO. TIENES DIFERENTES FORMAS DE APOYARNOS:</Parrafo>
             </DivText>
             <BoxCard>
-                <Card>
+                <Card data-aos="zoom-in" data-aos-duration="1000">
                     <Eclipse1/>
                     <Cuadro>
                         <TCuadro>CAMPAÑA DE APADRINAMIENTO</TCuadro>
@@ -290,7 +290,7 @@ const NuestraMision = (props) => {
                         <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
                     </Cuadro>
                 </Card>
-                <Card>
+                <Card data-aos="zoom-in" data-aos-duration="1000">
                     <Eclipse2/>
                     <Cuadro>
                         <TCuadro>CORRE LA VOZ</TCuadro>
@@ -303,7 +303,7 @@ const NuestraMision = (props) => {
                         </Iconos>
                     </Cuadro>
                 </Card>
-                <Card>
+                <Card data-aos="zoom-in" data-aos-duration="1000">
                     <Eclipse3/>
                     <Cuadro>
                         <TCuadro>CUIDANDO Y CONSERVANDO</TCuadro>
@@ -312,7 +312,7 @@ const NuestraMision = (props) => {
                 </Card>
             </BoxCard>
             <DivText2>
-                <Parrafo>ÚNETE A NUESTRA MISIÓN Y SÉ PARTE DEL ESFUERZO POR PROTEGER Y CONSERVAR LA FLORA Y FAUNA SILVESTRE. CADA APORTE, YA SEA ECONÓMICO, DIFUSIÓN O PARTICIPACIÓN ACTIVA, NOS ACERCA A UN FUTURO EN EL QUE LAS GENERACIONES VENIDERAS PUEDAN DISFRUTAR DE LA RIQUEZA NATURAL QUE NOS RODEA.</Parrafo>
+                <Parrafo data-aos="fade-up" data-aos-duration="2000">ÚNETE A NUESTRA MISIÓN Y SÉ PARTE DEL ESFUERZO POR PROTEGER Y CONSERVAR LA FLORA Y FAUNA SILVESTRE. CADA APORTE, YA SEA ECONÓMICO, DIFUSIÓN O PARTICIPACIÓN ACTIVA, NOS ACERCA A UN FUTURO EN EL QUE LAS GENERACIONES VENIDERAS PUEDAN DISFRUTAR DE LA RIQUEZA NATURAL QUE NOS RODEA.</Parrafo>
                 <Titulo>¡JUNTOS PODEMOS MARCAR LA DIFERENCIA!</Titulo>
             </DivText2>
         </BoxMision>
