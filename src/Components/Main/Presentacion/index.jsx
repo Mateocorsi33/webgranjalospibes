@@ -45,7 +45,7 @@ const TituloPortada = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    animation: bounce;
+    animation: fadeInLeft;
     animation-duration: 1s;
 
     @media (max-width: 800px) {
@@ -293,7 +293,7 @@ const Presentacion = () => {
                         <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500"> 
-                        HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD SOBRE LOS CUIDADOS Y CONSERVACIÓN. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
+                        GRANJA LOS PIBES HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
                         </Parra>
                     </DivText>
                     <Gif src={foto} data-aos="fade-left"  data-aos-duration="1500"/>
