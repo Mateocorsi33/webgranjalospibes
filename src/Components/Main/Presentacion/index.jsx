@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes }  from "styled-components";
 import foto from "../../../assest/cuatro.jpg";
 import foto2 from "../../../assest/siete.jpg";
 import foto3 from "../../../assest/tres.jpg";
@@ -45,6 +45,8 @@ const TituloPortada = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    animation: lightSpeedInRight;
+    animation-duration: 1s;
 
     @media (max-width: 800px) {
         display: flex;
@@ -63,8 +65,10 @@ const DivContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-bottom: 11rem;
-    gap: 9rem;
+    margin: 0;
+    gap: 10rem;
 
     @media (max-width: 800px) {
         flex-direction: column;
@@ -80,8 +84,10 @@ const DivContent2 = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding-bottom: 11rem;
-    gap: 9rem;
+    gap: 5rem;
+
     @media (max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -280,7 +286,7 @@ const Presentacion = () => {
             <BoxCuerpo>
                     <TituloPortada>CONOCER PARA CUIDAR Y CONSERVAR</TituloPortada>
                 <DivContent>
-                    <DivText data-aos="fade-right" data-aos-duration="1500">
+                    <DivText>
                         <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500"> 
@@ -291,7 +297,7 @@ const Presentacion = () => {
                 </DivContent>
                 <DivContent2>
                     <Gif2 src={foto2} data-aos="fade-right" data-aos-duration="1500"/>
-                    <DivText2 data-aos="fade-left"  data-aos-duration="1500">
+                    <DivText2>
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500">APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
                         <GifM src={foto2}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500"> 
@@ -300,7 +306,7 @@ const Presentacion = () => {
                     </DivText2>
                 </DivContent2>
                 <DivContent>
-                    <DivText data-aos="fade-right" data-aos-duration="1500">
+                    <DivText>
                         <Titu data-aos="fade-right" data-aos-duration="1500"><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
                         <GifM src={foto3}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500">
@@ -311,7 +317,7 @@ const Presentacion = () => {
                 </DivContent>
                 <DivContent2>
                     <Gif2 src={foto4} data-aos="fade-right" data-aos-duration="1500"/>
-                    <DivText2 data-aos="fade-left"  data-aos-duration="1500">
+                    <DivText2>
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
                         <GifM src={foto4}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500">

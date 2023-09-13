@@ -69,8 +69,8 @@ export default function Portada () {
                     <source src={video} type="video/mp4" />
                 </Video>
                 <DivText>
-                    <Titulo class="animate__animated animate__bounce">CONOCER PARA</Titulo>
-                    <Titulo class="animate__animated animate__bounce">CUIDAR Y CONSERVAR</Titulo>
+                    <Titulo>CONOCER PARA</Titulo>
+                    <Titulo>CUIDAR Y CONSERVAR</Titulo>
                 </DivText>
                 <GradientOverlay />
             </VideoBackground>
