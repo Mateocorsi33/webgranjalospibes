@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import video from "../../../assest/movie.webm";
+import 'animate.css';
 
 
 const BoxPortada = styled.div`
@@ -38,6 +39,8 @@ const Titulo = styled.h1`
     width: 100%;
     margin: 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+    animation: bounceInLeft;
+    animation-duration: 1s;
 
     @media (max-width: 800px) {
         display: none;
@@ -66,8 +69,8 @@ export default function Portada () {
                     <source src={video} type="video/mp4" />
                 </Video>
                 <DivText>
-                    <Titulo>CONOCER PARA</Titulo>
-                    <Titulo>CUIDAR Y CONSERVAR</Titulo>
+                    <Titulo class="animate__animated animate__bounce">CONOCER PARA</Titulo>
+                    <Titulo class="animate__animated animate__bounce">CUIDAR Y CONSERVAR</Titulo>
                 </DivText>
                 <GradientOverlay />
             </VideoBackground>

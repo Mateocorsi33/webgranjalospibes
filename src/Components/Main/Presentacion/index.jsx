@@ -280,41 +280,41 @@ const Presentacion = () => {
             <BoxCuerpo>
                     <TituloPortada>CONOCER PARA CUIDAR Y CONSERVAR</TituloPortada>
                 <DivContent>
-                    <DivText>
-                        <Titu>CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
+                    <DivText data-aos="fade-right" data-aos-duration="1500">
+                        <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto}/>
-                        <Parra> 
+                        <Parra data-aos="fade-right" data-aos-duration="1500"> 
                         HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD SOBRE LOS CUIDADOS Y CONSERVACIÓN. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
                         </Parra>
                     </DivText>
-                    <Gif src={foto}/>
+                    <Gif src={foto} data-aos="fade-left"  data-aos-duration="1500"/>
                 </DivContent>
                 <DivContent2>
-                    <Gif2 src={foto2}/>
-                    <DivText2>
-                        <Titu2>APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
+                    <Gif2 src={foto2} data-aos="fade-right" data-aos-duration="1500"/>
+                    <DivText2 data-aos="fade-left"  data-aos-duration="1500">
+                        <Titu2 data-aos="fade-left"  data-aos-duration="1500">APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
                         <GifM src={foto2}/>
-                        <Parra2> 
+                        <Parra2 data-aos="fade-left"  data-aos-duration="1500"> 
                         A TRAVÉS DE ACCIONES DE RESCATE, ESTUDIOS VETERINARIOS Y LIBERACIONES, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL, PARA ASEGURAR EL BIENESTAR Y LA SUPERVIVENCIA DE LOS ANIMALES SILVESTRES.
                         </Parra2>
                     </DivText2>
                 </DivContent2>
                 <DivContent>
-                    <DivText>
-                        <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
+                    <DivText data-aos="fade-right" data-aos-duration="1500">
+                        <Titu data-aos="fade-right" data-aos-duration="1500"><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
                         <GifM src={foto3}/>
-                        <Parra>
+                        <Parra data-aos="fade-right" data-aos-duration="1500">
                         EN RESPUESTA A ESTOS DESAFÍOS, QUE REPRESENTAN LOS PRINCIPALES FOCOS DE CONFLICTO, CONSIDERAMOS DE VITAL IMPORTANCIA CONCIENTIZAR Y UNIR ESFUERZOS PARA PROTEGER Y PRESERVAR NUESTRO HÁBITAT NATURAL.
                         </Parra>
                     </DivText>
-                    <Gif src={foto3}/>
+                    <Gif src={foto3} data-aos="fade-left"  data-aos-duration="1500"/>
                 </DivContent>
                 <DivContent2>
-                    <Gif2 src={foto4}/>
-                    <DivText2>
-                        <Titu2><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
+                    <Gif2 src={foto4} data-aos="fade-right" data-aos-duration="1500"/>
+                    <DivText2 data-aos="fade-left"  data-aos-duration="1500">
+                        <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
                         <GifM src={foto4}/>
-                        <Parra2>
+                        <Parra2 data-aos="fade-left"  data-aos-duration="1500">
                         FUNCIONAMIENTO DEL CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD. SE BUSCA BRINDAR UN APOYO INTEGRAL, PARA EL CRECIMIENTO Y DESARROLLO DE LOS NIÑOS Y NIÑAS, PROPORCIONÁNDOLES OPORTUNIDADES EDUCATIVAS PARA UN FUTURO MEJOR.
                         </Parra2>
                     </DivText2>

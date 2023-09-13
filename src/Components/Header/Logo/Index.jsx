@@ -36,6 +36,8 @@ const ImgLogo = styled.img`
     height: 2.5rem;
     border-radius: 100%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    animation: flip;
+    animation-duration: 1s;
 
     @media (max-width: 800px) {
         margin-left: 1rem;
