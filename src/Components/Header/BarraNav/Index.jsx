@@ -7,7 +7,7 @@ const BoxBarraNav = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #557153;
+    background-color: #638360;
     width: 85%;
     box-shadow: inset 2px 0px 1px rgba(0, 0, 0, 0.1);
 

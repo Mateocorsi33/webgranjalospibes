@@ -45,7 +45,7 @@ const TituloPortada = styled.h1`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    animation: lightSpeedInRight;
+    animation: bounce;
     animation-duration: 1s;
 
     @media (max-width: 800px) {

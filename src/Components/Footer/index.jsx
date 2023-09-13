@@ -11,7 +11,8 @@ const DivFooter = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 4.5rem 0 2rem 0;
+    padding: 6rem 1rem 6rem 1rem;
+    gap: 2rem;
     background-color: #557153;
     box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
 
@@ -70,6 +71,7 @@ const DivCopyIconos = styled.div`
     align-items: center;
     margin: 1rem 6rem;
     border-top: 1px solid #ffffff;
+    padding-top: 1rem;
 
     @media (max-width: 800px) {
         flex-direction: column;
@@ -93,6 +95,7 @@ const Iconos = styled.div`
 const Redes = styled.img`
     width: 2rem;
     border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     &:hover{
         transition: .3s;
