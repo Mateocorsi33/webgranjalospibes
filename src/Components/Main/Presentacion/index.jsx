@@ -107,7 +107,6 @@ const DivText = styled.div`
     padding-top: 2rem;
     border-top: 4px solid #D6D582;
     width: 20%;
-    overflow: hidden;
 
     @media (max-width: 800px) {
         text-align: center;
@@ -116,7 +115,6 @@ const DivText = styled.div`
         padding-top: .8rem;
         gap: 1.2rem;
         width: 100%;
-        overflow: hidden;
     }
 `
 
@@ -126,9 +124,7 @@ const DivText2 = styled.div`
     padding-top: 2rem;
     align-items: flex-end;
     border-top: 4px solid #D6D582;
-    width: 20%;
-    overflow: hidden;
-    
+    width: 20%;    
 
     @media (max-width: 800px) {
         align-items: center;
@@ -137,7 +133,6 @@ const DivText2 = styled.div`
         gap: 1.2rem;
         order: 1;
         width: 100%;
-        overflow: hidden;
     }
 `
 
@@ -151,7 +146,6 @@ const Titu = styled.h1`
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
-    overflow: hidden;
 
     @media (max-width: 800px) {
         border-top: 4px solid #A9AF7E;
@@ -177,7 +171,6 @@ const Titu2 = styled.h1`
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
-    overflow: hidden;
 
     @media (max-width: 800px) {
         border-top: 4px solid #A9AF7E;
@@ -204,7 +197,6 @@ const Parra = styled.p`
     line-height: 2rem;
     letter-spacing: 0.9px;
     padding-top: .5rem;
-    overflow: hidden;
 
     @media (max-width: 800px) {
         width: 95%;
@@ -229,7 +221,6 @@ const Parra2 = styled.p`
     line-height: 2rem;
     letter-spacing: 0.9px;
     padding-top: .5rem;
-    overflow: hidden;
 
 
     @media (max-width: 800px) {
@@ -272,7 +263,6 @@ const GifM = styled.img`
     display: none;
 
     @media (max-width: 800px) {
-        overflow: hidden;
         display: flex;
         width: 100%;
         height: auto;
