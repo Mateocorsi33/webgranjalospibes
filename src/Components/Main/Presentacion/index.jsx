@@ -18,6 +18,7 @@ const Fondo = styled.div`
     width:100%;
     height: auto;
     z-index: -1;
+    overflow: hidden;
 
   @media (max-width: 800px) {
       background-attachment: fixed;
@@ -31,6 +32,7 @@ const BoxCuerpo = styled.div`
     align-items: center;
     margin-top: 3.5rem;
     width: 80%;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         margin-top:1rem;
@@ -47,6 +49,7 @@ const TituloPortada = styled.h1`
     line-height: normal;
     animation: fadeInLeft;
     animation-duration: 1s;
+
 
     @media (max-width: 800px) {
         display: flex;
@@ -69,6 +72,7 @@ const DivContent = styled.div`
     padding-bottom: 11rem;
     margin: 0;
     gap: 10rem;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         flex-direction: column;
@@ -87,6 +91,7 @@ const DivContent2 = styled.div`
     width: 100%;
     padding-bottom: 11rem;
     gap: 5rem;
+    overflow: hidden;
 
     @media (max-width: 800px) {
     flex-direction: column;
@@ -102,6 +107,7 @@ const DivText = styled.div`
     padding-top: 2rem;
     border-top: 4px solid #D6D582;
     width: 20%;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         text-align: center;
@@ -121,6 +127,7 @@ const DivText2 = styled.div`
     align-items: flex-end;
     border-top: 4px solid #D6D582;
     width: 20%;
+    overflow: hidden;
     
 
     @media (max-width: 800px) {
@@ -144,6 +151,7 @@ const Titu = styled.h1`
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         border-top: 4px solid #A9AF7E;
@@ -169,6 +177,7 @@ const Titu2 = styled.h1`
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         border-top: 4px solid #A9AF7E;
@@ -195,6 +204,7 @@ const Parra = styled.p`
     line-height: 2rem;
     letter-spacing: 0.9px;
     padding-top: .5rem;
+    overflow: hidden;
 
     @media (max-width: 800px) {
         width: 95%;
@@ -219,6 +229,7 @@ const Parra2 = styled.p`
     line-height: 2rem;
     letter-spacing: 0.9px;
     padding-top: .5rem;
+    overflow: hidden;
 
 
     @media (max-width: 800px) {
@@ -261,6 +272,7 @@ const GifM = styled.img`
     display: none;
 
     @media (max-width: 800px) {
+        overflow: hidden;
         display: flex;
         width: 100%;
         height: auto;

@@ -38,6 +38,7 @@ const DivBarra2 = styled.div`
 `
 
 const Marcador = styled.div`
+
     &:hover{
         border-bottom: 2px solid #D6D582;
     }
@@ -76,9 +77,9 @@ const Boton = styled.button`
 const StyledLink = styled(Link)`
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     color: #ffffff;
   &:hover {
     text-decoration: none;
@@ -102,12 +103,12 @@ const BarraNav = () => {
     return(
         <BoxBarraNav>
                 <DivBarra1>
-                    <Marcador><StyledLink to="/" style={{}}>INICIO</StyledLink></Marcador>
-                    <Marcador><StyledLink to="/quienes-somos" style={{}}>QUIÉNES SOMOS</StyledLink></Marcador>
-                    <Marcador><StyledLink to="/contacto" style={{}}>CONTACTO</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/" style={{}}>Inicio</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/quienes-somos" style={{}}>Quiénes somos</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/contacto" style={{}}>Contacto</StyledLink></Marcador>
                 </DivBarra1>
                 <DivBarra2>
-                    <Marcador><StyledLink to="/padrinos" style={{}}>PADRINOS</StyledLink></Marcador>
+                    <Marcador><StyledLink to="/padrinos" style={{}}>Padrinos</StyledLink></Marcador>
                     <StyledLink to="/donar" style={{}}><Boton>DONAR</Boton></StyledLink>
                 </DivBarra2>
         </BoxBarraNav>
