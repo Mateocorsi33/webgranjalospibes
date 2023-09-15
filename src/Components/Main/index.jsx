@@ -4,7 +4,7 @@ import Portada from "./Portada";
 import Presentacion from "./Presentacion";
 import NuestraMision from "./NuestraMision";
 // import Guia from "./GuiaSierras";
-// import Imagenes from "./Imagenes";
+import DivImgVideo from "./Imagenes";
 
 const BoxMain = styled.div`
     display: flex;
@@ -21,7 +21,7 @@ const Main = () => {
             <Presentacion/>
             {/* <Guia/> */}
             <NuestraMision/>
-            {/* <Imagenes/> */}
+            <DivImgVideo/>
         </BoxMain>
     )
 }
