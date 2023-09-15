@@ -17,8 +17,9 @@ const DivImg = styled.div`
     background-size: cover;
 
     @media (max-width: 800px) {
-        width: 95%;
-        padding: 1.5rem 5%;
+        width: 100%;
+        margin: 0;
+        padding: 5rem 0 8rem 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -32,8 +33,9 @@ const DivText = styled.div`
     gap: .5rem;
 
     @media (max-width: 800px) {
-        width: 95%;
+        width: 100%;
         gap:1rem;
+        margin-bottom: 1.5rem;
     }
 `
 
@@ -54,11 +56,12 @@ const Titu = styled.h1`
     @media (max-width: 800px) {
         letter-spacing: 0.5px;
         width: 100%;
+        padding: 0 5%;
         font-size: 1.7rem;
-        line-height: 1.5rem;
-        font-weight: 600;
+        line-height: 2rem;
+        font-weight: 800;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
     }
 `
 
@@ -77,9 +80,10 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 100%;
+        padding: 0 5%;
         font-size: 1rem;
         line-height: 2rem;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 0;
         text-align: center;
     }
@@ -101,17 +105,36 @@ const Video = styled.iframe`
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
 
     @media (max-width: 800px) {
-        width: 100%;
+        display: none;
+    }
+`
+
+const VideoMovil = styled.iframe`
+        display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
+        margin: 1.5rem 0;
+        box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
     }
 `
 
 
 const DivImgVideo = () => {
     return(
+        <>
         <DivImg>
             <DivText>
                 <Titu>PRESERVAR PARA VIVIR</Titu>
                 <Parra>Te invitamos a mirar nuestro nuevo documental para poder conocer, cuidar y conservar el lugar del cual somos parte.</Parra>
+                <VideoMovil  width="100%" 
+                    height="250" 
+                    src="https://www.youtube.com/embed/AHZFRtVyC48?si=7ltCQSB4Beq__pSD" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </VideoMovil>
                 <Parra>Cortometraje documental sobre el ambiente de Tandil, para mirarnos y reconocernos en lo nuestro, en lo próximo, en lo cercano que, al fin de cuentas, nos constituye.</Parra>
                 <Img src={flecha}/>
             </DivText>
@@ -122,8 +145,9 @@ const DivImgVideo = () => {
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
-            </Video>   
+            </Video>    
         </DivImg>
+        </>
     )
 }
 
