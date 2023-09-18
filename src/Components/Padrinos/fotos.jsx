@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
-import foto1 from "../../assest/p25.JPG";
+import foto1 from "../../assest/p25.jpg";
 import foto2 from "../../assest/p1.jpg";
-import foto3 from "../../assest/p28.JPG";
+import foto3 from "../../assest/p28.jpg";
 import foto4 from "../../assest/p3.jpg";
-import foto5 from "../../assest/p4.JPG";
+import foto5 from "../../assest/p4.jpg";
 import foto6 from "../../assest/p5.jpg";
-import foto7 from "../../assest/p27.JPG";
-import foto8 from "../../assest/p24.JPG";
-import foto9 from "../../assest/p23.JPG";
+import foto7 from "../../assest/p27.jpg";
+import foto8 from "../../assest/p24.jpg";
+import foto9 from "../../assest/p23.jpg";
 import foto10 from "../../assest/foto2.jpg";
 
 
