@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
-import foto1 from "../../assest/p25.jpg";
+// import foto1 from "../../assest/p25.jpg";
 import foto2 from "../../assest/p1.jpg";
 import foto3 from "../../assest/p28.jpg";
 import foto4 from "../../assest/p3.jpg";
@@ -41,10 +41,10 @@ const Img = styled.img`
 function CarouselImg() {
   return (
     <StyledCarousel interval={3000}>
-        <Carousel.Item>
+        {/* <Carousel.Item>
             <Img className="d-block w-100" src={foto1} alt="Granja"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
-        </Carousel.Item>
+        </Carousel.Item> */}
         <Carousel.Item>
             <Img className="d-block w-100" src={foto2} alt="Second slide"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
