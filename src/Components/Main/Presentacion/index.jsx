@@ -146,7 +146,7 @@ const Titu = styled.h1`
     flex-direction: column;
     color: #7D8F69;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
@@ -171,7 +171,7 @@ const Titu2 = styled.h1`
     text-align: end;
     color: #7D8F69;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
@@ -195,11 +195,11 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #557153;
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 2rem;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.1px;
     padding-top: .5rem;
 
     @media (max-width: 800px) {
@@ -219,11 +219,11 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #557153;
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 2rem;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.1px;
     padding-top: .5rem;
 
 
@@ -297,7 +297,7 @@ const Presentacion = () => {
                         <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto1}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500"> 
-                        GRANJA LOS PIBES HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
+                        Granja los pibes ha asumido la importante tarea de concientizar a la comunidad, a través de su incansable labor, el centro busca preservar la riqueza y la biodiversidad que nos rodea, consideradas tesoros vivos de nuestra región.
                         </Parra>
                     </DivText>
                     <Gif src={foto} data-aos="fade-left"  data-aos-duration="1000"/>
@@ -308,7 +308,7 @@ const Presentacion = () => {
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500">APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
                         <GifM src={foto2m}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500"> 
-                        A TRAVÉS DE ACCIONES DE RESCATE, ESTUDIOS VETERINARIOS Y LIBERACIONES, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL, PARA ASEGURAR EL BIENESTAR Y LA SUPERVIVENCIA DE LOS ANIMALES SILVESTRES.
+                        A través de acciones de rescate, estudios veterinarios y liberaciones, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial, para asegurar el bienestar y la supervivencia de los animales silvestres.
                         </Parra2>
                     </DivText2>
                 </DivContent2>
@@ -317,7 +317,7 @@ const Presentacion = () => {
                         <Titu data-aos="fade-right" data-aos-duration="1500"><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
                         <GifM src={foto3m}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500">
-                        EN RESPUESTA A ESTOS DESAFÍOS, QUE REPRESENTAN LOS PRINCIPALES FOCOS DE CONFLICTO, CONSIDERAMOS DE VITAL IMPORTANCIA CONCIENTIZAR Y UNIR ESFUERZOS PARA PROTEGER Y PRESERVAR NUESTRO HÁBITAT NATURAL.
+                        En respuesta a estos desafíos, que representan los principales focos de conflicto, consideramos de vital importancia concientizar y unir esfuerzos para proteger y preservar nuestro hábitat natural.
                         </Parra>
                     </DivText>
                     <Gif src={foto3} data-aos="fade-left"  data-aos-duration="1000"/>
@@ -328,7 +328,7 @@ const Presentacion = () => {
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
                         <GifM src={foto4m}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500">
-                        FUNCIONAMIENTO DEL CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD. SE BUSCA BRINDAR UN APOYO INTEGRAL, PARA EL CRECIMIENTO Y DESARROLLO DE LOS NIÑOS Y NIÑAS, PROPORCIONÁNDOLES OPORTUNIDADES EDUCATIVAS PARA UN FUTURO MEJOR.
+                        Funcionamiento del centro de día para niños y niñas en situaciones de vulnerabilidad. se busca brindar un apoyo integral, para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor.
                         </Parra2>
                     </DivText2>
                 </DivContent2>

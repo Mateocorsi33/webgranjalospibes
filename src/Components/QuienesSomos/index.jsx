@@ -185,10 +185,10 @@ const Parrafo = styled.p`
     width: 80%;
     height: auto;
     flex-direction: column;
-    color: #557153;
-    font-size: .9rem;
+    color: #464646;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8rem;
     margin: 0;
 
@@ -197,7 +197,7 @@ const Parrafo = styled.p`
         align-items: center;
         text-align: center;
         justify-content: center;
-        font-size: .8rem;
+        font-size: .9rem;
         width: 100%;
         padding: 0 5%;
     }
@@ -206,19 +206,20 @@ const Parrafo = styled.p`
 const Parrafo2 = styled.p`
     display: flex;
     text-align: start;
-    width: 50%;
+    width: 47%;
     height: auto;
     flex-direction: column;
     color: #ffffff;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: .8rem;
+        font-size: .9rem;
+        font-weight: 400;
         width: 100%;
         padding: 0 5%;
         text-align: center;
@@ -228,19 +229,19 @@ const Parrafo2 = styled.p`
 const Parrafo2Bis = styled.p`
     display: flex;
     text-align: start;
-    width: 50%;
+    width: 47%;
     height: auto;
     flex-direction: column;
-    color: #557153;
-    font-size: .9rem;
+    color: #464646;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: .8rem;
+        font-size: .9rem;
         width: 100%;
         padding: 0 5%;
         text-align: center;
@@ -254,15 +255,16 @@ const Parrafo2Lineal = styled.p`
     height: auto;
     flex-direction: column;
     color: #ffffff;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: .8rem;
+        font-size: .9rem;
+        font-weight: 400;
         width: 90%;
         text-align: center;
     }
@@ -301,16 +303,16 @@ const Strong = styled.strong`
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     @media (max-width: 800px) {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight:600;
     }
 `
 
 const Video = styled.video`
     display: flex;
-    width: 55%;
+    width: 53%;
 
     @media (max-width: 800px) {
         width: 100%;
@@ -344,51 +346,51 @@ const QuienesSomos = () => {
                     <TituPrincipal data-aos="zoom-in">GRANJA LOS PIBES</TituPrincipal>
                 <DivEncabezado>
                     <Box>
-                        <Parrafo data-aos="zoom-in">GRANJA LOS PIBES, UN FARO DE ESPERANZA Y ACCIÓN, QUE TRABAJA INCANSABLEMENTE PARA CONSTRUIR UN FUTURO MEJOR Y PODER GENERAR UN IMPACTO POSITIVO EN LA COMUNIDAD. LA GRANJA ABORDA COMO PRINCIPALES PROBLEMÁTICAS LA CONSERVACIÓN AMBIENTAL Y EL DESARROLLO SOCIAL DE NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD. BAJO SU MANTO LA GRANJA CUENTA CON EL<Strong>CENTRO DE RESCATE DE ANIMALES SILVESTRES Y LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE,</Strong>DOS INICIATIVAS COMPLEMENTARIAS DONDE CONVERGEN EL DESARROLLO SOCIAL Y LA CONSERVACIÓN AMBIENTAL.</Parrafo>
+                        <Parrafo data-aos="zoom-in">Granja los pibes, un faro de esperanza y acción, que trabaja incansablemente para construir un futuro mejor y poder generar un impacto positivo en la comunidad. la granja aborda como principales problemáticas la conservación ambiental y el desarrollo social de niños y niñas en situaciones de vulnerabilidad. bajo su manto la granja cuenta con el<Strong>Centro de rescate de animales silvestres y la Asociación Civil Casa del niño en la calle,</Strong>dos iniciativas complementarias donde convergen el desarrollo social y la conservación ambiental.</Parrafo>
                         <Video autoPlay muted loop data-aos="zoom-in">
                              <source src={video} type="video/mp4" />
                         </Video>
                     </Box>
                     <br></br>
-                    <Parrafo data-aos="zoom-in"><Strong>EN GRANJA LOS PIBES, LA ESPERANZA Y LA ACCIÓN SE ENTRELAZAN PARA CREAR UN IMPACTO POSITIVO EN LA SOCIEDAD Y EN EL MEDIO AMBIENTE. ES UN LLAMADO A UNIR FUERZAS, A GENERAR CONCIENCIA Y A TRABAJAR JUNTOS PARA CONSTRUIR UN MUNDO MÁS EQUITATIVO, SOSTENIBLE Y LLENO DE OPORTUNIDADES PARA TODOS. GRANJA LOS PIBES NOS MUESTRA QUE, CON COMPROMISO Y DEDICACIÓN, PODEMOS MARCAR LA DIFERENCIA Y DEJAR UN LEGADO DURADERO PARA LAS GENERACIONES VENIDERAS.</Strong></Parrafo>
+                    <Parrafo data-aos="zoom-in"><Strong>En granja los pibes, la esperanza y la acción se entrelazan para crear un impacto positivo en la sociedad y en el medio ambiente. es un llamado a unir fuerzas, a generar conciencia y a trabajar juntos para construir un mundo más equitativo, sostenible y lleno de oportunidades para todos. granja los pibes nos muestra que, con compromiso y dedicación, podemos marcar la diferencia y dejar un legado duradero para las generaciones venideras.</Strong></Parrafo>
                 </DivEncabezado>
                 <DivCentro>
                     <Encabe data-aos="zoom-in">CENTRO DE RESCATE DE ANIMALES SILVESTRES</Encabe>
                     <Box>
-                        <Parrafo2 data-aos="zoom-in">EL CENTRO SE DEDICA A LA PROTECCIÓN Y CONSERVACIÓN DE LA FLORA Y FAUNA NATIVA. SU LABOR INCANSABLE SE ENFOCA EN RESCATAR Y REHABILITAR ANIMALES VÍCTIMAS DEL TRÁFICO ILEGAL, DEL MASCOTISMO Y LA CRECIENTE EXPANSIÓN URBANA Y AGRÍCOLA PROMOVIENDO LA CONCIENCIA SOBRE LA IMPORTANCIA DE PRESERVAR NUESTRA BIODIVERSIDAD. MEDIANTE ESTUDIOS VETERINARIOS, CUIDADOS ESPECIALIZADOS Y LIBERACIONES RESPONSABLES, EL CENTRO BUSCA GARANTIZAR QUE LOS ANIMALES RECUPERADOS REGRESEN A SU HÁBITAT NATURAL DE FORMA EXITOSA.</Parrafo2>
+                        <Parrafo2 data-aos="zoom-in">El centro se dedica a la protección y conservación de la flora y fauna nativa. su labor incansable se enfoca en rescatar y rehabilitar animales víctimas del tráfico ilegal, del mascotismo y la creciente expansión urbana y agrícola promoviendo la conciencia sobre la importancia de preservar nuestra biodiversidad. mediante estudios veterinarios, cuidados especializados y liberaciones responsables, el centro busca garantizar que los animales recuperados regresen a su hábitat natural de forma exitosa.</Parrafo2>
                         <Fotos src={foto4} data-aos="zoom-in"/>
                         <Fotos2 src={foto4}/>
                     </Box>
-                        <Parrafo2Lineal data-aos="zoom-in">NUESTRO OBJETIVO PRINCIPAL ES LOGRAR QUE LOS ANIMALES RESCATADOS PUEDAN REGRESAR A SU HÁBITAT NATURAL LO ANTES POSIBLE. TRABAJAMOS EN ESTRECHA COLABORACIÓN CON EXPERTOS EN CONSERVACIÓN PARA DETERMINAR EL MOMENTO Y EL LUGAR ADECUADOS PARA SU LIBERACIÓN. ESTO NOS ASEGURA QUE TENGAN LAS MEJORES OPORTUNIDADES DE REINTEGRARSE A SU ENTORNO Y CONTINUAR SU CICLO DE VIDA NATURAL.</Parrafo2Lineal>
+                        <Parrafo2Lineal data-aos="zoom-in">Nuestro objetivo principal es lograr que los animales rescatados puedan regresar a su hábitat natural lo antes posible. trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo2Lineal>
                     <Box>
                         <Fotos2 src={foto5}/>
-                        <Parrafo2 data-aos="zoom-in">EN UN ESFUERZO POR PRESERVAR LA VIDA SILVESTRE Y SU HÁBITAT NATURAL, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL. NUESTRO EQUIPO ESPECIALIZADO ESTÁ PREPARADO PARA ATENDER SITUACIONES DE EMERGENCIA RELACIONADAS CON ANIMALES SILVESTRES EN PELIGRO. REALIZAMOS RESCATES CUIDADOSOS Y BRINDAMOS LA ATENCIÓN NECESARIA, OFRECIENDO UN REFUGIO SEGURO Y LOS TRATAMIENTOS MÉDICOS ADECUADOS PARA SU REHABILITACIÓN. ADEMÁS, LLEVAMOS A CABO ESTUDIOS VETERINARIOS EXHAUSTIVOS PARA EVALUAR EL ESTADO DE SALUD DE LOS ANIMALES RESCATADOS.</Parrafo2>
+                        <Parrafo2 data-aos="zoom-in">En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial. nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados.</Parrafo2>
                         <Fotos src={foto5} data-aos="zoom-in"/>
                     </Box>
                 </DivCentro>
                 <DivAsociacion>
                     <Encabe data-aos="zoom-in">LA ASOCIACIÓN CIVIL CASA DEL NIÑO EN LA CALLE</Encabe>
                         <Box>
-                            <Parrafo2 data-aos="zoom-in">LA ASOCIACIÓN TRABAJA DESDE HACE MÁS DE 30 AÑOS PARA BRINDAR RESPUESTAS A LAS NECESIDADES DE NIÑOS Y FAMILIAS EN SITUACIÓN DE VULNERABILIDAD Y EXCLUSIÓN, PRIORIZANDO LA PROMOCIÓN Y PROTECCIÓN DE LOS DERECHOS DEL NIÑO. A LO LARGO DE SU TRAYECTORIA, HAN ATENDIDO A MÁS DE 1000 NIÑOS EN DIFERENTES MODALIDADES, COMO EL HOGAR CONVIVENCIAL, CASA DE LOS NIÑOS Y CENTRO DE DESARROLLO INFANTIL. MUCHOS DE LOS NIÑOS QUE FUERON ATENDIDOS POR LA ASOCIACIÓN CONTINÚAN TRABAJANDO EN EL LUGAR, DESEMPEÑÁNDOSE COMO EDUCADORES, CONSTRUCTORES, PERSONAL DE MANTENIMIENTO Y ATENCIÓN EN EL CENTRO DE RESCATE DE ANIMALES SILVESTRES.</Parrafo2>
+                            <Parrafo2 data-aos="zoom-in">La asociación trabaja desde hace más de 30 años para brindar respuestas a las necesidades de niños y familias en situación de vulnerabilidad y exclusión, priorizando la promoción y protección de los derechos del niño. a lo largo de su trayectoria, han atendido a más de 1000 niños en diferentes modalidades, como el hogar convivencial, casa de los niños y centro de desarrollo infantil. muchos de los niños que fueron atendidos por la asociación continúan trabajando en el lugar, desempeñándose como educadores, constructores, personal de mantenimiento y atención en el centro de rescate de animales silvestres.</Parrafo2>
                             <Fotos src={foto8} data-aos="zoom-in"/>
                             <Fotos2 src={foto8}/>
                         </Box>
                         <Box>
                             <Fotos src={foto1} data-aos="zoom-in"/>
-                            <Parrafo2 data-aos="zoom-in">ADEMÁS DE SU FUNCIÓN AMBIENTAL, DESEMPEÑA UN PAPEL CRUCIAL COMO CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD BRINDANDO APOYO Y OPORTUNIDADES. A TRAVÉS DE PROGRAMAS EDUCATIVOS, TALLERES Y UNA ATENCIÓN INTEGRAL, SE BUSCA MEJORAR SU CALIDAD DE VIDA, PROMOVER SU DESARROLLO PERSONAL Y EMPODERARLOS PARA UN FUTURO MÁS EQUITATIVO. ADEMÁS, SE ENFOCA EN FORTALECER LOS LAZOS CON LOS CENTROS EDUCATIVOS Y PROPORCIONAR UN ENTORNO SEGURO Y ACOGEDOR.</Parrafo2>
+                            <Parrafo2 data-aos="zoom-in">Además de su función ambiental, desempeña un papel crucial como centro de día para niños y niñas en situaciones de vulnerabilidad brindando apoyo y oportunidades. a través de programas educativos, talleres y una atención integral, se busca mejorar su calidad de vida, promover su desarrollo personal y empoderarlos para un futuro más equitativo. además, se enfoca en fortalecer los lazos con los centros educativos y proporcionar un entorno seguro y acogedor.</Parrafo2>
                             <Fotos2 src={foto1}/>
                         </Box>
                 </DivAsociacion>
                 <DivHumedal>
                     <Encabe data-aos="zoom-in">HUMEDAL - LOS COIPOS</Encabe>
                     <Box>
-                        <Parrafo2Bis data-aos="zoom-in">LA ASOCIACIÓN VE LA OPORTUNIDAD DE CONTRIBUIR A LA CONSERVACIÓN Y PROTECCIÓN DEL HUMEDAL UBICADO EN EL KILÓMETRO 139 DE LA RUTA NACIONAL 226. SE LLEVA A CABO UNA INVESTIGACIÓN Y MONITOREO DE LA DIVERSIDAD DE ESPECIES PRESENTES, RESPETANDO LA CONSERVACIÓN DE LA BIODIVERSIDAD. SE HA CONSTRUIDO UN SENDERO AMBIENTAL PARA QUE LAS ESCUELAS DE LA REGIÓN CONOZCAN LA IMPORTANCIA Y PROBLEMÁTICAS DE ESTOS ESPACIOS NATURALES. MUCHAS ESPECIES DE FLORA Y FAUNA SILVESTRES DEPENDEN COMPLETAMENTE DE LOS HUMEDALES.</Parrafo2Bis>
+                        <Parrafo2Bis data-aos="zoom-in">La asociación ve la oportunidad de contribuir a la conservación y protección del humedal ubicado en el kilómetro 139 de la ruta nacional 226. se lleva a cabo una investigación y monitoreo de la diversidad de especies presentes, respetando la conservación de la biodiversidad. se ha construido un sendero ambiental para que las escuelas de la región conozcan la importancia y problemáticas de estos espacios naturales. muchas especies de flora y fauna silvestres dependen completamente de los humedales.</Parrafo2Bis>
                         <Fotos src={foto6} data-aos="zoom-in"/>
                         <Fotos2 src={foto6}/>
                     </Box>
                     <Box>
                         <Fotos src={foto2} data-aos="zoom-in"/>
-                        <Parrafo2Bis data-aos="zoom-in">TAMBIÉN SE IMPLEMENTA UN PROGRAMA SOCIOEDUCATIVO PARA LA FORMACIÓN Y DIVULGACIÓN SOBRE LA CONSERVACIÓN Y LA IMPORTANCIA DE ESTOS AMBIENTES, A TRAVÉS DE CHARLAS EN LAS ESCUELAS DE LA CIUDAD. LOS PROFESIONALES DE LA ASOCIACIÓN, CON SU EXPERIENCIA EN BIOLOGÍA, VETERINARIA, MANEJO DE FAUNA Y CONSERVACIÓN, ESTÁN COMPROMETIDOS EN DESPERTAR EL INTERÉS DE LOS ESTUDIANTES HACIA EL CUIDADO Y PROTECCIÓN DE LOS AMBIENTES NATURALES, TANTO DE LOS HUMEDALES, COMO DE LA FLORA Y FAUNA EN GENERAL, DE LA QUE SOMOS PARTÍCIPES.</Parrafo2Bis>
+                        <Parrafo2Bis data-aos="zoom-in">También se implementa un programa socioeducativo para la formación y divulgación sobre la conservación y la importancia de estos ambientes, a través de charlas en las escuelas de la ciudad. los profesionales de la asociación, con su experiencia en biología, veterinaria, manejo de fauna y conservación, están comprometidos en despertar el interés de los estudiantes hacia el cuidado y protección de los ambientes naturales, tanto de los humedales, como de la flora y fauna en general, de la que somos partícipes.</Parrafo2Bis>
                         <Fotos2 src={foto2}/>
                     </Box>
                 </DivHumedal>

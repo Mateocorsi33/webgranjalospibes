@@ -70,12 +70,12 @@ const Parra = styled.p`
     width: 80%;
     flex-direction: column;
     margin: 0;
-    color: #464646;
+    color: #557153;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 2rem;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.8px;
     padding-top: .5rem;
 
     @media (max-width: 800px) {
