@@ -83,8 +83,8 @@ const Parrafo = styled.p`
     width: 100%;
     height: auto;
     flex-direction: column;
-    color: #557153;
-    font-size: 1.2rem;
+    color: #464646;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;

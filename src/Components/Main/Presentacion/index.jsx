@@ -26,6 +26,7 @@ const Fondo = styled.div`
 
   @media (max-width: 800px) {
       background-attachment: fixed;
+      background-image: none;
   }
 `
 
@@ -328,7 +329,7 @@ const Presentacion = () => {
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
                         <GifM src={foto4m}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500">
-                        Funcionamiento del centro de día para niños y niñas en situaciones de vulnerabilidad. se busca brindar un apoyo integral, para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor.
+                        Funcionamiento del centro de día para niños y niñas en situaciones de vulnerabilidad. Se busca brindar un apoyo integral, para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor.
                         </Parra2>
                     </DivText2>
                 </DivContent2>

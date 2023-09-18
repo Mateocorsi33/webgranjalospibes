@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import fondo from "../../assest/fondopa.png";
+import fondo from "../../assest/padri.png";
 import { Link } from "react-router-dom";
 import CarouselImg from "./fotos";
 import iconoUno from "../../assest/buho.png";
@@ -67,7 +67,7 @@ const DivParrafos = styled.div`
        display: flex;
        flex-direction: column;
        align-items: center;
-       gap:3rem;
+       gap:1rem;
     }
 `
 
@@ -75,6 +75,8 @@ const Divisores = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
 
     @media (max-width: 800px) {
        display: flex;
@@ -89,6 +91,9 @@ const DivisoresCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    padding: 2rem 0;
 
     @media (max-width: 800px) {
        display: flex;
@@ -129,17 +134,17 @@ const Encabe = styled.h1`
 const Parrafo = styled.p`
     display: flex;
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     flex-direction: column;
-    color: #557153;
+    color: #464646;
     font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem;
     margin: 0;
-    padding: 1.5rem;
+    padding-top: 1rem;
 
     @media (max-width: 800px) {
         text-align: center;
@@ -204,7 +209,6 @@ const Strong = styled.strong`
     font-weight: 600;
     line-height: normal;
     margin: 0;
-    padding-bottom: 1rem;
 
     @media (max-width: 800px) {
         text-align: center;
@@ -280,17 +284,17 @@ const Padrinos = () => {
                     <Divisores data-aos="zoom-in">
                         <Parrafo><Strong>BRINDAR CUIDADO Y ATENCIÓN A LAS ESPECIES RESCATADAS:</Strong></Parrafo>
                         <Img src={iconoUno}/>
-                        <Parrafo>TU DONACIÓN NOS PERMITIRÁ ALIMENTAR, PROPORCIONAR ATENCIÓN VETERINARIA Y GARANTIZAR UN AMBIENTE ADECUADO PARA LOS ANIMALES RESCATADOS.</Parrafo>
+                        <Parrafo>Tu donación nos permitirá alimentar, proporcionar atención veterinaria y garantizar un ambiente adecuado para los animales rescatados.</Parrafo>
                     </Divisores> 
                     <Divisores data-aos="zoom-in">  
                         <Parrafo><Strong>MEJORAR LA CALIDAD DE VIDA DE LOS NIÑOS:</Strong></Parrafo>
                         <Img src={iconoDos}/>
-                        <Parrafo>AYUDARÁ A CUBRIR LAS NECESIDADES BÁSICAS DE LOS NIÑOS QUE ATENDEMOS, INCLUYENDO ALIMENTACIÓN, EDUCACIÓN Y PROGRAMAS DE DESARROLLO INTEGRAL.</Parrafo>
+                        <Parrafo>Ayudará a cubrir las necesidades básicas de los niños que atendemos, incluyendo alimentación, educación y programas de desarrollo integral.</Parrafo>
                     </Divisores> 
                     <Divisores data-aos="zoom-in">   
                         <Parrafo><Strong>IMPULSAR PROYECTOS DE EDUCACIÓN AMBIENTAL:</Strong></Parrafo>
                         <Img src={iconoTres}/>
-                        <Parrafo>CON TU APOYO, PODREMOS FORTALECER NUESTROS PROGRAMAS EDUCATIVOS Y LLEVAR CHARLAS Y TALLERES A LAS ESCUELAS DE NUESTRA COMUNIDAD.</Parrafo>
+                        <Parrafo>Con tu apoyo, podremos fortalecer nuestros programas educativos y llevar charlas y talleres a las escuelas de nuestra comunidad</Parrafo>
                     </Divisores>
                 </DivParrafos>
                 <Encabe data-aos="zoom-in">¿CÓMO PUEDES SER UN PADRINO?</Encabe>
@@ -299,12 +303,12 @@ const Padrinos = () => {
                     <DivisoresCard data-aos="zoom-in">
                         <Img src={iconoCuatro}/>
                         <Parrafo><StrongCard>DONACIÓN POR ÚNICA VEZ:</StrongCard></Parrafo>
-                        <Parrafo> SI DESEAS REALIZAR UNA DONACIÓN ÚNICA, CUALQUIER APORTE ECONÓMICO SERÁ DE GRAN AYUDA PARA SEGUIR ADELANTE CON NUESTRA MISIÓN. CADA CONTRIBUCIÓN CUENTA Y CADA GESTO DE APOYO ES VALIOSO PARA NOSOTROS.</Parrafo>
+                        <Parrafo> Si deseas realizar una donación única, cualquier aporte económico será de gran ayuda para seguir adelante con nuestra misión. Cada contribución cuenta y cada gesto de apoyo es valioso para nosotros.</Parrafo>
                     </DivisoresCard>
                     <DivisoresCard data-aos="zoom-in">
                         <Img src={iconoCinco}/>
                         <Parrafo><StrongCard>DONACIÓN MENSUAL:</StrongCard></Parrafo>
-                        <Parrafo>ESTABLECE UNA DONACIÓN MENSUAL QUE SE AJUSTE A TU PRESUPUESTO. CADA MES, TU CONTRIBUCIÓN RESPALDARÁ NUESTROS PROYECTOS Y BRINDARÁ ESPERANZA A LOS NIÑOS Y A LOS ANIMALES EN NUESTRO CENTRO DE RESCATE.</Parrafo>
+                        <Parrafo>Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
                     </DivisoresCard>
                 </DivParrafos>
                 <Parrafo data-aos="fade-up"

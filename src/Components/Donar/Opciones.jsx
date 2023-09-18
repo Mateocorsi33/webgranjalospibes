@@ -32,13 +32,13 @@ const DivMensual = styled.div`
 
 
 const Parrafo1 = styled.h2`
-  color: #557153;
+  color: #464646;
   text-align: center;
   width: 80%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5rem;
   letter-spacing: 0.6px;
 
@@ -103,7 +103,7 @@ const Link = styled.a`
 const Button = styled.button`
     border: 2px solid #D6D582;
     margin: 0 1em;
-    padding: 1em 1.5em;
+    padding: 1.2em 1.7em;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #000;

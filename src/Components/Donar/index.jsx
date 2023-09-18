@@ -132,10 +132,10 @@ const Titulo = styled.h1`
 `
 
 const Parrafo1 = styled.h2`
-  color: #557153;
+  color: #464646;
   text-align: center;
   width: 80%;
-  font-size: 1rem;
+  font-size: .9rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -150,14 +150,14 @@ const Parrafo1 = styled.h2`
 `
 
 const Parrafo = styled.h3`
-  color: #557153;
+  color: #464646;
   text-align: center;
   width: 80%;
   margin: 0;
-  font-size: .9rem;
+  font-size: .8rem;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 0.54px;
 

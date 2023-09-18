@@ -70,7 +70,7 @@ const ImgMapa = styled.img`
 `
 
 const Titulo = styled.h1`
-    color: #557153;
+    color: #464646;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
@@ -82,7 +82,7 @@ const Titulo = styled.h1`
 `
 
 const Parrafo = styled.p`
-    color: #557153;
+    color: #464646;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;

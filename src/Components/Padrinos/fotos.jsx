@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
-import foto1 from "../../assest/14.jpg";
+import foto1 from "../../assest/p25.JPG";
 import foto2 from "../../assest/p1.jpg";
-import foto3 from "../../assest/p3.jpg";
-import foto4 from "../../assest/p4.jpg";
-import foto5 from "../../assest/p5.jpg";
-import foto6 from "../../assest/p6.jpg";
-import foto7 from "../../assest/p8.jpg";
-import foto8 from "../../assest/p9.jpg";
+import foto3 from "../../assest/p28.JPG";
+import foto4 from "../../assest/p3.jpg";
+import foto5 from "../../assest/p4.JPG";
+import foto6 from "../../assest/p5.jpg";
+import foto7 from "../../assest/p27.JPG";
+import foto8 from "../../assest/p24.JPG";
+import foto9 from "../../assest/p23.JPG";
+import foto10 from "../../assest/foto2.jpg";
+
 
 
 
 
 const StyledCarousel = styled(Carousel)`
-    display: none;
+    display: flex;
+    width: 80%;
     
     @media (max-width: 800px) {
         display: flex;
@@ -69,6 +73,14 @@ function CarouselImg() {
         </Carousel.Item>
         <Carousel.Item>
             <Img className="d-block w-100" src={foto8} alt=""/>
+            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <Img className="d-block w-100" src={foto9} alt=""/>
+            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <Img className="d-block w-100" src={foto10} alt=""/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
     </StyledCarousel>

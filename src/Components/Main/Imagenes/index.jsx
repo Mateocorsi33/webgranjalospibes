@@ -18,6 +18,7 @@ const DivImg = styled.div`
 
     @media (max-width: 800px) {
         width: 100%;
+        background-image: none;
         margin: 0;
         padding: 5rem 0 8rem 0;
         flex-direction: column;
@@ -80,7 +81,7 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 100%;
-        padding: 0 5%;
+        padding: 0 10%;
         font-size: 1rem;
         line-height: 2rem;
         font-weight: 500;
