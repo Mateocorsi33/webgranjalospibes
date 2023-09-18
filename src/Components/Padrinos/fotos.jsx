@@ -14,8 +14,6 @@ import foto10 from "../../assest/foto2.jpg";
 
 
 
-
-
 const StyledCarousel = styled(Carousel)`
     display: flex;
     width: 80%;
