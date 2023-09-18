@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'react-bootstrap/Carousel';
-// import foto1 from "../../assest/p25.jpg";
+import foto1 from "../../assest/p2.jpg";
 import foto2 from "../../assest/p1.jpg";
-import foto3 from "../../assest/p28.jpg";
+import foto3 from "../../assest/p6.jpg";
 import foto4 from "../../assest/p3.jpg";
 import foto5 from "../../assest/p4.jpg";
 import foto6 from "../../assest/p5.jpg";
-import foto7 from "../../assest/p27.jpg";
-import foto8 from "../../assest/p24.jpg";
-import foto9 from "../../assest/p23.jpg";
+import foto7 from "../../assest/p7.jpg";
+import foto8 from "../../assest/p8.jpg";
+import foto9 from "../../assest/p9.jpg";
 import foto10 from "../../assest/foto2.jpg";
+import foto11 from "../../assest/p10.jpg";
 
 
 
@@ -41,10 +42,6 @@ const Img = styled.img`
 function CarouselImg() {
   return (
     <StyledCarousel interval={3000}>
-        {/* <Carousel.Item>
-            <Img className="d-block w-100" src={foto1} alt="Granja"/>
-            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
-        </Carousel.Item> */}
         <Carousel.Item>
             <Img className="d-block w-100" src={foto2} alt="Second slide"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
@@ -79,6 +76,10 @@ function CarouselImg() {
         </Carousel.Item>
         <Carousel.Item>
             <Img className="d-block w-100" src={foto10} alt=""/>
+            <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+            <Img className="d-block w-100" src={foto11} alt=""/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
         </Carousel.Item>
     </StyledCarousel>
