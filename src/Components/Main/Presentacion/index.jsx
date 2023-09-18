@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import foto from "../../../assest/cuatro.jpg";
-import foto2 from "../../../assest/siete.jpg";
-import foto3 from "../../../assest/tres.jpg";
-import foto4 from "../../../assest/14.jpg";
+import foto from "../../../assest/cuatro.png";
+import foto1 from "../../../assest/fotomovil.jpg";
+import foto2 from "../../../assest/siete2.png";
+import foto2m from "../../../assest/siete.jpg";
+import foto3 from "../../../assest/tres2.png";
+import foto3m from "../../../assest/tres.jpg";
+import foto4 from "../../../assest/14.png";
+import foto4m from "../../../assest/14.jpg";
 import fondo from "../../../assest/fondo9.png";
 
 
@@ -141,7 +145,7 @@ const Titu = styled.h1`
     width: 36rem;
     flex-direction: column;
     color: #7D8F69;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
@@ -166,7 +170,7 @@ const Titu2 = styled.h1`
     flex-direction: column;
     text-align: end;
     color: #7D8F69;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
@@ -191,7 +195,7 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #557153;
-    font-size: .9rem;
+    font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 2rem;
@@ -200,7 +204,7 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 95%;
-        font-size: .9rem;
+        font-size: .8rem;
         line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
@@ -215,7 +219,7 @@ const Parra2 = styled.p`
     text-align: end;
     margin: 0;
     color: #557153;
-    font-size: .9rem;
+    font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     line-height: 2rem;
@@ -225,7 +229,7 @@ const Parra2 = styled.p`
 
     @media (max-width: 800px) {
         width: 95%;
-        font-size: .9rem;
+        font-size: .8rem;
         line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
@@ -234,12 +238,11 @@ const Parra2 = styled.p`
 `
 
 const Gif = styled.img`
-    width: 26rem;
-    height: 26rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 5px;
     margin: 0;
-    /* opacity: 80%; */
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5); */
 
     @media (max-width: 800px) {
         display: none;
@@ -247,12 +250,11 @@ const Gif = styled.img`
 `
 
 const Gif2 = styled.img`
-    width: 26.34rem;
-    height: 26.34rem;
+    width: 24rem;
+    height: 24rem;
     border-radius: 5px;
     margin: 0;
-    /* opacity: 80%; */
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.5); */
 
     @media (max-width: 800px) {
         display: none;
@@ -275,7 +277,7 @@ const GifM = styled.img`
 const STRONG = styled.h1`
     color: #D6D582;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 2.2rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -293,18 +295,18 @@ const Presentacion = () => {
                 <DivContent>
                     <DivText data-aos="fade-left"  data-aos-duration="1500">
                         <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
-                        <GifM src={foto}/>
+                        <GifM src={foto1}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500"> 
                         GRANJA LOS PIBES HA ASUMIDO LA IMPORTANTE TAREA DE CONCIENTIZAR A LA COMUNIDAD. A TRAVÉS DE SU INCANSABLE LABOR, EL CENTRO BUSCA PRESERVAR LA RIQUEZA Y LA BIODIVERSIDAD QUE NOS RODEA, CONSIDERADAS TESOROS VIVOS DE NUESTRA REGIÓN.
                         </Parra>
                     </DivText>
-                    <Gif src={foto} data-aos="fade-left"  data-aos-duration="1500"/>
+                    <Gif src={foto} data-aos="fade-left"  data-aos-duration="1000"/>
                 </DivContent>
                 <DivContent2>
-                    <Gif2 src={foto2} data-aos="fade-right" data-aos-duration="1500"/>
+                    <Gif2 src={foto2} data-aos="fade-right" data-aos-duration="1000"/>
                     <DivText2 data-aos="fade-right" data-aos-duration="1500">
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500">APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
-                        <GifM src={foto2}/>
+                        <GifM src={foto2m}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500"> 
                         A TRAVÉS DE ACCIONES DE RESCATE, ESTUDIOS VETERINARIOS Y LIBERACIONES, NUESTRO EQUIPO SE DEDICA A BRINDAR UN APOYO INTEGRAL TANTO A LA COMUNIDAD LOCAL COMO A NIVEL PROVINCIAL, PARA ASEGURAR EL BIENESTAR Y LA SUPERVIVENCIA DE LOS ANIMALES SILVESTRES.
                         </Parra2>
@@ -313,18 +315,18 @@ const Presentacion = () => {
                 <DivContent>
                     <DivText data-aos="fade-left"  data-aos-duration="1500">
                         <Titu data-aos="fade-right" data-aos-duration="1500"><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
-                        <GifM src={foto3}/>
+                        <GifM src={foto3m}/>
                         <Parra data-aos="fade-right" data-aos-duration="1500">
                         EN RESPUESTA A ESTOS DESAFÍOS, QUE REPRESENTAN LOS PRINCIPALES FOCOS DE CONFLICTO, CONSIDERAMOS DE VITAL IMPORTANCIA CONCIENTIZAR Y UNIR ESFUERZOS PARA PROTEGER Y PRESERVAR NUESTRO HÁBITAT NATURAL.
                         </Parra>
                     </DivText>
-                    <Gif src={foto3} data-aos="fade-left"  data-aos-duration="1500"/>
+                    <Gif src={foto3} data-aos="fade-left"  data-aos-duration="1000"/>
                 </DivContent>
                 <DivContent2>
-                    <Gif2 src={foto4} data-aos="fade-right" data-aos-duration="1500"/>
+                    <Gif2 src={foto4} data-aos="fade-right" data-aos-duration="1000"/>
                     <DivText2 data-aos="fade-right" data-aos-duration="1500">
                         <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
-                        <GifM src={foto4}/>
+                        <GifM src={foto4m}/>
                         <Parra2 data-aos="fade-left"  data-aos-duration="1500">
                         FUNCIONAMIENTO DEL CENTRO DE DÍA PARA NIÑOS Y NIÑAS EN SITUACIONES DE VULNERABILIDAD. SE BUSCA BRINDAR UN APOYO INTEGRAL, PARA EL CRECIMIENTO Y DESARROLLO DE LOS NIÑOS Y NIÑAS, PROPORCIONÁNDOLES OPORTUNIDADES EDUCATIVAS PARA UN FUTURO MEJOR.
                         </Parra2>

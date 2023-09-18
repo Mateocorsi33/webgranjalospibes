@@ -132,8 +132,7 @@ const DivImgVideo = () => {
                     src="https://www.youtube.com/embed/AHZFRtVyC48?si=7ltCQSB4Beq__pSD" 
                     title="YouTube video player" 
                     frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                 </VideoMovil>
                 <Parra>Cortometraje documental sobre el ambiente de Tandil, para mirarnos y reconocernos en lo nuestro, en lo próximo, en lo cercano que, al fin de cuentas, nos constituye.</Parra>
                 <Img src={flecha}/>

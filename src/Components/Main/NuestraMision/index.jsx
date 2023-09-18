@@ -14,7 +14,7 @@ const BoxMision = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
     width: 100%;
     height: fit-content;
     background-color: #D6D582;
@@ -50,7 +50,7 @@ const Titulo = styled.h1`
     justify-content: center;
     gap: 0.5rem;
     color: #464646;
-    font-size: 40px;
+    font-size: 2.2rem;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     margin-top: 3rem;
@@ -67,11 +67,11 @@ const Parrafo = styled.p`
     display: flex;
     flex-direction: column;
     justify-content: center;  
-    margin: 3rem 0;
+    margin: 2rem 0 2rem 0;
     width: 59rem;
     color: #FFF;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.1rem;
     font-family: 'Montserrat', sans-serif;
 
     @media (max-width: 800px) {
@@ -84,7 +84,7 @@ const Parrafo = styled.p`
 
 const STRONG = styled.h1`
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.2rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -96,7 +96,7 @@ const BoxCard = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 3rem;
 
     @media (max-width: 800px) {
         flex-direction: column;
@@ -109,7 +109,7 @@ const Card = styled.div`
     align-items: center;
     width: 23rem;
     height: 48rem;
-    margin: 2rem 0;
+    margin: 1rem 0 0 0;
 
     @media (max-width: 800px) {
         margin:0;
@@ -123,8 +123,8 @@ const Eclipse1 = styled.div`
     background-image: url(${mono});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
     border: none;
 `
@@ -134,8 +134,8 @@ const Eclipse2 = styled.div`
     background-image: url(${charla});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
     border: none;
 `
@@ -145,15 +145,15 @@ const Eclipse3 = styled.div`
     background-image: url(${humedal});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 100%;
     border: none;
 `
 
 const Cuadro = styled.div`
-    width: 23rem;
-    height: 39rem;
+    width: 20rem;
+    height: 36rem;
     margin-top: 8rem;
     border-radius: 10px;
     background: #FFF;
@@ -175,7 +175,7 @@ const TCuadro = styled.h1`
     align-items: center;
     color: #464646;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-top: 6rem;
@@ -189,7 +189,7 @@ const TCuadro = styled.h1`
 const PCuadro = styled.p`
     color: #464646;
     text-align: center;
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
     margin: 0 2rem;
 
@@ -205,8 +205,8 @@ const Boton = styled.button`
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
-    width: 19rem;
-    height: 3rem;
+    width: 17rem;
+    height: 2.7rem;
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
@@ -242,8 +242,8 @@ const Iconos = styled.div`
 `
 
 const ImgIconos = styled.img`
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     cursor: pointer;
     &:hover {
