@@ -204,7 +204,7 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 95%;
-        font-size: .8rem;
+        font-size: .9rem;
         line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
@@ -229,7 +229,7 @@ const Parra2 = styled.p`
 
     @media (max-width: 800px) {
         width: 95%;
-        font-size: .8rem;
+        font-size: .9rem;
         line-height: 2rem;
         font-weight: 400;
         letter-spacing: 0;
