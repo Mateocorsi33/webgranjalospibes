@@ -123,8 +123,8 @@ const Eclipse1 = styled.div`
     background-image: url(${mono});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 100%;
     border: none;
 `
@@ -134,8 +134,8 @@ const Eclipse2 = styled.div`
     background-image: url(${charla});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 100%;
     border: none;
 `
@@ -145,8 +145,8 @@ const Eclipse3 = styled.div`
     background-image: url(${humedal});
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 100%;
     border: none;
 `
