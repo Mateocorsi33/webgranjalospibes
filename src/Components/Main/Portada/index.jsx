@@ -20,7 +20,7 @@ const Video = styled.video`
     z-index: -1;
 
     @media (max-width: 800px) {
-        width: 100%;
+        width: 110%;
         height: auto;
     }
 `

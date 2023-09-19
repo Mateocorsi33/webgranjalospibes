@@ -65,7 +65,7 @@ const Encabe = styled.h1`
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     margin: 3rem 0 0 0;
     padding-top: 2rem;
@@ -108,13 +108,13 @@ const Contacto = () => {
                 <Encabe>NUESTROS LUGARES</Encabe>
                 <Maps/>
             </DivCont>
-            <DivCont>
-                <Encabe data-aos="zoom-in">HORARIOS DE LA GRANJA LOS PIBES</Encabe>
-                <Parrafo data-aos="zoom-in"><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
-                <Parrafo data-aos="zoom-in">LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>$1000 PARA ADULTOS</strong> Y DE <strong>$500 MENORES DE 10 AÑOS.</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
+            <DivCont data-aos="zoom-in">
+                <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
+                <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
+                <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>$1000 PARA ADULTOS</strong> Y DE <strong>$500 MENORES DE 10 AÑOS.</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
             </DivCont>
-            <DivCont>
-                <Encabe data-aos="zoom-in">ENCONTRANOS EN</Encabe>
+            <DivCont data-aos="zoom-in">
+                <Encabe>ENCONTRANOS EN</Encabe>
                 <Redes></Redes>
             </DivCont>
         </>

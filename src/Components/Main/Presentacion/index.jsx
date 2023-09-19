@@ -59,12 +59,12 @@ const TituloPortada = styled.h1`
     @media (max-width: 800px) {
         display: flex;
         width: 90%;
-        color: #557153;
-        font-size: 2.5rem;
+        color: #71956e;
+        font-size: 2.8rem;
         z-index: 100;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        font-weight: 800;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
     }
 `
 
@@ -294,10 +294,10 @@ const Presentacion = () => {
             <BoxCuerpo>
                     <TituloPortada>CONOCER PARA CUIDAR Y CONSERVAR</TituloPortada>
                 <DivContent>
-                    <DivText data-aos="fade-left"  data-aos-duration="1500">
-                        <Titu data-aos="fade-right" data-aos-duration="1500">CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
+                    <DivText data-aos="fade-right"  data-aos-duration="1500">
+                        <Titu>CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto1}/>
-                        <Parra data-aos="fade-right" data-aos-duration="1500"> 
+                        <Parra> 
                         Granja los pibes ha asumido la importante tarea de concientizar a la comunidad, a través de su incansable labor, el centro busca preservar la riqueza y la biodiversidad que nos rodea, consideradas tesoros vivos de nuestra región.
                         </Parra>
                     </DivText>
@@ -305,19 +305,19 @@ const Presentacion = () => {
                 </DivContent>
                 <DivContent2>
                     <Gif2 src={foto2} data-aos="fade-right" data-aos-duration="1000"/>
-                    <DivText2 data-aos="fade-right" data-aos-duration="1500">
-                        <Titu2 data-aos="fade-left"  data-aos-duration="1500">APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
+                    <DivText2 data-aos="fade-left" data-aos-duration="1500">
+                        <Titu2>APOYO INTEGRAL A LA CONSERVACIÓN DE LA VIDA SILVESTRE: <STRONG>RESCATES, ESTUDIOS Y LIBERACIONES.</STRONG></Titu2>
                         <GifM src={foto2m}/>
-                        <Parra2 data-aos="fade-left"  data-aos-duration="1500"> 
+                        <Parra2> 
                         A través de acciones de rescate, estudios veterinarios y liberaciones, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial, para asegurar el bienestar y la supervivencia de los animales silvestres.
                         </Parra2>
                     </DivText2>
                 </DivContent2>
                 <DivContent>
-                    <DivText data-aos="fade-left"  data-aos-duration="1500">
-                        <Titu data-aos="fade-right" data-aos-duration="1500"><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
+                    <DivText data-aos="fade-right"  data-aos-duration="1500">
+                        <Titu><STRONG>MASCOTISMO, EXPANSIÓN URBANA-AGRÍCOLA Y TRÁFICO ILEGAL:</STRONG> PRINCIPALES AMENAZAS CONTRA LA BIODIVERSIDAD.</Titu>
                         <GifM src={foto3m}/>
-                        <Parra data-aos="fade-right" data-aos-duration="1500">
+                        <Parra>
                         En respuesta a estos desafíos, que representan los principales focos de conflicto, consideramos de vital importancia concientizar y unir esfuerzos para proteger y preservar nuestro hábitat natural.
                         </Parra>
                     </DivText>
@@ -325,10 +325,10 @@ const Presentacion = () => {
                 </DivContent>
                 <DivContent2>
                     <Gif2 src={foto4} data-aos="fade-right" data-aos-duration="1000"/>
-                    <DivText2 data-aos="fade-right" data-aos-duration="1500">
-                        <Titu2 data-aos="fade-left"  data-aos-duration="1500"><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
+                    <DivText2 data-aos="fade-left" data-aos-duration="1500">
+                        <Titu2><STRONG>CUIDANDO DEL PLANETA Y DE LOS NIÑOS:</STRONG> CENTRO DE RESCATE QUE COMBINA CONSERVACIÓN AMBIENTAL Y AYUDA SOCIAL.</Titu2>
                         <GifM src={foto4m}/>
-                        <Parra2 data-aos="fade-left"  data-aos-duration="1500">
+                        <Parra2>
                         Funcionamiento del centro de día para niños y niñas en situaciones de vulnerabilidad. Se busca brindar un apoyo integral, para el crecimiento y desarrollo de los niños y niñas, proporcionándoles oportunidades educativas para un futuro mejor.
                         </Parra2>
                     </DivText2>

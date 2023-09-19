@@ -18,7 +18,7 @@ const BoxLogo = styled.div`
         gap: 60%;
         width: 100%;
         height: auto;
-        padding: .3rem 0;
+        padding: .5rem 0;
     }
 `
 const BoxImgText = styled.div`

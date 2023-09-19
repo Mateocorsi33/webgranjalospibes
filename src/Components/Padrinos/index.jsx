@@ -49,7 +49,7 @@ const DivPadrinos = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3rem 10rem;
+    margin: 2rem 10rem;
     gap: 2rem;
 
     @media (max-width: 800px) {
@@ -119,7 +119,7 @@ const Encabe = styled.h1`
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     line-height: normal;
     margin: 3rem 0 0 0;
     padding-top: 2rem;
@@ -147,6 +147,7 @@ const Parrafo = styled.p`
     padding-top: 1rem;
 
     @media (max-width: 800px) {
+        width: 90%;
         text-align: center;
         font-size: .7rem;
         padding: 0;
