@@ -49,7 +49,7 @@ const DivPadrinos = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 10rem;
+    margin: 2rem 10rem 10rem 10rem;
     gap: 2rem;
 
     @media (max-width: 800px) {
@@ -155,17 +155,17 @@ const Parrafo = styled.p`
 `
 
 const Boton = styled.button`
-    margin: 0 2rem 8rem 2rem;
+    margin: 2.5rem 2rem;
     background-color: #F48020;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
-    width: 19rem;
-    height: 3rem;
+    width: 17rem;
+    height: 2.7rem;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2.56px;
+    letter-spacing: 2px;
     color: #ffffff;
     cursor: pointer;
     &:hover {
@@ -178,8 +178,8 @@ const Boton = styled.button`
         display: flex;
         align-items: center;
         justify-content:center;
-        width: 75%;
-        margin: 0;
+        width: 100%;
+        margin: 0 10% .5rem 10%;
     }
 `
 
@@ -312,10 +312,8 @@ const Padrinos = () => {
                         <Parrafo>Establece una donación mensual que se ajuste a tu presupuesto. Cada mes, tu contribución respaldará nuestros proyectos y brindará esperanza a los niños y a los animales en nuestro centro de rescate.</Parrafo>
                     </DivisoresCard>
                 </DivParrafos>
-                <Parrafo data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom"><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
-                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">APADRINARSE</Boton></StyledLink>
+                <Parrafo data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
+                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
             </DivPadrinos>
         </>
     )

@@ -44,8 +44,9 @@ const ImgLogo = styled.img`
     }
 `
 const DivText = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    font-family: Manrope;
+    letter-spacing: .5px;
+    color: #fff;
 
     @media (max-width: 800px) {
         display: none;
@@ -53,14 +54,14 @@ const DivText = styled.div`
 `
 
 const TextLogo1 = styled.h2`
-    font-weight: 600;
+    font-weight: 700;
     margin:0;
     font-size: 0.8rem;
 `
 const TextLogo2 = styled.h1`
-    font-weight: 600;
+    font-weight: 700;
     margin:0;
-    font-size: 1rem;
+    font-size: .9rem;
 `
 
 const BoxBarraNav = styled.div`

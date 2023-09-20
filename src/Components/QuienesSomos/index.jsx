@@ -188,7 +188,7 @@ const Parrafo = styled.p`
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -213,7 +213,7 @@ const Parrafo2 = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -236,7 +236,7 @@ const Parrafo2Bis = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -258,7 +258,7 @@ const Parrafo2Lineal = styled.p`
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: 1.7rem;
     margin: 0;
 
     @media (max-width: 800px) {
@@ -336,6 +336,8 @@ const Box = styled.div`
     }
 `
 
+
+
 const QuienesSomos = () => {
     return (
         <>
@@ -361,7 +363,7 @@ const QuienesSomos = () => {
                         <Fotos src={foto4}/>
                         <Fotos2 src={foto4}/>
                     </Box>
-                        <Parrafo2Lineal  data-aos="zoom-in">Nuestro objetivo principal es lograr que los animales rescatados puedan regresar a su hábitat natural lo antes posible. Trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. Esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo2Lineal>
+                        <Parrafo2Lineal  data-aos="zoom-in">El objetivo principal es que los animales rescatados regresen a su hábitat natural lo antes posible. Trabajamos en estrecha colaboración con expertos en conservación para determinar el momento y el lugar adecuados para su liberación. Esto nos asegura que tengan las mejores oportunidades de reintegrarse a su entorno y continuar su ciclo de vida natural.</Parrafo2Lineal>
                     <Box  data-aos="zoom-in">
                         <Fotos2 src={foto5}/>
                         <Parrafo2>En un esfuerzo por preservar la vida silvestre y su hábitat natural, nuestro equipo se dedica a brindar un apoyo integral tanto a la comunidad local como a nivel provincial. Nuestro equipo especializado está preparado para atender situaciones de emergencia relacionadas con animales silvestres en peligro. Realizamos rescates cuidadosos y brindamos la atención necesaria, ofreciendo un refugio seguro y los tratamientos médicos adecuados para su rehabilitación. Además, llevamos a cabo estudios veterinarios exhaustivos para evaluar el estado de salud de los animales rescatados.</Parrafo2>

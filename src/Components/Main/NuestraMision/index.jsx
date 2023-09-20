@@ -14,7 +14,7 @@ const BoxMision = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
     width: 100%;
     height: fit-content;
     background-color: #D6D582;
@@ -22,7 +22,7 @@ const BoxMision = styled.div`
 
     @media (max-width: 800px) {
         box-shadow: none;
-        padding-bottom: 3rem;
+        padding: 3rem 0;
         gap:.5rem;
     }
 `
@@ -53,7 +53,8 @@ const Titulo = styled.h1`
     font-size: 2.2rem;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 3rem;
+    
+
     @media (max-width: 800px) {
         text-align: center;
         width: auto;
@@ -76,7 +77,7 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         width: auto;
-        margin: 1.5rem 0;
+        margin: 1.5rem 0 .5rem 0;
         padding: 1rem 2rem;
         font-size: .9rem;
     }

@@ -53,7 +53,7 @@ const Boton = styled.button`
     border: none;
     font-family: Manrope;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.05em;
     color: #ffffff;
     cursor: pointer;
@@ -78,7 +78,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.1em;
     color: #ffffff;
   &:hover {
