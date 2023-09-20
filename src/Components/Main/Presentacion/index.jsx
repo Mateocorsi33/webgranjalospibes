@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import foto from "../../../assest/cuatro.png";
+import foto from "../../../assest/cuatro2.png";
 import foto1 from "../../../assest/fotomovil.jpg";
 import foto2 from "../../../assest/siete2.png";
 import foto2m from "../../../assest/siete.jpg";
 import foto3 from "../../../assest/tres2.png";
 import foto3m from "../../../assest/tres.jpg";
-import foto4 from "../../../assest/14.png";
+import foto4 from "../../../assest/14dos.png";
 import foto4m from "../../../assest/14.jpg";
 import fondo from "../../../assest/fondo9.png";
 
