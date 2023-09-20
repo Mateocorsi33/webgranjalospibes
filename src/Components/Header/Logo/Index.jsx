@@ -11,7 +11,8 @@ const BoxLogo = styled.div`
     align-items: center;
     width: 15%;
     height: 4.5rem;
-    background-color: #557153;
+    background-color: #297d4e; 
+    /* 557153 */
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-evenly;
@@ -93,7 +94,7 @@ const BotonMenu = styled.button`
         display: flex;
         justify-content:center;
         align-items: center;
-        background-color: #557153;
+        background-color: #297d4e;
         border-radius: 10px;
         width: 2rem;
         height: 1rem;

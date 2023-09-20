@@ -58,7 +58,7 @@ const Titulo = styled.h1`
     @media (max-width: 800px) {
         text-align: center;
         width: auto;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: 0 .5rem;
         font-weight: 400;
     }
@@ -79,7 +79,7 @@ const Parrafo = styled.p`
         width: auto;
         margin: 1.5rem 0 .5rem 0;
         padding: 1rem 2rem;
-        font-size: .9rem;
+        font-size: .8rem;
     }
 `
 
@@ -89,7 +89,7 @@ const STRONG = styled.h1`
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 `
 

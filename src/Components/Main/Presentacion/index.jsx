@@ -59,7 +59,7 @@ const TituloPortada = styled.h1`
     @media (max-width: 800px) {
         display: flex;
         width: 90%;
-        color: #71956e;
+        color: #2E8B57;
         font-size: 2.8rem;
         z-index: 100;
         font-weight: 800;
@@ -153,7 +153,7 @@ const Titu = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        border-top: 4px solid #A9AF7E;
+        border-top: 4px solid #2E8B57;
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
@@ -178,7 +178,7 @@ const Titu2 = styled.h1`
     letter-spacing: 2px;
 
     @media (max-width: 800px) {
-        border-top: 4px solid #A9AF7E;
+        border-top: 4px solid #2E8B57;
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;

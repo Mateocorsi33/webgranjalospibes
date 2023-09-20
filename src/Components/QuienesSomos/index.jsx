@@ -84,7 +84,7 @@ const DivCentro =styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #557153;
+    background-color: #297d4e;
     width: 100%;
     height: auto;
     padding: 4rem 0 6rem 0;
@@ -100,7 +100,7 @@ const DivAsociacion =styled.div`
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    background-color: #638360;
+    background-color: #2E8B57;
     width: 100%;
     height: auto;
     padding: 3rem 0 8rem 0;

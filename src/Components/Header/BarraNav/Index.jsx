@@ -7,7 +7,8 @@ const BoxBarraNav = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #71956e;
+    background-color: #2E8B57;
+    /* 2E8B57 */
     width: 85%;
     box-shadow: inset 2px 0px 1px rgba(0, 0, 0, 0.1);
 
@@ -53,7 +54,7 @@ const Boton = styled.button`
     border: none;
     font-family: Manrope;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.05em;
     color: #ffffff;
     cursor: pointer;
@@ -78,7 +79,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.1em;
     color: #ffffff;
   &:hover {
