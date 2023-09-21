@@ -71,7 +71,7 @@ const Parra = styled.p`
     width: 80%;
     flex-direction: column;
     margin: 0;
-    color: #557153;
+    color: #464646;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;

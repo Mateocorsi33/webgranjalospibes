@@ -195,7 +195,7 @@ const Parra = styled.p`
     width: 36rem;
     flex-direction: column;
     margin: 0;
-    color: #557153;
+    color: #464646;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -219,7 +219,7 @@ const Parra2 = styled.p`
     flex-direction: column;
     text-align: end;
     margin: 0;
-    color: #557153;
+    color: #464646;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;

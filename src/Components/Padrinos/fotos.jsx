@@ -41,7 +41,7 @@ const Img = styled.img`
 
 function CarouselImg() {
   return (
-    <StyledCarousel interval={3000}>
+    <StyledCarousel interval={3000} fade={true} >
         <Carousel.Item>
             <Img className="d-block w-100" src={foto2} alt="Second slide"/>
             <Carousel.Caption><h3></h3><p></p></Carousel.Caption>
