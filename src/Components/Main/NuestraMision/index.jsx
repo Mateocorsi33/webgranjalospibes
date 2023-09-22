@@ -17,7 +17,7 @@ const BoxMision = styled.div`
     padding: 3rem 0;
     width: 100%;
     height: fit-content;
-    background-color: #D6D582;
+    background-color: #2E8B57;
     box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 800px) {
@@ -49,16 +49,16 @@ const Titulo = styled.h1`
     display: flex;
     justify-content: center;
     gap: 0.5rem;
-    color: #464646;
+    color: #c9c86f;
     font-size: 2.2rem;
     font-weight: 300;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Norwester Pro Regular';
     
 
     @media (max-width: 800px) {
         text-align: center;
         width: auto;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding: 0 .5rem;
         font-weight: 400;
     }
@@ -72,26 +72,26 @@ const Parrafo = styled.p`
     width: 59rem;
     color: #FFF;
     text-align: center;
-    font-size: 1.1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Norwester Pro Regular';
 
     @media (max-width: 800px) {
         width: auto;
         margin: 1.5rem 0 .5rem 0;
         padding: 1rem 2rem;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 `
 
-const STRONG = styled.h1`
-    font-weight: 600;
-    font-size: 2.2rem;
-    margin: 0;
+// const STRONG = styled.h1`
+//     font-weight: 600;
+//     font-size: 2.2rem;
+//     margin: 0;
 
-    @media (max-width: 800px) {
-        font-size: 1.4rem;
-    }
-`
+//     @media (max-width: 800px) {
+//         font-size: 1.6rem;
+//     }
+// `
 
 const BoxCard = styled.div`
     display: flex;
@@ -202,7 +202,7 @@ const PCuadro = styled.p`
 
 const Boton = styled.button`
     margin: 2.5rem 2rem;
-    background-color: #F48020;
+    background-color: #9FB23B;
     border-radius: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: none;
@@ -245,6 +245,7 @@ const Iconos = styled.div`
 const ImgIconos = styled.img`
     width: 3rem;
     height: 3rem;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
     border-radius: 100%;
     cursor: pointer;
     &:hover {
@@ -279,7 +280,7 @@ const NuestraMision = (props) => {
     return (
         <BoxMision>
             <DivText data-aos="fade-up" data-aos-duration="2000">
-                <Titulo>ÚNETE A <STRONG>NUESTRA MISIÓN</STRONG></Titulo>
+                <Titulo>ÚNETE A NUESTRA MISIÓN</Titulo>
                 <Parrafo>EN GRANJA LOS PIBES, CREEMOS EN EL PODER DE LA COMUNIDAD PARA GENERAR UN IMPACTO POSITIVO EN LA VIDA DE LOS NIÑOS Y EN LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TE INVITAMOS A UNIRTE A NUESTRA MISIÓN Y SER PARTE DEL CAMBIO. TIENES DIFERENTES FORMAS DE APOYARNOS:</Parrafo>
             </DivText>
             <BoxCard>
@@ -288,7 +289,7 @@ const NuestraMision = (props) => {
                     <Cuadro>
                         <TCuadro>CAMPAÑA DE APADRINAMIENTO</TCuadro>
                         <PCuadro>Tu apoyo económico puede marcar la diferencia en la vida de un niño o en la rehabilitación de una especie en peligro. Al convertirte en un padrino, estarás contribuyendo directamente a brindar educación, atención y oportunidades para los niños y al cuidado y rescate de los animales silvestres. Cada donación cuenta y nos acerca un paso más hacia un futuro mejor. ¡Únete como padrino hoy mismo!</PCuadro>
-                        <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
+                        <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>SER UN PADRINO</Boton></StyledLink>
                     </Cuadro>
                 </Card>
                 <Card data-aos="zoom-in" data-aos-duration="1000">

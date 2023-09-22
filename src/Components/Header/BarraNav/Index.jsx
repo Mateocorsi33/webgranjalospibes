@@ -46,7 +46,7 @@ const Marcador = styled.div`
 `
 
 const Boton = styled.button`
-    background-color: #c9c86f;
+    background-color: #9FB23B;
     border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     width: 8rem;
@@ -61,7 +61,7 @@ const Boton = styled.button`
     &:hover {
         transition: .3s;
         transform: scale(1.1);
-        background-color: #D6D582 ;
+        background-color: #aec246 ;
         color: #ffffff;
     }
 

@@ -12,7 +12,7 @@ const BoxLogo = styled.div`
     width: 15%;
     height: 4.5rem;
     background-color: #297d4e; 
-    /* 557153 */
+    /* 297d4e */
     @media (max-width: 800px) {
         display: flex;
         justify-content: space-evenly;

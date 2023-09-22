@@ -30,11 +30,11 @@ const DivText = styled.div`
     z-index: 2;
 `
 const Titulo = styled.h1`
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Norwester Pro Regular';
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
     line-height: 6rem;
     width: 100%;
     margin: 0;

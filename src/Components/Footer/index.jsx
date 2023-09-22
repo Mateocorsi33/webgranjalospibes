@@ -104,8 +104,8 @@ const Redes = styled.img`
 `
 
 const Titulos = styled.h1`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: 'Norwester Pro Regular';
+    font-size: 1.2rem;
     font-weight: 500;
     color: #D6D582;
     letter-spacing: 1.5px;

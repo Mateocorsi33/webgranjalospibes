@@ -110,7 +110,7 @@ const DivText = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    border-top: 4px solid #D6D582;
+    border-top: 4px solid #c9c86f;
     width: 20%;
 
     @media (max-width: 800px) {
@@ -128,7 +128,7 @@ const DivText2 = styled.div`
     flex-direction: column;
     padding-top: 2rem;
     align-items: flex-end;
-    border-top: 4px solid #D6D582;
+    border-top: 4px solid #c9c86f;
     width: 20%;    
 
     @media (max-width: 800px) {
@@ -145,9 +145,9 @@ const Titu = styled.h1`
     display: flex;
     width: 36rem;
     flex-direction: column;
-    color: #7D8F69;
-    font-size: 1.5rem;
-    font-weight: 600;
+    color: #4f4f4f;
+    font-size: 1.6rem;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
@@ -157,9 +157,9 @@ const Titu = styled.h1`
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.5rem;
-        color: #557153;
+        color: #4f4f4f;
         font-weight: 600;
         text-align: center;
     }
@@ -170,9 +170,9 @@ const Titu2 = styled.h1`
     width: 36rem;
     flex-direction: column;
     text-align: end;
-    color: #7D8F69;
-    font-size: 1.5rem;
-    font-weight: 600;
+    color: #4f4f4f;
+    font-size: 1.6rem;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
@@ -182,9 +182,9 @@ const Titu2 = styled.h1`
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.5rem;
-        color: #557153;
+        color: #4f4f4f;
         font-weight: 600;
         text-align: center;
     }
@@ -195,7 +195,7 @@ const Parra = styled.p`
     width: 36rem;
     flex-direction: column;
     margin: 0;
-    color: #464646;
+    color: #4f4f4f;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -219,7 +219,7 @@ const Parra2 = styled.p`
     flex-direction: column;
     text-align: end;
     margin: 0;
-    color: #464646;
+    color: #4f4f4f;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -276,13 +276,13 @@ const GifM = styled.img`
 
 
 const STRONG = styled.h1`
-    color: #D6D582;
+    color: #c9c86f;
     font-weight: 800;
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         text-align: flex-start;
     }
 `
@@ -295,7 +295,7 @@ const Presentacion = () => {
                     <TituloPortada>CONOCER PARA CUIDAR Y CONSERVAR</TituloPortada>
                 <DivContent>
                     <DivText data-aos="fade-right"  data-aos-duration="1500">
-                        <Titu>CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE EL <STRONG>CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
+                        <Titu>CONTRIBUYENDO A LA CONCIENTIZACIÓN SOBRE <STRONG>EL CUIDADO Y LA PRESERVACIÓN</STRONG> DE LA FLORA Y FAUNA SILVESTRE.</Titu>
                         <GifM src={foto1}/>
                         <Parra> 
                         Granja los pibes ha asumido la importante tarea de concientizar a la comunidad, a través de su incansable labor, el centro busca preservar la riqueza y la biodiversidad que nos rodea, consideradas tesoros vivos de nuestra región.

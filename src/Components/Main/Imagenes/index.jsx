@@ -47,8 +47,8 @@ const Titu = styled.h1`
     color: #D6D582;
     font-weight: 800;
     margin: 0;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-family: 'Norwester Pro Regular';
     line-height: 2.5rem;
     letter-spacing: 2px;
     border-bottom: 2px  #D6D582;
@@ -58,7 +58,7 @@ const Titu = styled.h1`
         letter-spacing: 0.5px;
         width: 100%;
         padding: 0 5%;
-        font-size: 1.7rem;
+        font-size: 2rem;
         line-height: 2rem;
         font-weight: 800;
         text-align: center;
@@ -71,9 +71,9 @@ const Parra = styled.p`
     width: 80%;
     flex-direction: column;
     margin: 0;
-    color: #464646;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    color: #4f4f4f;
+    font-size: 1.1rem;
+    font-family: 'Norwester Pro Regular';
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: 0.8px;
