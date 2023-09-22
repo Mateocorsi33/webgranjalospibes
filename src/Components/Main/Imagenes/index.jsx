@@ -55,10 +55,11 @@ const Titu = styled.h1`
     
 
     @media (max-width: 800px) {
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: 0.5px;
         width: 100%;
         padding: 0 5%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 2rem;
         font-weight: 800;
         text-align: center;
@@ -81,9 +82,10 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 100%;
+        font-family: 'Montserrat', sans-serif;
         padding: 0 10%;
         font-size: 1rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
         font-weight: 500;
         letter-spacing: 0;
         text-align: center;

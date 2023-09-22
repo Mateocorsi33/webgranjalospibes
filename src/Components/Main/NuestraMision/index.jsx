@@ -57,8 +57,9 @@ const Titulo = styled.h1`
 
     @media (max-width: 800px) {
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
         width: auto;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         padding: 0 .5rem;
         font-weight: 400;
     }
@@ -77,21 +78,23 @@ const Parrafo = styled.p`
 
     @media (max-width: 800px) {
         width: auto;
+        font-family: 'Montserrat', sans-serif;
         margin: 1.5rem 0 .5rem 0;
         padding: 1rem 2rem;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 `
 
-// const STRONG = styled.h1`
-//     font-weight: 600;
-//     font-size: 2.2rem;
-//     margin: 0;
+const STRONG = styled.h1`
+    display: flex;
+    font-size: 2.2rem;
 
-//     @media (max-width: 800px) {
-//         font-size: 1.6rem;
-//     }
-// `
+    @media (max-width: 800px) {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+`
 
 const BoxCard = styled.div`
     display: flex;
@@ -280,7 +283,7 @@ const NuestraMision = (props) => {
     return (
         <BoxMision>
             <DivText data-aos="fade-up" data-aos-duration="2000">
-                <Titulo>ÚNETE A NUESTRA MISIÓN</Titulo>
+                <Titulo>ÚNETE A <STRONG>NUESTRA MISIÓN</STRONG></Titulo>
                 <Parrafo>EN GRANJA LOS PIBES, CREEMOS EN EL PODER DE LA COMUNIDAD PARA GENERAR UN IMPACTO POSITIVO EN LA VIDA DE LOS NIÑOS Y EN LA CONSERVACIÓN DE LA FAUNA SILVESTRE. TE INVITAMOS A UNIRTE A NUESTRA MISIÓN Y SER PARTE DEL CAMBIO. TIENES DIFERENTES FORMAS DE APOYARNOS:</Parrafo>
             </DivText>
             <BoxCard>

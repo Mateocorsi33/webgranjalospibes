@@ -111,6 +111,15 @@ const Titulos = styled.h1`
     letter-spacing: 1.5px;
     padding: 0.5rem 0;
     border-bottom: 1px solid #ffffff;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        text-align:start;
+        font-size: 1rem;
+        margin: 1rem 0;
+        gap:1rem;
+    }
 `
 
 const Texto = styled.p`
