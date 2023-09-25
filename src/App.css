@@ -36,25 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-@font-face {
-  font-family: 'Norwester Pro';
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-  src: local('Norwester Pro'),
-       local('NorwesterPro-Regular'),
-       url('fonts/NorwesterProComplete/woff2/NorwesterPro-Regular.woff2'),
-       format('woff2');
-}
-
-@font-face {
-  font-family: 'Norwester Pro Regular';
-  font-weight: bold;
-  font-style: normal;
-  font-display: block;
-  src: local('Norwester Pro Regular'),
-       local('NorwesterPro-Regular'),
-       url('fonts/NorwesterProComplete/woff2/NorwesterPro-Regular.woff2'),
-       format('woff2');
-}
