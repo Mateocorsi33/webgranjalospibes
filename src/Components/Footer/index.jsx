@@ -32,7 +32,7 @@ const DivTexto = styled.div`
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin: 2rem 8%;
+        margin: 2rem 5%;
         gap: 4rem;
     }
 `
@@ -104,8 +104,8 @@ const Redes = styled.img`
 `
 
 const Titulos = styled.h1`
-    font-family: 'Norwester Pro Regular';
-    font-size: 1.2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #D6D582;
     letter-spacing: 1.5px;
@@ -114,9 +114,8 @@ const Titulos = styled.h1`
 
     @media (max-width: 800px) {
         flex-direction: column;
-        font-family: 'Montserrat', sans-serif;
         text-align:start;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin: 1rem 0;
         gap:1rem;
     }

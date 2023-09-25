@@ -47,19 +47,18 @@ const Titu = styled.h1`
     color: #D6D582;
     font-weight: 800;
     margin: 0;
-    font-size: 2.5rem;
-    font-family: 'Norwester Pro Regular';
+    font-size: 2.8rem;
+    font-family: 'Bebas Neue', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
     border-bottom: 2px  #D6D582;
     
 
     @media (max-width: 800px) {
-        font-family: 'Montserrat', sans-serif;
         letter-spacing: 0.5px;
         width: 100%;
         padding: 0 5%;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         line-height: 2rem;
         font-weight: 800;
         text-align: center;
@@ -73,8 +72,8 @@ const Parra = styled.p`
     flex-direction: column;
     margin: 0;
     color: #4f4f4f;
-    font-size: 1.1rem;
-    font-family: 'Norwester Pro Regular';
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 500;
     line-height: 2rem;
     letter-spacing: 0.8px;
@@ -82,9 +81,8 @@ const Parra = styled.p`
 
     @media (max-width: 800px) {
         width: 100%;
-        font-family: 'Montserrat', sans-serif;
         padding: 0 10%;
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.5rem;
         font-weight: 500;
         letter-spacing: 0;

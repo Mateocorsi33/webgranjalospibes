@@ -30,9 +30,9 @@ const DivText = styled.div`
     z-index: 2;
 `
 const Titulo = styled.h1`
-    font-family: 'Norwester Pro Regular';
+    font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
-    font-size: 5.5rem;
+    font-size: 7rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     line-height: 6rem;

@@ -146,9 +146,9 @@ const Titu = styled.h1`
     width: 36rem;
     flex-direction: column;
     color: #4f4f4f;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
 
@@ -157,8 +157,8 @@ const Titu = styled.h1`
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
         color: #4f4f4f;
         font-weight: 600;
         text-align: center;
@@ -171,9 +171,9 @@ const Titu2 = styled.h1`
     flex-direction: column;
     text-align: end;
     color: #4f4f4f;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     line-height: 2.5rem;
     letter-spacing: 2px;
 
@@ -182,8 +182,8 @@ const Titu2 = styled.h1`
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
         width: 90%;
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
         color: #4f4f4f;
         font-weight: 600;
         text-align: center;
@@ -278,11 +278,11 @@ const GifM = styled.img`
 const STRONG = styled.h1`
     color: #c9c86f;
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 3.4rem;
     margin: 0;
 
     @media (max-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: flex-start;
     }
 `

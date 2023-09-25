@@ -50,17 +50,16 @@ const Titulo = styled.h1`
     justify-content: center;
     gap: 0.5rem;
     color: #c9c86f;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 300;
-    font-family: 'Norwester Pro Regular';
+    font-family: 'Bebas Neue', sans-serif;
     
 
     @media (max-width: 800px) {
         text-align: center;
-        font-family: 'Montserrat', sans-serif;
         width: auto;
-        font-size: 1.5rem;
-        padding: 0 .5rem;
+        font-size: 2rem;
+        padding: 0;
         font-weight: 400;
     }
 `
@@ -73,24 +72,23 @@ const Parrafo = styled.p`
     width: 59rem;
     color: #FFF;
     text-align: center;
-    font-size: 1.2rem;
-    font-family: 'Norwester Pro Regular';
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
 
     @media (max-width: 800px) {
         width: auto;
-        font-family: 'Montserrat', sans-serif;
         margin: 1.5rem 0 .5rem 0;
         padding: 1rem 2rem;
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
 `
 
 const STRONG = styled.h1`
     display: flex;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 
     @media (max-width: 800px) {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         font-weight: 600;
         margin: 0;
     }
