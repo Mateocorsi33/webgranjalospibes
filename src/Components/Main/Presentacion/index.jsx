@@ -146,7 +146,7 @@ const Titu = styled.h1`
     width: 36rem;
     flex-direction: column;
     color: #4f4f4f;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: 'Bebas Neue', sans-serif;
     line-height: 2.5rem;
@@ -156,7 +156,7 @@ const Titu = styled.h1`
         border-top: 4px solid #2E8B57;
         padding-top: 2.5rem;
         letter-spacing: 0.5px;
-        width: 90%;
+        width: 95%;
         font-size: 1.8rem;
         line-height: 2rem;
         color: #4f4f4f;
@@ -171,7 +171,7 @@ const Titu2 = styled.h1`
     flex-direction: column;
     text-align: end;
     color: #4f4f4f;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: 'Bebas Neue', sans-serif;
     line-height: 2.5rem;
@@ -278,7 +278,7 @@ const GifM = styled.img`
 const STRONG = styled.h1`
     color: #c9c86f;
     font-weight: 800;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     margin: 0;
 
     @media (max-width: 800px) {

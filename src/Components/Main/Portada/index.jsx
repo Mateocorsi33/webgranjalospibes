@@ -32,7 +32,7 @@ const DivText = styled.div`
 const Titulo = styled.h1`
     font-family: 'Bebas Neue', sans-serif;
     color: #ffffff;
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     line-height: 6rem;

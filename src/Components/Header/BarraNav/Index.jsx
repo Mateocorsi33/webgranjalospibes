@@ -41,7 +41,7 @@ const DivBarra2 = styled.div`
 const Marcador = styled.div`
 
     &:hover{
-        border-bottom: 3px solid #D6D582;
+        border-bottom: 2px solid #D6D582;
     }
 `
 
