@@ -48,13 +48,14 @@ const DivText = styled.div`
     font-family: Manrope;
     letter-spacing: .5px;
     color: #fff;
+    
 
     @media (max-width: 800px) {
         display: none;
     }
 `
 
-const TextLogo1 = styled.h2`
+const TextLogo1 = styled.h2` 
     font-weight: 700;
     margin:0;
     font-size: 0.8rem;
