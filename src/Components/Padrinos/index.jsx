@@ -299,7 +299,7 @@ const Padrinos = () => {
                     </Divisores>
                 </DivParrafos>
                 <Encabe data-aos="zoom-in">¿CÓMO PUEDES SER UN PADRINO?</Encabe>
-                <Parrafo data-aos="zoom-in"><Strong>SIMPLEMENTE ENTRA EN APADRINARSE, DONDE PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
+                <Parrafo data-aos="zoom-in"><Strong>SIMPLEMENTE DALE EN "SER UN PADRINO", Y PODRÁS ELEGIR LA MODALIDAD DE DONACIÓN QUE MEJOR SE ADAPTE A TUS POSIBILIDADES.</Strong></Parrafo>
                 <DivParrafos>
                     <DivisoresCard data-aos="zoom-in">
                         <Img src={iconoCuatro}/>
@@ -313,7 +313,7 @@ const Padrinos = () => {
                     </DivisoresCard>
                 </DivParrafos>
                 <Parrafo data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><Strong>CONVIÉRTETE EN UN PADRINO Y SÉ PARTE DEL CAMBIO QUE QUEREMOS VER EN EL MUNDO.</Strong></Parrafo>
-                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>APADRINARSE</Boton></StyledLink>
+                <StyledLink to="/donar" onClick={handleClick} style={{}}><Boton>SER UN PADRINO</Boton></StyledLink>
             </DivPadrinos>
         </>
     )

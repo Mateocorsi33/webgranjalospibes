@@ -44,7 +44,7 @@ const Parrafo1 = styled.h2`
 
   @media (max-width: 800px) {
         width: 90%;
-        font-size: 1rem;
+        font-size: .8rem;
         margin: 0;
     }
 `
@@ -58,7 +58,7 @@ const DivBtn = styled.div`
     margin: 1rem 0;
     gap: 2rem;
     padding: 1rem 0 4rem 0;
-    border-bottom: 1px solid #D6D582;
+    border-bottom: 1px solid #9FB23B;
 
     @media (max-width: 800px) {
         flex-direction: row;
@@ -78,7 +78,7 @@ const DivBtn2 = styled.div`
     margin: 1rem 0;
     gap: 2rem;
     padding: 1rem 0 4rem 0;
-    border-bottom: 1px solid #D6D582;
+    border-bottom: 1px solid #9FB23B;
 
     @media (max-width: 800px) {
         flex-direction: row;
@@ -101,7 +101,7 @@ const Link = styled.a`
 
 
 const Button = styled.button`
-    border: 2px solid #D6D582;
+    border: 2px solid #9FB23B;
     margin: 0 1em;
     padding: 1.2em 1.7em;
     border-radius: 10px;
@@ -118,13 +118,13 @@ const Button = styled.button`
 
     && {
     background-color: ${(props) =>
-      props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+      props.variant === 'contained' ? '#9FB23B' : '#ffffff'};
     color: ${(props) => (props.variant === 'contained' ? '#ffffff' : '#464646')};
     &:hover {
       background-color: ${(props) =>
-        props.variant === 'contained' ? '#D6D582' : '#ffffff'};
+        props.variant === 'contained' ? '#9FB23B' : '#ffffff'};
       color: ${(props) =>
-        props.variant === 'contained' ? '#ffffff' : '#557153'};
+        props.variant === 'contained' ? '#ffffff' : '#9FB23B'};
         transform: scale(1.1);
     }
   }
@@ -175,13 +175,13 @@ export default function Opciones() {
           onClick={handleButtonClick}
         >
           {" "}
-          PADRINO{" "}
+          SER PADRINO{" "}
         </Button>
       </DivBtn>
 
       {selectedButton === "button1" && 
         <DivUnico>
-        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR POR UNICA VEZ</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
+        <Parrafo1>Selecciona uno de los links de pago para <strong>DONAR POR UNICA VEZ</strong> y termina de realizar tu donación de manera segura a través de <strong>MERCADO PAGO</strong>.</Parrafo1>
         <DivBtn2>
           <Link href='http://mpago.la/2hqn9Bo'>
           <Button
@@ -228,7 +228,7 @@ export default function Opciones() {
       }
       {selectedButton === "button2" && 
       <DivMensual>
-        <Parrafo1>SELECCIONA UNO DE LOS LINKS DE PAGO PARA <strong>DONAR MENSUALMENTE COMO PADRINO</strong> Y TERMINA DE REALIZAR TU DONACIÓN A TRAVÉS DE MERCADO PAGO.</Parrafo1>
+        <Parrafo1>Selecciona uno de los links de pago para <strong>DONAR MENSUALMENTE COMO PADRINO</strong> y termina de realizar tu donación de manera segura a través de <strong>MERCADO PAGO</strong>.</Parrafo1>
         <DivBtn2>
           <Link href='https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489c5b1700189cbb4017e0219'>
           <Button
