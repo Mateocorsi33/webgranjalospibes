@@ -108,7 +108,7 @@ const Button = styled.button`
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #000;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -131,8 +131,9 @@ const Button = styled.button`
 
     @media (max-width: 800px) {
         width:100%;
-        font-size: 1rem;
-        padding: 1rem 1rem;
+        font-size: .9rem;
+        padding: .8rem 1rem;
+        letter-spacing: 0px;
     }
 `;
 
