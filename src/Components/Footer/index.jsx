@@ -13,7 +13,7 @@ const DivFooter = styled.div`
     width: 100%;
     padding: 6rem 1rem 6rem 1rem;
     gap: 2rem;
-    background-color: #297d4e;
+    background-color: #000;
     box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 800px) {
