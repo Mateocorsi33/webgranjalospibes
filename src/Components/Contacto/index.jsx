@@ -111,7 +111,7 @@ const Contacto = () => {
             <DivCont data-aos="zoom-in">
                 <Encabe>HORARIOS DE LA GRANJA LOS PIBES</Encabe>
                 <Parrafo><strong>LUNES A DOMINGO DE 10:00 - 18:30 HS</strong></Parrafo>
-                <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR DE <strong>$1000 PARA ADULTOS</strong> Y DE <strong>$500 MENORES DE 10 AÑOS.</strong> SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
+                <Parrafo>LAS ENTRADAS PARA VISITAR EL COMPLEJO TIENE UN VALOR GENERAL DE <strong>$1000.</strong>SE PUEDEN ADQUIRIR EN EL MISMO LUGAR, SIN NECESIDAD DE RESERVA PREVIA. <strong>¡ESTACIONAMIENTO LIBRE Y GRATUITO!</strong></Parrafo>
             </DivCont>
             <DivCont data-aos="zoom-in">
                 <Encabe>ENCONTRANOS EN</Encabe>
