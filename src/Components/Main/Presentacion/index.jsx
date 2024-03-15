@@ -59,7 +59,7 @@ const TituloPortada = styled.h1`
     @media (max-width: 800px) {
         display: flex;
         width: 90%;
-        color: #2E8B57;
+        color: #113420;
         font-size: 2.8rem;
         z-index: 100;
         font-weight: 800;

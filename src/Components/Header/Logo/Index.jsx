@@ -11,7 +11,7 @@ const BoxLogo = styled.div`
     align-items: center;
     width: 15%;
     height: 4.5rem;
-    background-color: #297d4e; 
+    background-color: #113420; 
     /* 297d4e */
     @media (max-width: 800px) {
         display: flex;
@@ -95,7 +95,7 @@ const BotonMenu = styled.button`
         display: flex;
         justify-content:center;
         align-items: center;
-        background-color: #297d4e;
+        background-color: #113420;
         border-radius: 10px;
         width: 2rem;
         height: 1rem;
@@ -159,7 +159,7 @@ const DivBarra1 = styled.div`
         gap: 1.4rem;
         margin: 0;
         padding: 1rem 0;
-        border-bottom: 2px solid #557153;
+        border-bottom: 2px solid #113420;
         z-index: 1;
     }
 `
@@ -181,7 +181,7 @@ const StyledLink = styled(Link)`
     animation-duration: 1s;
   &:hover {
     text-decoration: none;
-    color: #557153;
+    color: #113420;
   }
 
   @media (max-width: 800px) {

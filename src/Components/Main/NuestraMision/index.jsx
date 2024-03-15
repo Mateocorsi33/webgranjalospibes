@@ -17,7 +17,7 @@ const BoxMision = styled.div`
     padding: 3rem 0;
     width: 100%;
     height: fit-content;
-    background-color: #2E8B57;
+    background-color: #113420;
     box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 800px) {
